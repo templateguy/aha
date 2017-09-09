@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C80B91F1F642B0800DA33C4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C80B91E1F642B0800DA33C4 /* main.cpp */; };
+		2C80B9221F642B6800DA33C4 /* libAha.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C80B9211F642B6800DA33C4 /* libAha.a */; };
+		2C80B92F1F64305300DA33C4 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C80B92E1F64305300DA33C4 /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C80B92A1F642EBC00DA33C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C80B9261F642EBB00DA33C4 /* Aha.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C80B8F01F641D0700DA33C4;
+			remoteInfo = Aha;
+		};
+		2C80B92C1F642ECD00DA33C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C80B9261F642EBB00DA33C4 /* Aha.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C80B8EF1F641D0700DA33C4;
+			remoteInfo = Aha;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C80B8C31F6418EC00DA33C4 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C80B8D11F6418EE00DA33C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C80B91E1F642B0800DA33C4 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2C80B9211F642B6800DA33C4 /* libAha.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAha.a; path = "../../../../Library/Developer/Xcode/DerivedData/Aha-cntcmcsjfshiswfekcluafjfghzc/Build/Products/Debug/libAha.a"; sourceTree = "<group>"; };
+		2C80B9261F642EBB00DA33C4 /* Aha.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Aha.xcodeproj; path = ../../Aha/Aha.xcodeproj; sourceTree = "<group>"; };
+		2C80B92E1F64305300DA33C4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C80B8C01F6418EC00DA33C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C80B92F1F64305300DA33C4 /* AppKit.framework in Frameworks */,
+				2C80B9221F642B6800DA33C4 /* libAha.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C80B8BA1F6418EC00DA33C4 = {
+			isa = PBXGroup;
+			children = (
+				2C80B9261F642EBB00DA33C4 /* Aha.xcodeproj */,
+				2C80B8C51F6418EC00DA33C4 /* HelloWorld */,
+				2C80B8C41F6418EC00DA33C4 /* Products */,
+				2C80B9201F642B6800DA33C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C80B8C41F6418EC00DA33C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C80B8C31F6418EC00DA33C4 /* HelloWorld.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C80B8C51F6418EC00DA33C4 /* HelloWorld */ = {
+			isa = PBXGroup;
+			children = (
+				2C80B8D11F6418EE00DA33C4 /* Info.plist */,
+				2C80B91E1F642B0800DA33C4 /* main.cpp */,
+			);
+			path = HelloWorld;
+			sourceTree = "<group>";
+		};
+		2C80B9201F642B6800DA33C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C80B92E1F64305300DA33C4 /* AppKit.framework */,
+				2C80B9211F642B6800DA33C4 /* libAha.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C80B9271F642EBB00DA33C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C80B92B1F642EBC00DA33C4 /* libAha.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C80B8C21F6418EC00DA33C4 /* HelloWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C80B8D41F6418EE00DA33C4 /* Build configuration list for PBXNativeTarget "HelloWorld" */;
+			buildPhases = (
+				2C80B8BF1F6418EC00DA33C4 /* Sources */,
+				2C80B8C01F6418EC00DA33C4 /* Frameworks */,
+				2C80B8C11F6418EC00DA33C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C80B92D1F642ECD00DA33C4 /* PBXTargetDependency */,
+			);
+			name = HelloWorld;
+			productName = HelloWorld;
+			productReference = 2C80B8C31F6418EC00DA33C4 /* HelloWorld.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C80B8BB1F6418EC00DA33C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Saurabh Sinha";
+				TargetAttributes = {
+					2C80B8C21F6418EC00DA33C4 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2C80B8BE1F6418EC00DA33C4 /* Build configuration list for PBXProject "HelloWorld" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C80B8BA1F6418EC00DA33C4;
+			productRefGroup = 2C80B8C41F6418EC00DA33C4 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2C80B9271F642EBB00DA33C4 /* Products */;
+					ProjectRef = 2C80B9261F642EBB00DA33C4 /* Aha.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				2C80B8C21F6418EC00DA33C4 /* HelloWorld */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2C80B92B1F642EBC00DA33C4 /* libAha.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAha.a;
+			remoteRef = 2C80B92A1F642EBC00DA33C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C80B8C11F6418EC00DA33C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C80B8BF1F6418EC00DA33C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C80B91F1F642B0800DA33C4 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C80B92D1F642ECD00DA33C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Aha;
+			targetProxy = 2C80B92C1F642ECD00DA33C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2C80B8D21F6418EE00DA33C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2C80B8D31F6418EE00DA33C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2C80B8D51F6418EE00DA33C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = ../../Aha/;
+				INFOPLIST_FILE = HelloWorld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saurabh.HelloWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2C80B8D61F6418EE00DA33C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = ../../Aha/;
+				INFOPLIST_FILE = HelloWorld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saurabh.HelloWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C80B8BE1F6418EC00DA33C4 /* Build configuration list for PBXProject "HelloWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C80B8D21F6418EE00DA33C4 /* Debug */,
+				2C80B8D31F6418EE00DA33C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C80B8D41F6418EE00DA33C4 /* Build configuration list for PBXNativeTarget "HelloWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C80B8D51F6418EE00DA33C4 /* Debug */,
+				2C80B8D61F6418EE00DA33C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C80B8BB1F6418EC00DA33C4 /* Project object */;
+}
