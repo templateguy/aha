@@ -29,7 +29,6 @@
 		2C80B9011F641F4C00DA33C4 /* Platform.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Platform.hpp; sourceTree = "<group>"; };
 		2C80B9021F64202E00DA33C4 /* PlatformConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformConfig.h; sourceTree = "<group>"; };
 		2C80B9031F6420B500DA33C4 /* SelectValue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SelectValue.hpp; sourceTree = "<group>"; };
-		2C80B9041F6420DA00DA33C4 /* SelectType.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SelectType.hpp; sourceTree = "<group>"; };
 		2C80B9091F64217200DA33C4 /* AppAndroid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppAndroid.h; sourceTree = "<group>"; };
 		2C80B90A1F64219D00DA33C4 /* AppIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppIOS.h; sourceTree = "<group>"; };
 		2C80B90D1F64225900DA33C4 /* WindowAndroid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowAndroid.h; sourceTree = "<group>"; };
@@ -41,6 +40,7 @@
 		2C80B9171F64278700DA33C4 /* WindowOSX.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowOSX.mm; sourceTree = "<group>"; };
 		2C80B91A1F64285C00DA33C4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		2C80B91C1F6429A700DA33C4 /* AppOSX.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppOSX.mm; sourceTree = "<group>"; };
+		AFBDA5F51F6F0B3800DCC284 /* Singleton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Singleton.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 				2C80B9011F641F4C00DA33C4 /* Platform.hpp */,
 				2C80B9021F64202E00DA33C4 /* PlatformConfig.h */,
 				2C80B9031F6420B500DA33C4 /* SelectValue.hpp */,
-				2C80B9041F6420DA00DA33C4 /* SelectType.hpp */,
+				AFBDA5F51F6F0B3800DCC284 /* Singleton.hpp */,
 			);
 			path = Aha;
 			sourceTree = "<group>";
@@ -346,6 +346,7 @@
 				2C80B8F81F641D0700DA33C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

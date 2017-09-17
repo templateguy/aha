@@ -9,9 +9,9 @@
 #pragma once
 
 
+#include <type_traits>
 #include "PlatformConfig.h"
 #include "Platform.hpp"
-#include "SelectType.hpp"
 
 // Platform specific inclusion.
 #if defined AHA_PLATFORM_ANDROID
@@ -33,11 +33,12 @@ namespace aha
     class AppWin;
     
     
-    using AppPlatformPolicy = SelectType <Platform::Os == Platform::OS::ANDROID, AppAndroid,
-    SelectType <Platform::Os == Platform::OS::IOS, AppIOS,
-    SelectType <Platform::Os == Platform::OS::OSX, AppOSX,
-    SelectType <Platform::Os == Platform::OS::WIN, AppWin,
-    AppOSX>::Type>::Type>::Type>::Type;
+    using AppPlatformPolicy =
+    std::conditional <Platform::Os == Platform::OS::ANDROID, AppAndroid,
+    std::conditional <Platform::Os == Platform::OS::IOS, AppIOS,
+    std::conditional <Platform::Os == Platform::OS::OSX, AppOSX,
+    std::conditional <Platform::Os == Platform::OS::WIN, AppWin,
+    AppOSX>::type>::type>::type>::type;
     
     
     class App : public AppPlatformPolicy
