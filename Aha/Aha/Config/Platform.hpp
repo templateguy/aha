@@ -1,21 +1,21 @@
 //
-//  PlatformConfig.h
+//  Platform.hpp
 //  Aha
 //
-//  Created by Saurabh Sinha on 09/09/17.
+//  Created by Priyanshi Thakur on 18/09/17.
 //  Copyright © 2017 Saurabh Sinha. All rights reserved.
 //
 
 #pragma once
 
 
-#define AHA_PLATFORM_IS_WIN 0
-#define AHA_PLATFORM_IS_OSX 0
-#define AHA_PLATFORM_IS_LINUX 0
-#define AHA_PLATFORM_IS_UNIX 0
-#define AHA_PLATFORM_IS_POSIX 0
-#define AHA_PLATFORM_IS_IOS 0
+#include "SelectValue.hpp"
+
+
 #define AHA_PLATFORM_IS_ANDROID 0
+#define AHA_PLATFORM_IS_IOS 0
+#define AHA_PLATFORM_IS_OSX 0
+#define AHA_PLATFORM_IS_WIN 0
 #
 #define AHA_ARCH_IS_X86 0
 #define AHA_ARCH_IS_X64 0
@@ -59,31 +59,50 @@
 #       define AHA_PLATFORM_OSX
 #       undef AHA_PLATFORM_IS_OSX
 #       define AHA_PLATFORM_IS_OSX 1
-#
-#   else
-#       error "Unknown Apple Platform"
 #   endif
 #
 #elif __ANDROID__
 #   define AHA_PLATFORM_ANDROID
 #   undef AHA_PLATFORM_IS_ANDROID
 #   define AHA_PLATFORM_IS_ANDROID 1
-#
-#elif __linux__
-#   define AHA_PLATFORM_LINUX
-#   undef AHA_PLATFORM_IS_LINUX
-#   define AHA_PLATFORM_IS_LINUX 1
-#
-#elif __unix__
-#   define AHA_PLATFORM_UNIX
-#   undef AHA_PLATFORM_IS_UNIX
-#   define AHA_PLATFORM_IS_UNIX 1
-#
-#elif defined(_POSIX_VERSION)
-#   define AHA_PLATFORM_POSIX
-#   undef AHA_PLATFORM_IS_POSIX
-#   define AHA_PLATFORM_IS_POSIX 1
-#
-#else
-#   error "Unknow Platform"
 #endif
+
+
+namespace aha
+{
+    class Platform
+    {
+    public:
+        enum class Os
+        {
+            Android,
+            IOS,
+            OSX,
+            Win,
+            Unknown
+        };
+        
+        enum class Arch
+        {
+            X86,
+            X64
+        };
+        
+        enum class Target
+        {
+            Device,
+            Simulator
+        };
+        
+        static constexpr Os OS =
+        SelectValue <Os, AHA_PLATFORM_IS_ANDROID, Os::Android,
+        SelectValue <Os, AHA_PLATFORM_IS_IOS, Os::IOS,
+        SelectValue <Os, AHA_PLATFORM_IS_OSX, Os::OSX,
+        SelectValue <Os, AHA_PLATFORM_IS_WIN, Os::Win,
+        Os::Unknown>::Value>::Value>::Value>::Value;
+        
+        static constexpr Arch ARCH = SelectValue <Arch, AHA_ARCH_IS_X86, Arch::X86, Arch::X64>::Value;
+        
+        static constexpr Target TARGET = SelectValue <Target, AHA_TARGET_IS_DEVICE, Target::Device, Target::Simulator>::Value;
+    };
+}

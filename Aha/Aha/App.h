@@ -10,8 +10,7 @@
 
 
 #include <type_traits>
-#include "PlatformConfig.h"
-#include "Platform.hpp"
+#include "Config/Config.hpp"
 
 // Platform specific inclusion.
 #if defined AHA_PLATFORM_ANDROID
@@ -31,20 +30,19 @@ namespace aha
     class AppIOS;
     class AppOSX;
     class AppWin;
+    class AppUnknown;
     
     
     using AppPlatformPolicy =
-    std::conditional <Platform::Os == Platform::OS::ANDROID, AppAndroid,
-    std::conditional <Platform::Os == Platform::OS::IOS, AppIOS,
-    std::conditional <Platform::Os == Platform::OS::OSX, AppOSX,
-    std::conditional <Platform::Os == Platform::OS::WIN, AppWin,
-    AppOSX>::type>::type>::type>::type;
+    std::conditional <Platform::OS == Platform::Os::Android, AppAndroid,
+    std::conditional <Platform::OS == Platform::Os::IOS, AppIOS,
+    std::conditional <Platform::OS == Platform::Os::OSX, AppOSX,
+    std::conditional <Platform::OS == Platform::Os::Win, AppWin,
+    AppUnknown>::type>::type>::type>::type;
     
     
     class App : public AppPlatformPolicy
     {
-    public:
-        App();
-        ~App();
+        ;
     };
 }

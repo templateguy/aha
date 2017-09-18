@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C80B8FC1F641E0500DA33C4 /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C80B8FB1F641E0500DA33C4 /* App.cpp */; };
-		2C80B8FF1F641EA800DA33C4 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C80B8FD1F641EA800DA33C4 /* Window.cpp */; };
 		2C80B9001F641EA800DA33C4 /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C80B8FE1F641EA800DA33C4 /* Window.h */; };
 		2C80B9121F64251D00DA33C4 /* AppOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C80B9111F64251D00DA33C4 /* AppOSX.h */; };
 		2C80B9151F64254D00DA33C4 /* AppWin.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C80B9131F64254D00DA33C4 /* AppWin.h */; };
@@ -23,11 +21,7 @@
 		2C80B8F01F641D0700DA33C4 /* libAha.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAha.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C80B8F91F641DA500DA33C4 /* Aha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aha.h; sourceTree = "<group>"; };
 		2C80B8FA1F641DD200DA33C4 /* App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
-		2C80B8FB1F641E0500DA33C4 /* App.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = App.cpp; sourceTree = "<group>"; };
-		2C80B8FD1F641EA800DA33C4 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
 		2C80B8FE1F641EA800DA33C4 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
-		2C80B9011F641F4C00DA33C4 /* Platform.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Platform.hpp; sourceTree = "<group>"; };
-		2C80B9021F64202E00DA33C4 /* PlatformConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformConfig.h; sourceTree = "<group>"; };
 		2C80B9031F6420B500DA33C4 /* SelectValue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SelectValue.hpp; sourceTree = "<group>"; };
 		2C80B9091F64217200DA33C4 /* AppAndroid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppAndroid.h; sourceTree = "<group>"; };
 		2C80B90A1F64219D00DA33C4 /* AppIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppIOS.h; sourceTree = "<group>"; };
@@ -40,6 +34,9 @@
 		2C80B9171F64278700DA33C4 /* WindowOSX.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowOSX.mm; sourceTree = "<group>"; };
 		2C80B91A1F64285C00DA33C4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		2C80B91C1F6429A700DA33C4 /* AppOSX.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppOSX.mm; sourceTree = "<group>"; };
+		AF0D3F611F702457008864DD /* Compiler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Compiler.hpp; sourceTree = "<group>"; };
+		AF0D3F621F704005008864DD /* Config.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Config.hpp; sourceTree = "<group>"; };
+		AF0D3F631F70403D008864DD /* Platform.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Platform.hpp; sourceTree = "<group>"; };
 		AFBDA5F51F6F0B3800DCC284 /* Singleton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Singleton.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,13 +76,10 @@
 				2C80B9061F64213F00DA33C4 /* IOS */,
 				2C80B9071F64214D00DA33C4 /* OSX */,
 				2C80B9081F64215700DA33C4 /* Win */,
+				AF0D3F601F702438008864DD /* Config */,
 				2C80B8F91F641DA500DA33C4 /* Aha.h */,
 				2C80B8FA1F641DD200DA33C4 /* App.h */,
-				2C80B8FB1F641E0500DA33C4 /* App.cpp */,
-				2C80B8FD1F641EA800DA33C4 /* Window.cpp */,
 				2C80B8FE1F641EA800DA33C4 /* Window.h */,
-				2C80B9011F641F4C00DA33C4 /* Platform.hpp */,
-				2C80B9021F64202E00DA33C4 /* PlatformConfig.h */,
 				2C80B9031F6420B500DA33C4 /* SelectValue.hpp */,
 				AFBDA5F51F6F0B3800DCC284 /* Singleton.hpp */,
 			);
@@ -136,6 +130,16 @@
 				2C80B91A1F64285C00DA33C4 /* AppKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF0D3F601F702438008864DD /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AF0D3F611F702457008864DD /* Compiler.hpp */,
+				AF0D3F621F704005008864DD /* Config.hpp */,
+				AF0D3F631F70403D008864DD /* Platform.hpp */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +214,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C80B8FC1F641E0500DA33C4 /* App.cpp in Sources */,
-				2C80B8FF1F641EA800DA33C4 /* Window.cpp in Sources */,
 				2C80B91D1F6429A700DA33C4 /* AppOSX.mm in Sources */,
 				2C80B9181F64278700DA33C4 /* WindowOSX.mm in Sources */,
 			);

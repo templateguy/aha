@@ -10,8 +10,7 @@
 
 
 #include <type_traits>
-#include "PlatformConfig.h"
-#include "Platform.hpp"
+#include "Config/Config.hpp"
 
 // Platform specific inclusion.
 #if defined AHA_PLATFORM_ANDROID
@@ -31,18 +30,19 @@ namespace aha
     class WindowIOS;
     class WindowOSX;
     class WindowWin;
+    class WindowUnknownPlatform;
     
     
     using WindowPlatformPolicy =
-    std::conditional <Platform::Os == Platform::OS::ANDROID, WindowAndroid,
-    std::conditional <Platform::Os == Platform::OS::IOS, WindowIOS,
-    std::conditional <Platform::Os == Platform::OS::OSX, WindowOSX,
-    std::conditional <Platform::Os == Platform::OS::WIN, WindowWin,
-    WindowOSX>::type>::type>::type>::type;
+    std::conditional <Platform::OS == Platform::Os::Android, WindowAndroid,
+    std::conditional <Platform::OS == Platform::Os::IOS, WindowIOS,
+    std::conditional <Platform::OS == Platform::Os::OSX, WindowOSX,
+    std::conditional <Platform::OS == Platform::Os::Win, WindowWin,
+    WindowUnknownPlatform>::type>::type>::type>::type;
     
     
     class Window : public WindowPlatformPolicy
     {
-        
+        ;
     };
 }
