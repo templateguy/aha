@@ -22,6 +22,6 @@ namespace aha
         
     private:
         struct impl_;
-        std::unique_ptr <impl_> pImpl_;
+        std::unique_ptr <impl_> pimpl_;
     };
 }

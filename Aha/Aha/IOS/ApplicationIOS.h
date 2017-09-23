@@ -1,5 +1,5 @@
 //
-//  Aha.h
+//  AppIOS.h
 //  Aha
 //
 //  Created by Saurabh Sinha on 09/09/17.
@@ -9,5 +9,11 @@
 #pragma once
 
 
-#include "Application.h"
-#include "Window.h"
+namespace aha
+{
+    class ApplicationIOS
+    {
+    public:
+        void run();
+    };
+}

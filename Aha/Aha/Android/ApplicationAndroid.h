@@ -1,5 +1,5 @@
 //
-//  AppIOS.h
+//  AppAndroid.h
 //  Aha
 //
 //  Created by Saurabh Sinha on 09/09/17.
@@ -11,7 +11,7 @@
 
 namespace aha
 {
-    class AppIOS
+    class ApplicationAndroid
     {
         
     };

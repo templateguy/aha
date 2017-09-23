@@ -1,5 +1,5 @@
 //
-//  AppAndroid.h
+//  AppOSX.h
 //  Aha
 //
 //  Created by Saurabh Sinha on 09/09/17.
@@ -11,8 +11,9 @@
 
 namespace aha
 {
-    class AppAndroid
+    class ApplicationOSX
     {
-        
+    public:
+        void run();
     };
 }

@@ -11,7 +11,7 @@
 
 namespace aha
 {
-    class AppWin
+    class ApplicationWin
     {
         
     };

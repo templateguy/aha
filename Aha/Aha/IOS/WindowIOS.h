@@ -9,10 +9,19 @@
 #pragma once
 
 
+#include <memory>
+
+
 namespace aha
 {
     class WindowIOS
     {
+    public:
+        WindowIOS();
+        ~WindowIOS();
         
+    protected:
+        struct impl_;
+        std::unique_ptr <impl_> pimpl_;
     };
 }
