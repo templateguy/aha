@@ -58,6 +58,10 @@
 		AF143EFA1F716032000D0788 /* libAhaIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAhaIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF143F031F7160C1000D0788 /* ApplicationIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ApplicationIOS.mm; sourceTree = "<group>"; };
 		AF7F45061F76D29900EAFEA9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		AF9087EA1F7AA618007B56FF /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		AF9087EB1F7AA649007B56FF /* Preprocessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Preprocessor.h; sourceTree = "<group>"; };
+		AF9087EC1F7AA690007B56FF /* Compiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Compiler.h; sourceTree = "<group>"; };
+		AF9087ED1F7AA71A007B56FF /* Platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
 		AFA6D77C1F7550D8006B9CA8 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		AFA6D77E1F7550EF006B9CA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AFA6D7861F7555FE006B9CA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 		2C80B8E21F641B0100DA33C4 /* Aha */ = {
 			isa = PBXGroup;
 			children = (
+				AF9087E91F7AA60A007B56FF /* Preprocessor */,
 				2C80B9051F64213200DA33C4 /* Android */,
 				2C80B9061F64213F00DA33C4 /* IOS */,
 				2C80B9071F64214D00DA33C4 /* OSX */,
@@ -186,6 +191,17 @@
 				AF0D3F631F70403D008864DD /* Platform.hpp */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		AF9087E91F7AA60A007B56FF /* Preprocessor */ = {
+			isa = PBXGroup;
+			children = (
+				AF9087EA1F7AA618007B56FF /* Common.h */,
+				AF9087EB1F7AA649007B56FF /* Preprocessor.h */,
+				AF9087EC1F7AA690007B56FF /* Compiler.h */,
+				AF9087ED1F7AA71A007B56FF /* Platform.h */,
+			);
+			path = Preprocessor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

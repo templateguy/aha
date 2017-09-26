@@ -12,19 +12,12 @@
 #include <type_traits>
 #include <memory>
 #include <vector>
-#include "Config/Config.hpp"
+#include "Preprocessor/Platform.h"
+#include "Config/Platform.hpp"
 #include "Window.h"
 
-// Platform specific inclusion.
-#if defined AHA_PLATFORM_ANDROID
-#   include "Android/ApplicationAndroid.h"
-#elif defined AHA_PLATFORM_IOS
-#   include "IOS/ApplicationIOS.h"
-#elif defined AHA_PLATFORM_OSX
-#   include "OSX/ApplicationOSX.h"
-#elif defined AHA_PLATFORM_WIN
-#   include "WIN/ApplicationWin.h"
-#endif
+// Platform specific inclusion. See Preprocessor/Platform.h
+#include AHA_PLATFORM_SPECIFIC(Application, .h)
 
 
 namespace aha
