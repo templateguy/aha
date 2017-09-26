@@ -17,21 +17,14 @@
 #include AHA_PLATFORM_SPECIFIC(Window, .h)
 
 
+// Forward declares platform specific classes. See Preprocesor/Platform.h
+AHA_PLATFORM_SPECIFIC_FORWARD_DECLARATIONS(Window);
+
+
 namespace aha
 {
-    class WindowAndroid;
-    class WindowIOS;
-    class WindowOSX;
-    class WindowWin;
-    class WindowUnknownPlatform;
-    
-    
-    using WindowPlatformPolicy =
-    std::conditional <Platform::OS == Platform::Os::Android, WindowAndroid,
-    std::conditional <Platform::OS == Platform::Os::IOS, WindowIOS,
-    std::conditional <Platform::OS == Platform::Os::OSX, WindowOSX,
-    std::conditional <Platform::OS == Platform::Os::Win, WindowWin,
-    WindowUnknownPlatform>::type>::type>::type>::type;
+    // AHA_PLATFORM_POLICY(class) expands to the platform specific version of the class. See Preprocessor/Platform.h
+    using WindowPlatformPolicy = AHA_PLATFORM_POLICY(Window);
     
     
     class Window : public WindowPlatformPolicy

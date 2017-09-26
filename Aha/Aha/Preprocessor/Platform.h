@@ -79,3 +79,23 @@ AHA_IF(AHA_PLATFORM_IS_IOS, AHA_IOS_SPECIFIC(file, ext), \
 AHA_IF(AHA_PLATFORM_IS_OSX, AHA_OSX_SPECIFIC(file, ext), \
 AHA_IF(AHA_PLATFORM_IS_WIN, AHA_WIN_SPECIFIC(file, ext), \
 AHA_OSX_SPECIFIC(file, ext)))))
+#
+#
+#define AHA_PLATFORM_SPECIFIC_FORWARD_DECLARATIONS(type) \
+\
+namespace aha \
+{ \
+    class AHA_CONCAT(type, Android); \
+    class AHA_CONCAT(type, IOS); \
+    class AHA_CONCAT(type, OSX); \
+    class AHA_CONCAT(type, Win); \
+    class AHA_CONCAT(type, Unknown); \
+}
+
+
+#define AHA_PLATFORM_POLICY(class) \
+std::conditional <Platform::OS == Platform::Os::Android, AHA_CONCAT(class, Android), \
+std::conditional <Platform::OS == Platform::Os::IOS, AHA_CONCAT(class, IOS), \
+std::conditional <Platform::OS == Platform::Os::OSX, AHA_CONCAT(class, OSX), \
+std::conditional <Platform::OS == Platform::Os::Win, AHA_CONCAT(class, Win), \
+AHA_CONCAT(class, Unknown)>::type>::type>::type>::type;
