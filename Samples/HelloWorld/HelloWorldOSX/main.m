@@ -6,8 +6,7 @@
 //  Copyright © 2017 Saurabh Sinha. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-#import "../../../Aha/Aha/OSX/AppDelegate.h"
+#import "AppDelegate.h"
 
 
 int main(int argc, const char * argv[])

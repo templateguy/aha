@@ -1,8 +1,8 @@
 //
-//  AppAndroid.h
+//  GraphicsDriverMetal.h
 //  Aha
 //
-//  Created by Saurabh Sinha on 09/09/17.
+//  Created by Priyanshi Thakur on 02/10/17.
 //  Copyright © 2017 Saurabh Sinha. All rights reserved.
 //
 
@@ -11,7 +11,10 @@
 
 namespace aha
 {
-    class ApplicationAndroid
+    class Window;
+    
+    
+    class GraphicsDriverMetal
     {
         
     };

@@ -91,8 +91,9 @@ namespace aha \
     class AHA_CONCAT(type, Win); \
     class AHA_CONCAT(type, Unknown); \
 }
-
-
+#
+#
+#include <type_traits>
 #define AHA_PLATFORM_POLICY(class) \
 std::conditional <Platform::OS == Platform::Os::Android, AHA_CONCAT(class, Android), \
 std::conditional <Platform::OS == Platform::Os::IOS, AHA_CONCAT(class, IOS), \

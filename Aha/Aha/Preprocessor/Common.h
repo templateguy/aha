@@ -24,3 +24,21 @@
 #define AHA_IF_I(cond, x, y) AHA_CONCAT(AHA_IF_, cond)(x, y)
 #define AHA_IF_0(x, y) y
 #define AHA_IF_1(x, y) x
+#
+#
+#define AHA_MAKE_SINGLETON(class)                                   \
+public:                                                             \
+    static auto& getInstance()                                      \
+    {                                                               \
+        static class instance;                                      \
+        return instance;                                            \
+    }                                                               \
+                                                                    \
+    class(const class&) = delete;                                   \
+    const class& operator =(const class&) = delete;                 \
+                                                                    \
+private:                                                            \
+    class() = default
+
+
+

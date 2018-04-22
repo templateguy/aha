@@ -6,12 +6,14 @@
 //  Copyright © 2017 Saurabh Sinha. All rights reserved.
 //
 
-#include "../../../Aha/Aha/Aha.h"
+#include "HelloTriangle.hpp"
+#include "HelloTexture.hpp"
+#include "HelloModel.hpp"
 
 
 void Main()
 {
-    Application.init();
-    Application.createWindow();
-    Application.run();
+    aha::Application.init("Aha", 800, 600);
+    auto scene(HelloModel::create());
+    aha::Application.run(scene);
 }

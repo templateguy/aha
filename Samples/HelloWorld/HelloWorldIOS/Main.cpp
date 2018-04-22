@@ -12,6 +12,6 @@
 void Main()
 {
     Application.init();
-    Application.createWindow();
+    Application.newWindow("Aha Window 1");
     Application.run();
 }
