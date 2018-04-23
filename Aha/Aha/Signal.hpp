@@ -49,7 +49,10 @@ namespace aha
         {
             for(auto slot : slots_)
             {
-                slot.second(args...);
+                if(slot.second)
+                {
+                    slot.second(args...);
+                }
             }
         }
         

@@ -11,7 +11,6 @@
 
 #include "Window.hpp"
 #include AHA_PLATFORM_SPECIFIC(RendererGL,.h)
-#include "Event.hpp"
 #include "Scene.hpp"
 
 
@@ -28,7 +27,6 @@ namespace aha
             };
             window_ = std::make_shared <Window_> (title, width, height, isFullScreen);
             renderer_ = std::shared_ptr <Renderer> (new RendererGLOSX(window_));
-            Event.addListener <void (float, float)> ("MouseLeftButtonDown", std::bind(&Application_::onMouseDown, this, std::placeholders::_1, std::placeholders::_2));
         }
         
         void run(std::shared_ptr <Scene> scene = std::shared_ptr <Scene> (nullptr))
@@ -64,11 +62,6 @@ namespace aha
         }
         
     private:
-        void onMouseDown(float x, float y)
-        {
-            printf("onMouseDown Called...\n");
-        }
-        
         std::shared_ptr <Window> window_{};
         std::shared_ptr <Renderer> renderer_{};
         AHA_MAKE_SINGLETON(Application_);

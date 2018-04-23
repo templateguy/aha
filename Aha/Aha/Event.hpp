@@ -21,21 +21,21 @@ namespace aha
     {
     public:
         template <typename FunctionSignature>
-        auto addListener(const IdentifierType& identifier, const std::function <FunctionSignature>& listener)
+        auto addListener(const IdentifierType& identifier, const std::function <FunctionSignature>& listener) const
         {
             auto& signal(Registry_::template fetch <FunctionSignature> (identifier));
             return signal.connect(listener);
         }
         
         template <typename FunctionSignature>
-        void removeListener(const IdentifierType& identifier, const typename Signal <FunctionSignature>::Handle& handle)
+        void removeListener(const IdentifierType& identifier, const typename Signal <FunctionSignature>::Handle& handle) const
         {
             auto& signal(Registry_::template fetch <FunctionSignature> (identifier));
             signal.disconnect(handle);
         }
         
         template <typename FunctionSignature, typename... Args>
-        void fire(const IdentifierType& identifier, Args... args)
+        void fire(const IdentifierType& identifier, Args... args) const
         {
             auto& signal(Registry_::template fetch <FunctionSignature> (identifier));
             signal(args...);
