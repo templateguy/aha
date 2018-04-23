@@ -9,9 +9,7 @@
 #pragma once
 
 
-#include <map>
 #include <string>
-#include <functional>
 #include "Signal.hpp"
 #include "Preprocessor/Preprocessor.h"
 
@@ -22,28 +20,24 @@ namespace aha
     class Event_
     {
     public:
-        template <typename FunctionSignature, typename HandleType = unsigned int>
-        HandleType addListener(const IdentifierType& identifier, std::function <FunctionSignature> listener)
+        template <typename FunctionSignature>
+        auto addListener(const IdentifierType& identifier, const std::function <FunctionSignature>& listener)
         {
-            if(listener)
-            {
-                auto signal(Registry_::template fetch <FunctionSignature> (identifier));
-                return signal.connect(listener);
-            }
-            return HandleType{};
+            auto& signal(Registry_::template fetch <FunctionSignature> (identifier));
+            return signal.connect(listener);
         }
         
-        template <typename FunctionSignature, typename HandleType = unsigned int>
-        void removeListener(const IdentifierType& identifier, HandleType handle)
+        template <typename FunctionSignature>
+        void removeListener(const IdentifierType& identifier, const typename Signal <FunctionSignature>::Handle& handle)
         {
-            auto signal(Registry_::template fetch <FunctionSignature> (identifier));
+            auto& signal(Registry_::template fetch <FunctionSignature> (identifier));
             signal.disconnect(handle);
         }
         
         template <typename FunctionSignature, typename... Args>
         void fire(const IdentifierType& identifier, Args... args)
         {
-            auto signal(Registry_::template fetch <FunctionSignature> (identifier));
+            auto& signal(Registry_::template fetch <FunctionSignature> (identifier));
             signal(args...);
         }
         

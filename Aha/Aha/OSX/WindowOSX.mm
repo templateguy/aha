@@ -137,6 +137,24 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
     
 }
 
+- (void) mouseEntered : (NSEvent*) event
+{
+    CGPoint point = [event locationInWindow];
+    aha::Event.fire <void (float, float)> ("MouseEntered", point.x, point.y);
+}
+
+- (void) mouseExited : (NSEvent*) event
+{
+    CGPoint point = [event locationInWindow];
+    aha::Event.fire <void (float, float)> ("MouseExited", point.x, point.y);
+}
+
+- (void) mouseMoved : (NSEvent*) event
+{
+    CGPoint point = [event locationInWindow];
+    aha::Event.fire <void (float, float)> ("MouseMoved", point.x, point.y);
+}
+
 - (void) mouseDown : (NSEvent*) event
 {
     CGPoint point = [event locationInWindow];
@@ -145,57 +163,66 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 
 - (void) mouseDragged : (NSEvent*) event
 {
-    
+    CGPoint point = [event locationInWindow];
+    aha::Event.fire <void (float, float)> ("MouseLeftButtonDragged", point.x, point.y);
 }
 
 - (void) mouseUp : (NSEvent*) event
 {
-    
-}
-
-- (void) mouseMoved : (NSEvent*) event
-{
-    
+    CGPoint point = [event locationInWindow];
+    aha::Event.fire <void (float, float)> ("MouseLeftButtonUp", point.x, point.y);
 }
 
 - (void) rightMouseDown : (NSEvent*) event
 {
-    
+    CGPoint point = [event locationInWindow];
+    aha::Event.fire <void (float, float)> ("MouseRightButtonDown", point.x, point.y);
 }
 
 - (void) rightMouseDragged : (NSEvent*) event
 {
-    
+    CGPoint point = [event locationInWindow];
+    aha::Event.fire <void (float, float)> ("MouseRightButtonDragged", point.x, point.y);
 }
 
 - (void) rightMouseUp : (NSEvent*) event
 {
-    
+    CGPoint point = [event locationInWindow];
+    aha::Event.fire <void (float, float)> ("MouseRightButtonUp", point.x, point.y);
 }
 
 - (void) otherMouseDown : (NSEvent*) event
 {
-    
+    CGPoint point = [event locationInWindow];
+    aha::Event.fire <void (float, float)> ("MouseMiddleButtonDown", point.x, point.y);
 }
 
 - (void) otherMouseDragged : (NSEvent*) event
 {
-    
+    CGPoint point = [event locationInWindow];
+    aha::Event.fire <void (float, float)> ("MouseMiddleButtonDragged", point.x, point.y);
 }
 
 - (void) otherMouseUp : (NSEvent*) event
 {
-    
+    CGPoint point = [event locationInWindow];
+    aha::Event.fire <void (float, float)> ("MouseMiddleButtonUp", point.x, point.y);
 }
 
-- (void) mouseExited : (NSEvent*) event
+- (void) scrollWheel : (NSEvent*) event
 {
-    
-}
-
-- (void) mouseEntered : (NSEvent*) event
-{
-    
+    double deltaX, deltaY;
+    deltaX = [event scrollingDeltaX];
+    deltaY = [event scrollingDeltaY];
+    if([event hasPreciseScrollingDeltas])
+    {
+        deltaX *= 0.1;
+        deltaY *= 0.1;
+    }
+    if(fabs(deltaX) > 0.0 || fabs(deltaY) > 0.0)
+    {
+        aha::Event.fire <void (float, float)> ("MouseWheelScrolled", deltaX, deltaY);
+    }
 }
 
 - (void) viewDidChangeBackingProperties
@@ -245,22 +272,6 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 - (void) keyUp : (NSEvent*) event
 {
     printf("Key Up...\n");
-}
-
-- (void) scrollWheel : (NSEvent*) event
-{
-    double deltaX, deltaY;
-    deltaX = [event scrollingDeltaX];
-    deltaY = [event scrollingDeltaY];
-    if ([event hasPreciseScrollingDeltas])
-    {
-        deltaX *= 0.1;
-        deltaY *= 0.1;
-    }
-    if (fabs(deltaX) > 0.0 || fabs(deltaY) > 0.0)
-    {
-        printf("Scroll Wheel Moved...\n");
-    }
 }
 
 - (NSDragOperation) draggingEntered : (id <NSDraggingInfo>) sender

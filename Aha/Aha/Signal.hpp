@@ -11,7 +11,6 @@
 
 #include <functional>
 #include <map>
-#include "Policies/HasID.hpp"
 
 
 namespace aha
@@ -20,9 +19,11 @@ namespace aha
     class Signal;
     
     template <typename DelegateType, typename HandleType, typename ReturnType, typename... Args>
-    class Signal <ReturnType (Args...), DelegateType, HandleType> : public HasID <unsigned int>
+    class Signal <ReturnType (Args...), DelegateType, HandleType>
     {
     public:
+        using Handle = HandleType;
+        
         auto connect(const DelegateType& slot)
         {
             if(slot)
