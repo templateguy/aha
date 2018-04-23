@@ -59,6 +59,6 @@ namespace aha
             return ++handle;
         }
         
-        std::map <HandleType, DelegateType> slots_;
+        std::map <HandleType, DelegateType> slots_{};
     };
 }

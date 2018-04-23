@@ -23,39 +23,38 @@ namespace aha
     {
     public:
         template <typename FunctionSignature, typename HandleType = unsigned int>
-        HandleType addListener(const IdentifierType& identifier, const std::function <FunctionSignature>& listener)
+        HandleType addListener(const IdentifierType& identifier, std::function <FunctionSignature> listener)
         {
             if(listener)
             {
-                auto signal(Registry_ <IdentifierType>::template fetch <FunctionSignature> (identifier));
+                auto signal(Registry_::template fetch <FunctionSignature> (identifier));
                 return signal.connect(listener);
             }
             return HandleType{};
         }
         
         template <typename FunctionSignature, typename HandleType = unsigned int>
-        void removeListener(const IdentifierType& identifier, const HandleType& handle)
+        void removeListener(const IdentifierType& identifier, HandleType handle)
         {
-            auto signal(Registry_ <IdentifierType>::template fetch <FunctionSignature> (identifier));
+            auto signal(Registry_::template fetch <FunctionSignature> (identifier));
             signal.disconnect(handle);
         }
         
         template <typename FunctionSignature, typename... Args>
         void fire(const IdentifierType& identifier, Args... args)
         {
-            auto signal(Registry_ <IdentifierType>::template fetch <FunctionSignature> (identifier));
+            auto signal(Registry_::template fetch <FunctionSignature> (identifier));
             signal(args...);
         }
         
     protected:
-        template <typename T>
         class Registry_
         {
         public:
             template <typename FunctionSignature>
-            static auto& fetch(const T& identifier)
+            static auto& fetch(const IdentifierType& identifier)
             {
-                static std::map <T, aha::Signal <FunctionSignature>> registry;
+                static std::map <IdentifierType, aha::Signal <FunctionSignature>> registry;
                 auto i(registry.begin());
                 i = registry.find(identifier);
                 if(i != registry.end())
