@@ -13,4 +13,6 @@
 #include "stb_image.h"
 #include "Application.hpp"
 #include "Texture.hpp"
+#include "Camera.hpp"
 #include "Model.hpp"
+#include "Timer.hpp"

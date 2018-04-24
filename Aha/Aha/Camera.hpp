@@ -9,6 +9,7 @@
 #pragma once
 
 
+#include <cmath>
 #include "glm/glm.hpp"
 #include "glm/gtc/matrix_transform.hpp"
 
@@ -29,6 +30,26 @@ namespace aha
             return glm::lookAt(position_, position_ + front_, up_);
         }
         
+        glm::vec3 getPosition() const
+        {
+            return position_;
+        }
+        
+        void setPosition(const glm::vec3& position)
+        {
+            position_ = position;
+        }
+        
+        float getZoom() const
+        {
+            return zoom_;
+        }
+        
+        void setZoom(float zoom)
+        {
+            zoom_ = zoom;
+        }
+        
     protected:
         void updateVectors_()
         {
@@ -46,11 +67,11 @@ namespace aha
         
         glm::vec3 position_{glm::vec3(0.0f, 0.0f, 0.0f)};
         glm::vec3 worldUp_{glm::vec3(0.0f, 1.0f, 0.0f)};
-        glm::vec3 yaw_{-90.0f};
-        glm::vec3 pitch_{0.0f};
+        float yaw_{-90.0f};
+        float pitch_{0.0f};
         glm::vec3 front_{glm::vec3(0.0f, 0.0f, -1.0f)};
         glm::vec3 up_{};
-        glm::vec3 right_{}
+        glm::vec3 right_{};
         
         float speed_{2.5f};
         float sensitivity_{0.1f};

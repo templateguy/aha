@@ -65,6 +65,7 @@
 		AF12BC702003D7CA0000A955 /* HasChildren.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HasChildren.hpp; sourceTree = "<group>"; };
 		AF12C9601F76B81A00729018 /* libAhaOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAhaOSX.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF143EFA1F716032000D0788 /* libAhaIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAhaIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2F36A0208F7FA000969216 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		AF3361E6208B592300A6B95B /* Mesh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
 		AF3361E7208B606100A6B95B /* Model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
 		AF336AAD208B6D9500A6B95B /* .editorconfig */ = {isa = PBXFileReference; lastKnownFileType = text; path = .editorconfig; sourceTree = "<group>"; };
@@ -502,6 +503,7 @@
 				AF336C45208CB07C00A6B95B /* Camera.hpp */,
 				AF336C46208CC3E800A6B95B /* Signal.hpp */,
 				AF336C47208CC6F300A6B95B /* Event.hpp */,
+				AF2F36A0208F7FA000969216 /* Timer.hpp */,
 			);
 			path = Aha;
 			sourceTree = "<group>";

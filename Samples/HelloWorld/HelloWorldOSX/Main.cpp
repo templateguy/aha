@@ -9,11 +9,12 @@
 #include "HelloTriangle.hpp"
 #include "HelloTexture.hpp"
 #include "HelloModel.hpp"
+#include "HelloPBR.hpp"
 
 
 void Main()
 {
     aha::Application.init("Aha", 800, 600);
-    auto scene(HelloModel::create());
+    auto scene(HelloPBR::create());
     aha::Application.run(scene);
 }

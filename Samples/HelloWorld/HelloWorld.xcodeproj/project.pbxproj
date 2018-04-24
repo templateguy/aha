@@ -11,6 +11,12 @@
 		AF12C9541F76B73E00729018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF12C9531F76B73E00729018 /* Assets.xcassets */; };
 		AF143EE31F715A4F000D0788 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF143EE21F715A4F000D0788 /* main.m */; };
 		AF143EEE1F715A50000D0788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF143EED1F715A50000D0788 /* Assets.xcassets */; };
+		AF2F369A208F737F00969216 /* hello_pbr.vs in Resources */ = {isa = PBXBuildFile; fileRef = AF2F3699208F737F00969216 /* hello_pbr.vs */; };
+		AF2F369B208F737F00969216 /* hello_pbr.vs in Resources */ = {isa = PBXBuildFile; fileRef = AF2F3699208F737F00969216 /* hello_pbr.vs */; };
+		AF2F369D208F73DC00969216 /* hello_pbr.fs in Resources */ = {isa = PBXBuildFile; fileRef = AF2F369C208F73DC00969216 /* hello_pbr.fs */; };
+		AF2F369E208F73DC00969216 /* hello_pbr.fs in Resources */ = {isa = PBXBuildFile; fileRef = AF2F369C208F73DC00969216 /* hello_pbr.fs */; };
+		AF2F36AE208F928600969216 /* metallic1.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36AD208F928600969216 /* metallic1.png */; };
+		AF2F36AF208F928600969216 /* metallic1.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36AD208F928600969216 /* metallic1.png */; };
 		AF336B0C208B7DF100A6B95B /* model.vs in Resources */ = {isa = PBXBuildFile; fileRef = AF336B0B208B7DF100A6B95B /* model.vs */; };
 		AF336B0D208B7DF100A6B95B /* model.vs in Resources */ = {isa = PBXBuildFile; fileRef = AF336B0B208B7DF100A6B95B /* model.vs */; };
 		AF336B0F208B7E5300A6B95B /* model.fs in Resources */ = {isa = PBXBuildFile; fileRef = AF336B0E208B7E5300A6B95B /* model.fs */; };
@@ -262,6 +268,10 @@
 		AF143EE21F715A4F000D0788 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF143EED1F715A50000D0788 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF143EF21F715A50000D0788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF2F3699208F737F00969216 /* hello_pbr.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = hello_pbr.vs; sourceTree = "<group>"; };
+		AF2F369C208F73DC00969216 /* hello_pbr.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = hello_pbr.fs; sourceTree = "<group>"; };
+		AF2F369F208F746600969216 /* HelloPBR.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloPBR.hpp; sourceTree = "<group>"; };
+		AF2F36AD208F928600969216 /* metallic1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metallic1.png; sourceTree = "<group>"; };
 		AF336B08208B6ECC00A6B95B /* HelloModel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloModel.hpp; sourceTree = "<group>"; };
 		AF336B0B208B7DF100A6B95B /* model.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = model.vs; sourceTree = "<group>"; };
 		AF336B0E208B7E5300A6B95B /* model.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = model.fs; sourceTree = "<group>"; };
@@ -448,6 +458,7 @@
 				AFA86012207A49730083B81B /* HelloTriangle.hpp */,
 				AF8F173A207B9EBF00C8AB85 /* HelloTexture.hpp */,
 				AF336B08208B6ECC00A6B95B /* HelloModel.hpp */,
+				AF2F369F208F746600969216 /* HelloPBR.hpp */,
 			);
 			path = HelloWorldOSX;
 			sourceTree = "<group>";
@@ -468,6 +479,8 @@
 			children = (
 				AF336B0B208B7DF100A6B95B /* model.vs */,
 				AF336B0E208B7E5300A6B95B /* model.fs */,
+				AF2F3699208F737F00969216 /* hello_pbr.vs */,
+				AF2F369C208F73DC00969216 /* hello_pbr.fs */,
 			);
 			path = shaders;
 			sourceTree = "<group>";
@@ -646,6 +659,7 @@
 			isa = PBXGroup;
 			children = (
 				AF336B69208B823800A6B95B /* albedo.png */,
+				AF2F36AD208F928600969216 /* metallic1.png */,
 				AF336B6A208B823800A6B95B /* ao.png */,
 				AF336B6B208B823800A6B95B /* metallic.png */,
 				AF336B6C208B823800A6B95B /* normal.png */,
@@ -823,6 +837,7 @@
 				AF336BEF208B823800A6B95B /* container2_specular.png in Resources */,
 				AF12C9541F76B73E00729018 /* Assets.xcassets in Resources */,
 				AF336BA7208B823800A6B95B /* cell_ddn.png in Resources */,
+				AF2F36AF208F928600969216 /* metallic1.png in Resources */,
 				AF336C33208B823800A6B95B /* left.jpg in Resources */,
 				AF336C23208B823800A6B95B /* albedo.png in Resources */,
 				AF336B99208B823800A6B95B /* back.jpg in Resources */,
@@ -838,6 +853,7 @@
 				AF336C2B208B823800A6B95B /* roughness.png in Resources */,
 				AF336BC9208B823800A6B95B /* leg_showroom_ddn.png in Resources */,
 				AF336BE1208B823800A6B95B /* bricks2.jpg in Resources */,
+				AF2F369B208F737F00969216 /* hello_pbr.vs in Resources */,
 				AF336C29208B823800A6B95B /* normal.png in Resources */,
 				AF336BE3208B823800A6B95B /* bricks2_disp.jpg in Resources */,
 				AF336BE9208B823800A6B95B /* brickwall_normal.jpg in Resources */,
@@ -893,6 +909,7 @@
 				AF8F173F207BA0A900C8AB85 /* container.jpg in Resources */,
 				AF336BD3208B823800A6B95B /* planet.mtl in Resources */,
 				AF336BBF208B823800A6B95B /* helmet_diff.png in Resources */,
+				AF2F369E208F73DC00969216 /* hello_pbr.fs in Resources */,
 				AF336BFF208B823800A6B95B /* metallic.png in Resources */,
 				AF336BD1208B823800A6B95B /* nanosuit.obj in Resources */,
 				AF336C3D208B823800A6B95B /* toy_box_normal.png in Resources */,
@@ -932,6 +949,7 @@
 				AF336BEE208B823800A6B95B /* container2_specular.png in Resources */,
 				AF143EEE1F715A50000D0788 /* Assets.xcassets in Resources */,
 				AF336BA6208B823800A6B95B /* cell_ddn.png in Resources */,
+				AF2F36AE208F928600969216 /* metallic1.png in Resources */,
 				AF336C32208B823800A6B95B /* left.jpg in Resources */,
 				AF336C22208B823800A6B95B /* albedo.png in Resources */,
 				AF336B98208B823800A6B95B /* back.jpg in Resources */,
@@ -947,6 +965,7 @@
 				AF336C2A208B823800A6B95B /* roughness.png in Resources */,
 				AF336BC8208B823800A6B95B /* leg_showroom_ddn.png in Resources */,
 				AF336BE0208B823800A6B95B /* bricks2.jpg in Resources */,
+				AF2F369A208F737F00969216 /* hello_pbr.vs in Resources */,
 				AF336C28208B823800A6B95B /* normal.png in Resources */,
 				AF336BE2208B823800A6B95B /* bricks2_disp.jpg in Resources */,
 				AF336BE8208B823800A6B95B /* brickwall_normal.jpg in Resources */,
@@ -1002,6 +1021,7 @@
 				AF8F173E207BA0A900C8AB85 /* container.jpg in Resources */,
 				AF336BD2208B823800A6B95B /* planet.mtl in Resources */,
 				AF336BBE208B823800A6B95B /* helmet_diff.png in Resources */,
+				AF2F369D208F73DC00969216 /* hello_pbr.fs in Resources */,
 				AF336BFE208B823800A6B95B /* metallic.png in Resources */,
 				AF336BD0208B823800A6B95B /* nanosuit.obj in Resources */,
 				AF336C3C208B823800A6B95B /* toy_box_normal.png in Resources */,
