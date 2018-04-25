@@ -17,6 +17,30 @@
 		AF2F369E208F73DC00969216 /* hello_pbr.fs in Resources */ = {isa = PBXBuildFile; fileRef = AF2F369C208F73DC00969216 /* hello_pbr.fs */; };
 		AF2F36AE208F928600969216 /* metallic1.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36AD208F928600969216 /* metallic1.png */; };
 		AF2F36AF208F928600969216 /* metallic1.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36AD208F928600969216 /* metallic1.png */; };
+		AF2F36BD20909B2E00969216 /* lantern_description.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36B120909B2E00969216 /* lantern_description.txt */; };
+		AF2F36BE20909B2E00969216 /* lantern_description.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36B120909B2E00969216 /* lantern_description.txt */; };
+		AF2F36BF20909B2E00969216 /* lantern_fbx.fbx in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36B220909B2E00969216 /* lantern_fbx.fbx */; };
+		AF2F36C020909B2E00969216 /* lantern_fbx.fbx in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36B220909B2E00969216 /* lantern_fbx.fbx */; };
+		AF2F36C120909B2E00969216 /* lantern_maya2016.mb in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36B320909B2E00969216 /* lantern_maya2016.mb */; };
+		AF2F36C220909B2E00969216 /* lantern_maya2016.mb in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36B320909B2E00969216 /* lantern_maya2016.mb */; };
+		AF2F36C320909B2E00969216 /* lantern_obj.mtl in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36B420909B2E00969216 /* lantern_obj.mtl */; };
+		AF2F36C420909B2E00969216 /* lantern_obj.mtl in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36B420909B2E00969216 /* lantern_obj.mtl */; };
+		AF2F36C520909B2E00969216 /* lantern_obj.obj in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36B520909B2E00969216 /* lantern_obj.obj */; };
+		AF2F36C620909B2E00969216 /* lantern_obj.obj in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36B520909B2E00969216 /* lantern_obj.obj */; };
+		AF2F36C720909B2E00969216 /* albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36B720909B2E00969216 /* albedo.jpg */; };
+		AF2F36C820909B2E00969216 /* albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36B720909B2E00969216 /* albedo.jpg */; };
+		AF2F36C920909B2E00969216 /* ao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36B820909B2E00969216 /* ao.jpg */; };
+		AF2F36CA20909B2E00969216 /* ao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36B820909B2E00969216 /* ao.jpg */; };
+		AF2F36CB20909B2E00969216 /* metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36B920909B2E00969216 /* metallic.jpg */; };
+		AF2F36CC20909B2E00969216 /* metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36B920909B2E00969216 /* metallic.jpg */; };
+		AF2F36CD20909B2E00969216 /* normal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36BA20909B2E00969216 /* normal.jpg */; };
+		AF2F36CE20909B2E00969216 /* normal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36BA20909B2E00969216 /* normal.jpg */; };
+		AF2F36CF20909B2E00969216 /* opacity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36BB20909B2E00969216 /* opacity.jpg */; };
+		AF2F36D020909B2E00969216 /* opacity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36BB20909B2E00969216 /* opacity.jpg */; };
+		AF2F36D120909B2E00969216 /* roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36BC20909B2E00969216 /* roughness.jpg */; };
+		AF2F36D220909B2E00969216 /* roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36BC20909B2E00969216 /* roughness.jpg */; };
+		AF2F36D42090A45900969216 /* model1.fs in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36D32090A45900969216 /* model1.fs */; };
+		AF2F36D52090A45900969216 /* model1.fs in Resources */ = {isa = PBXBuildFile; fileRef = AF2F36D32090A45900969216 /* model1.fs */; };
 		AF336B0C208B7DF100A6B95B /* model.vs in Resources */ = {isa = PBXBuildFile; fileRef = AF336B0B208B7DF100A6B95B /* model.vs */; };
 		AF336B0D208B7DF100A6B95B /* model.vs in Resources */ = {isa = PBXBuildFile; fileRef = AF336B0B208B7DF100A6B95B /* model.vs */; };
 		AF336B0F208B7E5300A6B95B /* model.fs in Resources */ = {isa = PBXBuildFile; fileRef = AF336B0E208B7E5300A6B95B /* model.fs */; };
@@ -272,6 +296,18 @@
 		AF2F369C208F73DC00969216 /* hello_pbr.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = hello_pbr.fs; sourceTree = "<group>"; };
 		AF2F369F208F746600969216 /* HelloPBR.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloPBR.hpp; sourceTree = "<group>"; };
 		AF2F36AD208F928600969216 /* metallic1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metallic1.png; sourceTree = "<group>"; };
+		AF2F36B120909B2E00969216 /* lantern_description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lantern_description.txt; sourceTree = "<group>"; };
+		AF2F36B220909B2E00969216 /* lantern_fbx.fbx */ = {isa = PBXFileReference; lastKnownFileType = file; path = lantern_fbx.fbx; sourceTree = "<group>"; };
+		AF2F36B320909B2E00969216 /* lantern_maya2016.mb */ = {isa = PBXFileReference; lastKnownFileType = file; path = lantern_maya2016.mb; sourceTree = "<group>"; };
+		AF2F36B420909B2E00969216 /* lantern_obj.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lantern_obj.mtl; sourceTree = "<group>"; };
+		AF2F36B520909B2E00969216 /* lantern_obj.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lantern_obj.obj; sourceTree = "<group>"; };
+		AF2F36B720909B2E00969216 /* albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = albedo.jpg; sourceTree = "<group>"; };
+		AF2F36B820909B2E00969216 /* ao.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ao.jpg; sourceTree = "<group>"; };
+		AF2F36B920909B2E00969216 /* metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = metallic.jpg; sourceTree = "<group>"; };
+		AF2F36BA20909B2E00969216 /* normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = normal.jpg; sourceTree = "<group>"; };
+		AF2F36BB20909B2E00969216 /* opacity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = opacity.jpg; sourceTree = "<group>"; };
+		AF2F36BC20909B2E00969216 /* roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roughness.jpg; sourceTree = "<group>"; };
+		AF2F36D32090A45900969216 /* model1.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = model1.fs; sourceTree = "<group>"; };
 		AF336B08208B6ECC00A6B95B /* HelloModel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloModel.hpp; sourceTree = "<group>"; };
 		AF336B0B208B7DF100A6B95B /* model.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = model.vs; sourceTree = "<group>"; };
 		AF336B0E208B7E5300A6B95B /* model.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = model.fs; sourceTree = "<group>"; };
@@ -474,6 +510,32 @@
 			path = HelloWorldIOS;
 			sourceTree = "<group>";
 		};
+		AF2F36B020909B2E00969216 /* old_lantern */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F36B120909B2E00969216 /* lantern_description.txt */,
+				AF2F36B220909B2E00969216 /* lantern_fbx.fbx */,
+				AF2F36B320909B2E00969216 /* lantern_maya2016.mb */,
+				AF2F36B420909B2E00969216 /* lantern_obj.mtl */,
+				AF2F36B520909B2E00969216 /* lantern_obj.obj */,
+				AF2F36B620909B2E00969216 /* textures */,
+			);
+			path = old_lantern;
+			sourceTree = "<group>";
+		};
+		AF2F36B620909B2E00969216 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F36B720909B2E00969216 /* albedo.jpg */,
+				AF2F36B820909B2E00969216 /* ao.jpg */,
+				AF2F36B920909B2E00969216 /* metallic.jpg */,
+				AF2F36BA20909B2E00969216 /* normal.jpg */,
+				AF2F36BB20909B2E00969216 /* opacity.jpg */,
+				AF2F36BC20909B2E00969216 /* roughness.jpg */,
+			);
+			path = textures;
+			sourceTree = "<group>";
+		};
 		AF336B0A208B7D4400A6B95B /* shaders */ = {
 			isa = PBXGroup;
 			children = (
@@ -481,6 +543,7 @@
 				AF336B0E208B7E5300A6B95B /* model.fs */,
 				AF2F3699208F737F00969216 /* hello_pbr.vs */,
 				AF2F369C208F73DC00969216 /* hello_pbr.fs */,
+				AF2F36D32090A45900969216 /* model1.fs */,
 			);
 			path = shaders;
 			sourceTree = "<group>";
@@ -488,6 +551,7 @@
 		AF336B11208B823700A6B95B /* objects */ = {
 			isa = PBXGroup;
 			children = (
+				AF2F36B020909B2E00969216 /* old_lantern */,
 				AF336B12208B823700A6B95B /* cyborg */,
 				AF336B1B208B823700A6B95B /* nanosuit */,
 				AF336B3D208B823700A6B95B /* planet */,
@@ -823,16 +887,20 @@
 				AF336C17208B823800A6B95B /* roughness.png in Resources */,
 				AF336C0B208B823800A6B95B /* normal.png in Resources */,
 				AF336BB5208B823800A6B95B /* glass_refl.png in Resources */,
+				AF2F36C820909B2E00969216 /* albedo.jpg in Resources */,
 				AF336BED208B823800A6B95B /* container2.png in Resources */,
 				AF336BB3208B823800A6B95B /* glass_dif.png in Resources */,
 				AF336BD5208B823800A6B95B /* planet.obj in Resources */,
 				AF336B9F208B823800A6B95B /* body_showroom_refl.png in Resources */,
 				AF336BF1208B823800A6B95B /* grass.png in Resources */,
 				AF336BA9208B823800A6B95B /* cell_hand_alpha.png in Resources */,
+				AF2F36CE20909B2E00969216 /* normal.jpg in Resources */,
+				AF2F36C020909B2E00969216 /* lantern_fbx.fbx in Resources */,
 				AF336C21208B823800A6B95B /* roughness.png in Resources */,
 				AF336BDD208B823800A6B95B /* rock.png in Resources */,
 				AF336C19208B823800A6B95B /* albedo.png in Resources */,
 				AF336B8D208B823800A6B95B /* cyborg_specular.png in Resources */,
+				AF2F36D020909B2E00969216 /* opacity.jpg in Resources */,
 				AF336BD7208B823800A6B95B /* planet_Quom1200.png in Resources */,
 				AF336BEF208B823800A6B95B /* container2_specular.png in Resources */,
 				AF12C9541F76B73E00729018 /* Assets.xcassets in Resources */,
@@ -845,11 +913,13 @@
 				AF336C31208B823800A6B95B /* front.jpg in Resources */,
 				AF336BDB208B823800A6B95B /* rock.obj in Resources */,
 				AF336C3B208B823800A6B95B /* toy_box_disp.png in Resources */,
+				AF2F36CA20909B2E00969216 /* ao.jpg in Resources */,
 				AF336BC1208B823800A6B95B /* helmet_showroom_ddn.png in Resources */,
 				AF336BF9208B823800A6B95B /* metal.png in Resources */,
 				AF336C2D208B823800A6B95B /* back.jpg in Resources */,
 				AF336BBD208B823800A6B95B /* hand_showroom_spec.png in Resources */,
 				AF336C1D208B823800A6B95B /* metallic.png in Resources */,
+				AF2F36BE20909B2E00969216 /* lantern_description.txt in Resources */,
 				AF336C2B208B823800A6B95B /* roughness.png in Resources */,
 				AF336BC9208B823800A6B95B /* leg_showroom_ddn.png in Resources */,
 				AF336BE1208B823800A6B95B /* bricks2.jpg in Resources */,
@@ -870,9 +940,11 @@
 				AF336BC3208B823800A6B95B /* helmet_showroom_refl.png in Resources */,
 				AF336B91208B823800A6B95B /* arm_dif.png in Resources */,
 				AF336C35208B823800A6B95B /* right.jpg in Resources */,
+				AF2F36CC20909B2E00969216 /* metallic.jpg in Resources */,
 				AF336B83208B823800A6B95B /* cyborg.blend1 in Resources */,
 				AF336BD9208B823800A6B95B /* rock.mtl in Resources */,
 				AF336B9B208B823800A6B95B /* body_dif.png in Resources */,
+				AF2F36C420909B2E00969216 /* lantern_obj.mtl in Resources */,
 				AF336C07208B823800A6B95B /* ao.png in Resources */,
 				AF336BCF208B823800A6B95B /* nanosuit.mtl in Resources */,
 				AF336BE5208B823800A6B95B /* bricks2_normal.jpg in Resources */,
@@ -900,15 +972,19 @@
 				AF336B95208B823800A6B95B /* arm_showroom_refl.png in Resources */,
 				AF336C11208B823800A6B95B /* ao.png in Resources */,
 				AF336BB7208B823800A6B95B /* hand_dif.png in Resources */,
+				AF2F36D220909B2E00969216 /* roughness.jpg in Resources */,
+				AF2F36C220909B2E00969216 /* lantern_maya2016.mb in Resources */,
 				AF336BF3208B823800A6B95B /* newport_loft.hdr in Resources */,
 				AF336BA3208B823800A6B95B /* cell_arm_alpha.png in Resources */,
 				AF336C13208B823800A6B95B /* metallic.png in Resources */,
 				AF336BAD208B823800A6B95B /* cell_leg_alpha.png in Resources */,
+				AF2F36C620909B2E00969216 /* lantern_obj.obj in Resources */,
 				AF336C41208B823800A6B95B /* wood.png in Resources */,
 				AF336BFB208B823800A6B95B /* albedo.png in Resources */,
 				AF8F173F207BA0A900C8AB85 /* container.jpg in Resources */,
 				AF336BD3208B823800A6B95B /* planet.mtl in Resources */,
 				AF336BBF208B823800A6B95B /* helmet_diff.png in Resources */,
+				AF2F36D52090A45900969216 /* model1.fs in Resources */,
 				AF2F369E208F73DC00969216 /* hello_pbr.fs in Resources */,
 				AF336BFF208B823800A6B95B /* metallic.png in Resources */,
 				AF336BD1208B823800A6B95B /* nanosuit.obj in Resources */,
@@ -935,16 +1011,20 @@
 				AF336C16208B823800A6B95B /* roughness.png in Resources */,
 				AF336C0A208B823800A6B95B /* normal.png in Resources */,
 				AF336BB4208B823800A6B95B /* glass_refl.png in Resources */,
+				AF2F36C720909B2E00969216 /* albedo.jpg in Resources */,
 				AF336BEC208B823800A6B95B /* container2.png in Resources */,
 				AF336BB2208B823800A6B95B /* glass_dif.png in Resources */,
 				AF336BD4208B823800A6B95B /* planet.obj in Resources */,
 				AF336B9E208B823800A6B95B /* body_showroom_refl.png in Resources */,
 				AF336BF0208B823800A6B95B /* grass.png in Resources */,
 				AF336BA8208B823800A6B95B /* cell_hand_alpha.png in Resources */,
+				AF2F36CD20909B2E00969216 /* normal.jpg in Resources */,
+				AF2F36BF20909B2E00969216 /* lantern_fbx.fbx in Resources */,
 				AF336C20208B823800A6B95B /* roughness.png in Resources */,
 				AF336BDC208B823800A6B95B /* rock.png in Resources */,
 				AF336C18208B823800A6B95B /* albedo.png in Resources */,
 				AF336B8C208B823800A6B95B /* cyborg_specular.png in Resources */,
+				AF2F36CF20909B2E00969216 /* opacity.jpg in Resources */,
 				AF336BD6208B823800A6B95B /* planet_Quom1200.png in Resources */,
 				AF336BEE208B823800A6B95B /* container2_specular.png in Resources */,
 				AF143EEE1F715A50000D0788 /* Assets.xcassets in Resources */,
@@ -957,11 +1037,13 @@
 				AF336C30208B823800A6B95B /* front.jpg in Resources */,
 				AF336BDA208B823800A6B95B /* rock.obj in Resources */,
 				AF336C3A208B823800A6B95B /* toy_box_disp.png in Resources */,
+				AF2F36C920909B2E00969216 /* ao.jpg in Resources */,
 				AF336BC0208B823800A6B95B /* helmet_showroom_ddn.png in Resources */,
 				AF336BF8208B823800A6B95B /* metal.png in Resources */,
 				AF336C2C208B823800A6B95B /* back.jpg in Resources */,
 				AF336BBC208B823800A6B95B /* hand_showroom_spec.png in Resources */,
 				AF336C1C208B823800A6B95B /* metallic.png in Resources */,
+				AF2F36BD20909B2E00969216 /* lantern_description.txt in Resources */,
 				AF336C2A208B823800A6B95B /* roughness.png in Resources */,
 				AF336BC8208B823800A6B95B /* leg_showroom_ddn.png in Resources */,
 				AF336BE0208B823800A6B95B /* bricks2.jpg in Resources */,
@@ -982,9 +1064,11 @@
 				AF336BC2208B823800A6B95B /* helmet_showroom_refl.png in Resources */,
 				AF336B90208B823800A6B95B /* arm_dif.png in Resources */,
 				AF336C34208B823800A6B95B /* right.jpg in Resources */,
+				AF2F36CB20909B2E00969216 /* metallic.jpg in Resources */,
 				AF336B82208B823800A6B95B /* cyborg.blend1 in Resources */,
 				AF336BD8208B823800A6B95B /* rock.mtl in Resources */,
 				AF336B9A208B823800A6B95B /* body_dif.png in Resources */,
+				AF2F36C320909B2E00969216 /* lantern_obj.mtl in Resources */,
 				AF336C06208B823800A6B95B /* ao.png in Resources */,
 				AF336BCE208B823800A6B95B /* nanosuit.mtl in Resources */,
 				AF336BE4208B823800A6B95B /* bricks2_normal.jpg in Resources */,
@@ -1012,15 +1096,19 @@
 				AF336B94208B823800A6B95B /* arm_showroom_refl.png in Resources */,
 				AF336C10208B823800A6B95B /* ao.png in Resources */,
 				AF336BB6208B823800A6B95B /* hand_dif.png in Resources */,
+				AF2F36D120909B2E00969216 /* roughness.jpg in Resources */,
+				AF2F36C120909B2E00969216 /* lantern_maya2016.mb in Resources */,
 				AF336BF2208B823800A6B95B /* newport_loft.hdr in Resources */,
 				AF336BA2208B823800A6B95B /* cell_arm_alpha.png in Resources */,
 				AF336C12208B823800A6B95B /* metallic.png in Resources */,
 				AF336BAC208B823800A6B95B /* cell_leg_alpha.png in Resources */,
+				AF2F36C520909B2E00969216 /* lantern_obj.obj in Resources */,
 				AF336C40208B823800A6B95B /* wood.png in Resources */,
 				AF336BFA208B823800A6B95B /* albedo.png in Resources */,
 				AF8F173E207BA0A900C8AB85 /* container.jpg in Resources */,
 				AF336BD2208B823800A6B95B /* planet.mtl in Resources */,
 				AF336BBE208B823800A6B95B /* helmet_diff.png in Resources */,
+				AF2F36D42090A45900969216 /* model1.fs in Resources */,
 				AF2F369D208F73DC00969216 /* hello_pbr.fs in Resources */,
 				AF336BFE208B823800A6B95B /* metallic.png in Resources */,
 				AF336BD0208B823800A6B95B /* nanosuit.obj in Resources */,

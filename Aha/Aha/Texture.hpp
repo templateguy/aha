@@ -26,7 +26,20 @@ namespace aha
             unsigned char* data(stbi_load(fileName.c_str(), &width, &height, &channels, 0));
             if(data)
             {
-                texture = std::shared_ptr <Texture> (new Texture(data, width, height, channels == 3? false : true));
+                GLenum format = GL_RGBA;
+                if(channels == 1)
+                {
+                    format = GL_RED;
+                }
+                else if(channels == 3)
+                {
+                    format = GL_RGB;
+                }
+                else if(channels == 4)
+                {
+                    format = GL_RGBA;
+                }
+                texture = std::shared_ptr <Texture> (new Texture(data, width, height, format));
             }
             else
             {
@@ -47,28 +60,26 @@ namespace aha
         }
         
     protected:
-        Texture(unsigned char* data, int width, int height, bool hasAlpha) : width_(width), height_(height), hasAlpha_(hasAlpha)
+        Texture(unsigned char* data, int width, int height, GLenum format) : width_(width), height_(height), format_(format)
         {
             if(data)
             {
                 glGenTextures(1, &handle_);
                 glBindTexture(GL_TEXTURE_2D, handle_);
-                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-                auto format(hasAlpha? GL_RGBA : GL_RGB);
                 glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
                 glGenerateMipmap(GL_TEXTURE_2D);
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
                 width_ = width;
                 height_ = height;
-                hasAlpha_ = hasAlpha;
             }
         }
         
         Handle handle_;
         size_t width_;
         size_t height_;
-        bool hasAlpha_;
+        GLenum format_;
     };
 }

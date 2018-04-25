@@ -14,7 +14,7 @@
 
 void Main()
 {
-    aha::Application.init("Aha", 800, 600);
+    aha::Application.init("Aha", 1280, 720);
     auto scene(HelloPBR::create());
     aha::Application.run(scene);
 }

@@ -22,38 +22,111 @@ public:
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         
+        delta_ += 0.005f;
+        delta_ = delta_ > 360.0f? delta_ - 360.0f : delta_;
+        
+        float scale(0.1f);
+        float start(-0.5f);
+        float distance(0.25f);
+        
         shader_.use();
+        glm::mat4 model;
         glm::mat4 view = camera_.getViewMatrix();
         shader_.setMat4("view", view);
         shader_.setVec3("camPos", camera_.getPosition());
         
         glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, albedo_->handle());
+        glBindTexture(GL_TEXTURE_2D, albedoGold_->handle());
         glActiveTexture(GL_TEXTURE1);
-        glBindTexture(GL_TEXTURE_2D, normal_->handle());
+        glBindTexture(GL_TEXTURE_2D, normalGold_->handle());
         glActiveTexture(GL_TEXTURE2);
-        glBindTexture(GL_TEXTURE_2D, metallic_->handle());
+        glBindTexture(GL_TEXTURE_2D, metallicGold_->handle());
         glActiveTexture(GL_TEXTURE3);
-        glBindTexture(GL_TEXTURE_2D, roughness_->handle());
+        glBindTexture(GL_TEXTURE_2D, roughnessGold_->handle());
         glActiveTexture(GL_TEXTURE4);
-        glBindTexture(GL_TEXTURE_2D, ao_->handle());
+        glBindTexture(GL_TEXTURE_2D, aoGold_->handle());
         
-        // render rows*column number of spheres with material properties defined by textures (they all have the same material properties)
-        glm::mat4 model;
-        for (int row = 0; row < rows_; ++row)
-        {
-            for (int col = 0; col < columns_; ++col)
-            {
-                model = glm::mat4();
-                model = glm::translate(model, glm::vec3((float)(col - (rows_ / 2)) * spacing_, (float)(row - (columns_ / 2)) * spacing_, 0.0f));
-                shader_.setMat4("model", model);
-                renderSphere();
-            }
-        }
+        model = glm::mat4();
+        model = glm::translate(model, glm::vec3(start, 0.0f, 2.0f));
+        model = glm::scale(model, glm::vec3(scale, scale, scale));
+        model = glm::rotate(model, delta_, glm::vec3(0.0f, 1.0f, 0.0f));
+        shader_.setMat4("model", model);
+        renderSphere();
         
-        // render light source (simply re-render sphere at light positions)
-        // this looks a bit off as we use the same shader, but it'll make their positions obvious and
-        // keeps the codeprint small.
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, albedoGrass_->handle());
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, normalGrass_->handle());
+        glActiveTexture(GL_TEXTURE2);
+        glBindTexture(GL_TEXTURE_2D, metallicGrass_->handle());
+        glActiveTexture(GL_TEXTURE3);
+        glBindTexture(GL_TEXTURE_2D, roughnessGrass_->handle());
+        glActiveTexture(GL_TEXTURE4);
+        glBindTexture(GL_TEXTURE_2D, aoGrass_->handle());
+        
+        model = glm::mat4();
+        model = glm::translate(model, glm::vec3(start + distance, 0.0f, 2.0f));
+        model = glm::scale(model, glm::vec3(scale, scale, scale));
+        model = glm::rotate(model, delta_, glm::vec3(0.0f, 1.0f, 0.0f));
+        shader_.setMat4("model", model);
+        renderSphere();
+        
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, albedoPlastic_->handle());
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, normalPlastic_->handle());
+        glActiveTexture(GL_TEXTURE2);
+        glBindTexture(GL_TEXTURE_2D, metallicPlastic_->handle());
+        glActiveTexture(GL_TEXTURE3);
+        glBindTexture(GL_TEXTURE_2D, roughnessPlastic_->handle());
+        glActiveTexture(GL_TEXTURE4);
+        glBindTexture(GL_TEXTURE_2D, aoPlastic_->handle());
+        
+        model = glm::mat4();
+        model = glm::translate(model, glm::vec3(start + distance + distance, 0.0f, 2.0f));
+        model = glm::scale(model, glm::vec3(scale, scale, scale));
+        model = glm::rotate(model, delta_, glm::vec3(0.0f, 1.0f, 0.0f));
+        shader_.setMat4("model", model);
+        renderSphere();
+        
+        // Rusted Iron
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, albedoRustedIron_->handle());
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, normalRustedIron_->handle());
+        glActiveTexture(GL_TEXTURE2);
+        glBindTexture(GL_TEXTURE_2D, metallicRustedIron_->handle());
+        glActiveTexture(GL_TEXTURE3);
+        glBindTexture(GL_TEXTURE_2D, roughnessRustedIron_->handle());
+        glActiveTexture(GL_TEXTURE4);
+        glBindTexture(GL_TEXTURE_2D, aoRustedIron_->handle());
+        
+        model = glm::mat4();
+        model = glm::translate(model, glm::vec3(start + distance + distance + distance, 0.0f, 2.0f));
+        model = glm::scale(model, glm::vec3(scale, scale, scale));
+        model = glm::rotate(model, delta_, glm::vec3(0.0f, 1.0f, 0.0f));
+        shader_.setMat4("model", model);
+        renderSphere();
+        
+        // Wall
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, albedoWall_->handle());
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, normalWall_->handle());
+        glActiveTexture(GL_TEXTURE2);
+        glBindTexture(GL_TEXTURE_2D, metallicWall_->handle());
+        glActiveTexture(GL_TEXTURE3);
+        glBindTexture(GL_TEXTURE_2D, roughnessWall_->handle());
+        glActiveTexture(GL_TEXTURE4);
+        glBindTexture(GL_TEXTURE_2D, aoWall_->handle());
+        
+        model = glm::mat4();
+        model = glm::translate(model, glm::vec3(start + distance + distance + distance + distance, 0.0f, 2.0f));
+        model = glm::scale(model, glm::vec3(scale, scale, scale));
+        model = glm::rotate(model, delta_, glm::vec3(0.0f, 1.0f, 0.0f));
+        shader_.setMat4("model", model);
+        renderSphere();
+        
         for (unsigned int i = 0; i < sizeof(lightPositions_) / sizeof(lightPositions_[0]); ++i)
         {
             glm::vec3 newPos = lightPositions_[i] + glm::vec3(sin(timer_.elapsed() * 5.0) * 5.0, 0.0, 0.0);
@@ -83,20 +156,40 @@ protected:
         shader_.setInt("roughnessMap", 3);
         shader_.setInt("aoMap", 4);
         
-        // load PBR material textures
-        // --------------------------
-        albedo_    = aha::Texture::New("textures/pbr/rusted_iron/albedo.png");
-        normal_    = aha::Texture::New("textures/pbr/rusted_iron/normal.png");
-        metallic_  = aha::Texture::New("textures/pbr/rusted_iron/metallic1.png");
-        roughness_ = aha::Texture::New("textures/pbr/rusted_iron/roughness1.png");
-        ao_        = aha::Texture::New("textures/pbr/rusted_iron/ao.png");
+        albedoGold_             = aha::Texture::New("textures/pbr/gold/albedo.png");
+        normalGold_             = aha::Texture::New("textures/pbr/gold/normal.png");
+        metallicGold_           = aha::Texture::New("textures/pbr/gold/metallic.png");
+        roughnessGold_          = aha::Texture::New("textures/pbr/gold/roughness.png");
+        aoGold_                 = aha::Texture::New("textures/pbr/gold/ao.png");
         
-        // initialize static shader uniforms before rendering
-        // --------------------------------------------------
-        glm::mat4 projection = glm::perspective(glm::radians(camera_.getZoom()), 800.0f / 600.0f, 0.1f, 100.0f);
+        albedoGrass_            = aha::Texture::New("textures/pbr/grass/albedo.png");
+        normalGrass_            = aha::Texture::New("textures/pbr/grass/normal.png");
+        metallicGrass_          = aha::Texture::New("textures/pbr/grass/metallic.png");
+        roughnessGrass_         = aha::Texture::New("textures/pbr/grass/roughness.png");
+        aoGrass_                = aha::Texture::New("textures/pbr/grass/ao.png");
+        
+        albedoPlastic_          = aha::Texture::New("textures/pbr/plastic/albedo.png");
+        normalPlastic_          = aha::Texture::New("textures/pbr/plastic/normal.png");
+        metallicPlastic_        = aha::Texture::New("textures/pbr/plastic/metallic.png");
+        roughnessPlastic_       = aha::Texture::New("textures/pbr/plastic/roughness.png");
+        aoPlastic_              = aha::Texture::New("textures/pbr/plastic/ao.png");
+        
+        albedoRustedIron_       = aha::Texture::New("textures/pbr/rusted_iron/albedo.png");
+        normalRustedIron_       = aha::Texture::New("textures/pbr/rusted_iron/normal.png");
+        metallicRustedIron_     = aha::Texture::New("textures/pbr/rusted_iron/metallic.png");
+        roughnessRustedIron_    = aha::Texture::New("textures/pbr/rusted_iron/roughness.png");
+        aoRustedIron_           = aha::Texture::New("textures/pbr/rusted_iron/ao.png");
+        
+        albedoWall_             = aha::Texture::New("textures/pbr/wall/albedo.png");
+        normalWall_             = aha::Texture::New("textures/pbr/wall/normal.png");
+        metallicWall_           = aha::Texture::New("textures/pbr/wall/metallic.png");
+        roughnessWall_          = aha::Texture::New("textures/pbr/wall/roughness.png");
+        aoWall_                 = aha::Texture::New("textures/pbr/wall/ao.png");
+        
+        glm::mat4 projection = glm::perspective(glm::radians(camera_.getZoom()), 1280.0f / 720.0f, 0.1f, 100.0f);
         shader_.use();
         shader_.setMat4("projection", projection);
-        
+        timer_.reset();
         return true;
     }
     
@@ -195,23 +288,49 @@ protected:
     
     aha::Camera camera_{glm::vec3(0.0f, 0.0f, 3.0f)};
     aha::Shader shader_;
-    std::shared_ptr <aha::Texture> albedo_;
-    std::shared_ptr <aha::Texture> normal_;
-    std::shared_ptr <aha::Texture> metallic_;
-    std::shared_ptr <aha::Texture> roughness_;
-    std::shared_ptr <aha::Texture> ao_;
+    std::shared_ptr <aha::Texture> albedoRustedIron_;
+    std::shared_ptr <aha::Texture> normalRustedIron_;
+    std::shared_ptr <aha::Texture> metallicRustedIron_;
+    std::shared_ptr <aha::Texture> roughnessRustedIron_;
+    std::shared_ptr <aha::Texture> aoRustedIron_;
+    
+    std::shared_ptr <aha::Texture> albedoGold_;
+    std::shared_ptr <aha::Texture> normalGold_;
+    std::shared_ptr <aha::Texture> metallicGold_;
+    std::shared_ptr <aha::Texture> roughnessGold_;
+    std::shared_ptr <aha::Texture> aoGold_;
+    
+    std::shared_ptr <aha::Texture> albedoGrass_;
+    std::shared_ptr <aha::Texture> normalGrass_;
+    std::shared_ptr <aha::Texture> metallicGrass_;
+    std::shared_ptr <aha::Texture> roughnessGrass_;
+    std::shared_ptr <aha::Texture> aoGrass_;
+    
+    std::shared_ptr <aha::Texture> albedoPlastic_;
+    std::shared_ptr <aha::Texture> normalPlastic_;
+    std::shared_ptr <aha::Texture> metallicPlastic_;
+    std::shared_ptr <aha::Texture> roughnessPlastic_;
+    std::shared_ptr <aha::Texture> aoPlastic_;
+    
+    std::shared_ptr <aha::Texture> albedoWall_;
+    std::shared_ptr <aha::Texture> normalWall_;
+    std::shared_ptr <aha::Texture> metallicWall_;
+    std::shared_ptr <aha::Texture> roughnessWall_;
+    std::shared_ptr <aha::Texture> aoWall_;
+    
     static constexpr int rows_{7};
     static constexpr int columns_{7};
-    static constexpr float spacing_{1.5f};
+    static constexpr float spacing_{0.5f};
     glm::vec3 lightPositions_[1] =
     {
-        glm::vec3(0.0f, 0.0f, 10.0f),
+        glm::vec3(0.0f, 0.0f, 10.0f)
     };
     glm::vec3 lightColors_[1] =
     {
-        glm::vec3(150.0f, 150.0f, 150.0f),
+        glm::vec3(150.0f, 150.0f, 150.0f)
     };
     unsigned int sphereVAO_{0};
-    unsigned int indexCount_{};
+    unsigned int indexCount_{0};
     aha::Timer timer_{};
+    float delta_ = 0.0f;
 };

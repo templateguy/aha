@@ -39,8 +39,8 @@ public:
         
         // render the loaded model
         glm::mat4 model;
-        model = glm::translate(model, glm::vec3(0.0f, -1.5f, -1.0f)); // translate it down so it's at the center of the scene
-        model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.2f));    // it's a bit too big for our scene, so scale it down
+        model = glm::translate(model, glm::vec3(0.0f, -0.5f, -1.0f)); // translate it down so it's at the center of the scene
+        model = glm::scale(model, glm::vec3(0.02f, 0.02f, 0.02f));    // it's a bit too big for our scene, so scale it down
         model = glm::rotate(model, delta_, glm::vec3(0.0f, 1.0f, 0.0f));
         shader_.setMat4("model", model);
         model_.render(shader_.ID);
@@ -55,7 +55,7 @@ protected:
     {
         glEnable(GL_DEPTH_TEST);
         shader_.load("shaders/model.vs", "shaders/model.fs");
-        model_.load("objects/nanosuit/nanosuit.obj");
+        model_.load("objects/old_lantern/lantern_obj.obj");
         return true;
     }
     
