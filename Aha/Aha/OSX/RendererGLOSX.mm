@@ -99,6 +99,7 @@ namespace aha
     {
         NSOpenGLPixelFormatAttribute attrs[] =
         {
+            NSOpenGLPFAOpenGLProfile, NSOpenGLProfileVersion3_2Core,
             NSOpenGLPFAColorSize, 24,
             NSOpenGLPFAAlphaSize, 8,
             NSOpenGLPFADepthSize, 24,
