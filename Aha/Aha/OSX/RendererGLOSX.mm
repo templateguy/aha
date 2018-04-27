@@ -62,6 +62,10 @@ namespace aha
     void RendererGLOSX::preRender()
     {
         [pimpl_->context_ makeCurrentContext];
+        
+        // We draw on a secondary thread through the display link
+        // Add a mutex around to avoid the threads from accessing the context simultaneously
+        CGLLockContext([pimpl_->context_ CGLContextObj]);
     }
     
     void RendererGLOSX::render()
@@ -78,6 +82,9 @@ namespace aha
         {
             [pimpl_->context_ flushBuffer];
         }
+        
+        // unlock the context
+        CGLUnlockContext([pimpl_->context_ CGLContextObj]);
     }
     
     void RendererGLOSX::setClearColor(float r, float g, float b, float a)
