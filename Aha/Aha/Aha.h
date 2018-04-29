@@ -15,4 +15,5 @@
 #include "Texture.hpp"
 #include "Camera.hpp"
 #include "Model.hpp"
+#include "PBRModel.hpp"
 #include "Timer.hpp"

@@ -10,12 +10,13 @@
 #include "HelloTexture.hpp"
 #include "HelloModel.hpp"
 #include "HelloPBR.hpp"
-#include "HelloIBL.hpp"
+#include "HelloIBL1.hpp"
+#include "HelloPBRModel.hpp"
 
 
 void Main()
 {
-    aha::Application.init("Aha", 1280, 720);
-    auto scene(HelloIBL::create());
+    aha::Application.init();
+    auto scene(HelloPBRModel::create());
     aha::Application.run(scene);
 }

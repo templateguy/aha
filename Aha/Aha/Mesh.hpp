@@ -25,8 +25,8 @@ namespace aha
         struct Vertex
         {
             glm::vec3 position;
-            glm::vec3 normal;
             glm::vec2 texCoords;
+            glm::vec3 normal;
             glm::vec3 tangent;
             glm::vec3 bitangent;
         };
@@ -39,6 +39,11 @@ namespace aha
         };
         
         Mesh(const std::vector <Mesh::Vertex>& vertices, const std::vector <unsigned int>& indices, const std::vector <Mesh::Texture>& textures) : vertices_(vertices), indices_(indices), textures_(textures)
+        {
+            setup_();
+        }
+        
+        Mesh(const std::vector <Mesh::Vertex>& vertices, const std::vector <unsigned int>& indices) : vertices_(vertices), indices_(indices)
         {
             setup_();
         }
@@ -88,6 +93,14 @@ namespace aha
             glActiveTexture(GL_TEXTURE0);
         }
         
+        void render()
+        {
+            // draw mesh
+            glBindVertexArrayAPPLE(vao_);
+            glDrawElements(GL_TRIANGLES, static_cast <int> (indices_.size()), GL_UNSIGNED_INT, 0);
+            glBindVertexArrayAPPLE(0);
+        }
+        
     protected:
         void setup_()
         {
@@ -105,16 +118,16 @@ namespace aha
             glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)0);
             // vertex normals
             glEnableVertexAttribArray(1);
-            glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, normal));
+            glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, texCoords));
             // vertex texture coords
             glEnableVertexAttribArray(2);
-            glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, texCoords));
+            glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, normal));
             // vertex tangent
-            glEnableVertexAttribArray(3);
+            /*glEnableVertexAttribArray(3);
             glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, tangent));
             // vertex bitangent
             glEnableVertexAttribArray(4);
-            glVertexAttribPointer(4, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, bitangent));
+            glVertexAttribPointer(4, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, bitangent));*/
             
             glBindVertexArrayAPPLE(0);
         }

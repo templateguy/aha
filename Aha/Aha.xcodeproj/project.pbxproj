@@ -18,6 +18,7 @@
 		AFA6D7881F755620006B9CA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA6D7871F755620006B9CA8 /* ViewController.m */; };
 		AFA6D78A1F756A9A006B9CA8 /* WindowIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = AFA6D7891F756A9A006B9CA8 /* WindowIOS.mm */; };
 		AFA85F082079049E0083B81B /* RendererGLOSX.mm in Sources */ = {isa = PBXBuildFile; fileRef = AFA85F072079049E0083B81B /* RendererGLOSX.mm */; };
+		AFBC785720949D070096CF26 /* PBRModel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AFBC785620949D060096CF26 /* PBRModel.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -432,6 +433,7 @@
 		AFA8600F207924750083B81B /* vec4.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
 		AFA86010207924750083B81B /* vector_relational.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vector_relational.hpp; sourceTree = "<group>"; };
 		AFA86011207A46240083B81B /* Scene.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
+		AFBC785620949D060096CF26 /* PBRModel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PBRModel.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -504,6 +506,7 @@
 				AF336C46208CC3E800A6B95B /* Signal.hpp */,
 				AF336C47208CC6F300A6B95B /* Event.hpp */,
 				AF2F36A0208F7FA000969216 /* Timer.hpp */,
+				AFBC785620949D060096CF26 /* PBRModel.hpp */,
 			);
 			path = Aha;
 			sourceTree = "<group>";
@@ -1053,6 +1056,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFBC785720949D070096CF26 /* PBRModel.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -61,6 +61,7 @@ namespace aha
     
     void RendererGLOSX::preRender()
     {
+        mutex_.lock();
         [pimpl_->context_ makeCurrentContext];
     }
     
@@ -78,6 +79,7 @@ namespace aha
         {
             [pimpl_->context_ flushBuffer];
         }
+        mutex_.unlock();
     }
     
     void RendererGLOSX::setClearColor(float r, float g, float b, float a)

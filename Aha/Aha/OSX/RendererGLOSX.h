@@ -10,6 +10,7 @@
 
 
 #include <memory>
+#include <thread>
 #include "../Renderer.hpp"
 
 
@@ -39,6 +40,7 @@ namespace aha
         void prepareGL_(std::shared_ptr <WindowOSX> window);
         
         std::shared_ptr <Scene> scene_;
+        std::mutex mutex_;
         struct impl_;
         std::unique_ptr <impl_> pimpl_;
     };

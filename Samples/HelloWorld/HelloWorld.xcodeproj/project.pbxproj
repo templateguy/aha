@@ -249,26 +249,52 @@
 		AF8F1742207BACC000C8AB85 /* awesomeface.png in Resources */ = {isa = PBXBuildFile; fileRef = AF8F1740207BACBF00C8AB85 /* awesomeface.png */; };
 		AFA6D7811F7555C0006B9CA8 /* libAhaIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA6D77B1F754EF8006B9CA8 /* libAhaIOS.a */; };
 		AFA6D78C1F756E36006B9CA8 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFA6D78B1F756E36006B9CA8 /* Main.cpp */; };
-		AFDAA4D520923CE000C37741 /* pbr.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4CB20923CDF00C37741 /* pbr.vs */; };
-		AFDAA4D620923CE000C37741 /* pbr.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4CB20923CDF00C37741 /* pbr.vs */; };
-		AFDAA4D720923CE000C37741 /* prefilter.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4CC20923CDF00C37741 /* prefilter.fs */; };
-		AFDAA4D820923CE000C37741 /* prefilter.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4CC20923CDF00C37741 /* prefilter.fs */; };
-		AFDAA4D920923CE000C37741 /* brdf.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4CD20923CDF00C37741 /* brdf.fs */; };
-		AFDAA4DA20923CE000C37741 /* brdf.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4CD20923CDF00C37741 /* brdf.fs */; };
-		AFDAA4DB20923CE000C37741 /* equirectangular_to_cubemap.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4CE20923CDF00C37741 /* equirectangular_to_cubemap.fs */; };
-		AFDAA4DC20923CE000C37741 /* equirectangular_to_cubemap.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4CE20923CDF00C37741 /* equirectangular_to_cubemap.fs */; };
-		AFDAA4DD20923CE000C37741 /* irradiance_convolution.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4CF20923CDF00C37741 /* irradiance_convolution.fs */; };
-		AFDAA4DE20923CE000C37741 /* irradiance_convolution.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4CF20923CDF00C37741 /* irradiance_convolution.fs */; };
-		AFDAA4DF20923CE000C37741 /* background.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4D020923CDF00C37741 /* background.fs */; };
-		AFDAA4E020923CE000C37741 /* background.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4D020923CDF00C37741 /* background.fs */; };
-		AFDAA4E120923CE000C37741 /* background.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4D120923CDF00C37741 /* background.vs */; };
-		AFDAA4E220923CE000C37741 /* background.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4D120923CDF00C37741 /* background.vs */; };
-		AFDAA4E320923CE000C37741 /* brdf.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4D220923CDF00C37741 /* brdf.vs */; };
-		AFDAA4E420923CE000C37741 /* brdf.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4D220923CDF00C37741 /* brdf.vs */; };
-		AFDAA4E520923CE000C37741 /* cubemap.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4D320923CDF00C37741 /* cubemap.vs */; };
-		AFDAA4E620923CE000C37741 /* cubemap.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4D320923CDF00C37741 /* cubemap.vs */; };
-		AFDAA4E720923CE000C37741 /* pbr.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4D420923CDF00C37741 /* pbr.fs */; };
-		AFDAA4E820923CE000C37741 /* pbr.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFDAA4D420923CDF00C37741 /* pbr.fs */; };
+		AFBC77D520936B940096CF26 /* pbr.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77CB20936B940096CF26 /* pbr.vs */; };
+		AFBC77D620936B940096CF26 /* pbr.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77CB20936B940096CF26 /* pbr.vs */; };
+		AFBC77D720936B940096CF26 /* prefilter.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77CC20936B940096CF26 /* prefilter.fs */; };
+		AFBC77D820936B940096CF26 /* prefilter.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77CC20936B940096CF26 /* prefilter.fs */; };
+		AFBC77D920936B940096CF26 /* brdf.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77CD20936B940096CF26 /* brdf.fs */; };
+		AFBC77DA20936B940096CF26 /* brdf.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77CD20936B940096CF26 /* brdf.fs */; };
+		AFBC77DB20936B940096CF26 /* equirectangular_to_cubemap.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77CE20936B940096CF26 /* equirectangular_to_cubemap.fs */; };
+		AFBC77DC20936B940096CF26 /* equirectangular_to_cubemap.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77CE20936B940096CF26 /* equirectangular_to_cubemap.fs */; };
+		AFBC77DD20936B940096CF26 /* irradiance_convolution.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77CF20936B940096CF26 /* irradiance_convolution.fs */; };
+		AFBC77DE20936B940096CF26 /* irradiance_convolution.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77CF20936B940096CF26 /* irradiance_convolution.fs */; };
+		AFBC77DF20936B940096CF26 /* background.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77D020936B940096CF26 /* background.fs */; };
+		AFBC77E020936B940096CF26 /* background.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77D020936B940096CF26 /* background.fs */; };
+		AFBC77E120936B940096CF26 /* background.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77D120936B940096CF26 /* background.vs */; };
+		AFBC77E220936B940096CF26 /* background.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77D120936B940096CF26 /* background.vs */; };
+		AFBC77E320936B940096CF26 /* brdf.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77D220936B940096CF26 /* brdf.vs */; };
+		AFBC77E420936B940096CF26 /* brdf.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77D220936B940096CF26 /* brdf.vs */; };
+		AFBC77E520936B940096CF26 /* cubemap.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77D320936B940096CF26 /* cubemap.vs */; };
+		AFBC77E620936B940096CF26 /* cubemap.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77D320936B940096CF26 /* cubemap.vs */; };
+		AFBC77E720936B940096CF26 /* pbr.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77D420936B940096CF26 /* pbr.fs */; };
+		AFBC77E820936B940096CF26 /* pbr.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77D420936B940096CF26 /* pbr.fs */; };
+		AFBC77EC209472D40096CF26 /* blue_grotto_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77EA209472D30096CF26 /* blue_grotto_4k.hdr */; };
+		AFBC77ED209472D40096CF26 /* blue_grotto_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77EA209472D30096CF26 /* blue_grotto_4k.hdr */; };
+		AFBC77FC20947FA90096CF26 /* tears_of_steel_bridge_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F020947FA80096CF26 /* tears_of_steel_bridge_4k.hdr */; };
+		AFBC77FD20947FA90096CF26 /* tears_of_steel_bridge_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F020947FA80096CF26 /* tears_of_steel_bridge_4k.hdr */; };
+		AFBC77FE20947FA90096CF26 /* shady_patch_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F120947FA80096CF26 /* shady_patch_4k.hdr */; };
+		AFBC77FF20947FA90096CF26 /* shady_patch_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F120947FA80096CF26 /* shady_patch_4k.hdr */; };
+		AFBC780020947FA90096CF26 /* wooden_lounge_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F220947FA80096CF26 /* wooden_lounge_4k.hdr */; };
+		AFBC780120947FA90096CF26 /* wooden_lounge_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F220947FA80096CF26 /* wooden_lounge_4k.hdr */; };
+		AFBC780220947FA90096CF26 /* zwinger_night_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F320947FA80096CF26 /* zwinger_night_4k.hdr */; };
+		AFBC780320947FA90096CF26 /* zwinger_night_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F320947FA80096CF26 /* zwinger_night_4k.hdr */; };
+		AFBC780420947FA90096CF26 /* blinds_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F420947FA90096CF26 /* blinds_4k.hdr */; };
+		AFBC780520947FA90096CF26 /* blinds_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F420947FA90096CF26 /* blinds_4k.hdr */; };
+		AFBC780620947FA90096CF26 /* fireplace_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F520947FA90096CF26 /* fireplace_4k.hdr */; };
+		AFBC780720947FA90096CF26 /* fireplace_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F520947FA90096CF26 /* fireplace_4k.hdr */; };
+		AFBC780820947FA90096CF26 /* garage_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F620947FA90096CF26 /* garage_4k.hdr */; };
+		AFBC780920947FA90096CF26 /* garage_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F620947FA90096CF26 /* garage_4k.hdr */; };
+		AFBC780A20947FA90096CF26 /* satara_night_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F720947FA90096CF26 /* satara_night_4k.hdr */; };
+		AFBC780B20947FA90096CF26 /* satara_night_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F720947FA90096CF26 /* satara_night_4k.hdr */; };
+		AFBC780C20947FA90096CF26 /* vignaioli_night_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F820947FA90096CF26 /* vignaioli_night_4k.hdr */; };
+		AFBC780D20947FA90096CF26 /* vignaioli_night_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F820947FA90096CF26 /* vignaioli_night_4k.hdr */; };
+		AFBC780E20947FA90096CF26 /* pond_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F920947FA90096CF26 /* pond_4k.hdr */; };
+		AFBC780F20947FA90096CF26 /* pond_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77F920947FA90096CF26 /* pond_4k.hdr */; };
+		AFBC781020947FA90096CF26 /* rathaus_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77FA20947FA90096CF26 /* rathaus_4k.hdr */; };
+		AFBC781120947FA90096CF26 /* rathaus_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77FA20947FA90096CF26 /* rathaus_4k.hdr */; };
+		AFBC781220947FA90096CF26 /* blender_institute_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77FB20947FA90096CF26 /* blender_institute_4k.hdr */; };
+		AFBC781320947FA90096CF26 /* blender_institute_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77FB20947FA90096CF26 /* blender_institute_4k.hdr */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -440,16 +466,31 @@
 		AFA6D78B1F756E36006B9CA8 /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
 		AFA6D78E1F7579DC006B9CA8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		AFA86012207A49730083B81B /* HelloTriangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloTriangle.hpp; sourceTree = "<group>"; };
-		AFDAA4CB20923CDF00C37741 /* pbr.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = pbr.vs; sourceTree = "<group>"; };
-		AFDAA4CC20923CDF00C37741 /* prefilter.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = prefilter.fs; sourceTree = "<group>"; };
-		AFDAA4CD20923CDF00C37741 /* brdf.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = brdf.fs; sourceTree = "<group>"; };
-		AFDAA4CE20923CDF00C37741 /* equirectangular_to_cubemap.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = equirectangular_to_cubemap.fs; sourceTree = "<group>"; };
-		AFDAA4CF20923CDF00C37741 /* irradiance_convolution.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = irradiance_convolution.fs; sourceTree = "<group>"; };
-		AFDAA4D020923CDF00C37741 /* background.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = background.fs; sourceTree = "<group>"; };
-		AFDAA4D120923CDF00C37741 /* background.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = background.vs; sourceTree = "<group>"; };
-		AFDAA4D220923CDF00C37741 /* brdf.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = brdf.vs; sourceTree = "<group>"; };
-		AFDAA4D320923CDF00C37741 /* cubemap.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = cubemap.vs; sourceTree = "<group>"; };
-		AFDAA4D420923CDF00C37741 /* pbr.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = pbr.fs; sourceTree = "<group>"; };
+		AFBC77CB20936B940096CF26 /* pbr.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = pbr.vs; sourceTree = "<group>"; };
+		AFBC77CC20936B940096CF26 /* prefilter.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = prefilter.fs; sourceTree = "<group>"; };
+		AFBC77CD20936B940096CF26 /* brdf.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = brdf.fs; sourceTree = "<group>"; };
+		AFBC77CE20936B940096CF26 /* equirectangular_to_cubemap.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = equirectangular_to_cubemap.fs; sourceTree = "<group>"; };
+		AFBC77CF20936B940096CF26 /* irradiance_convolution.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = irradiance_convolution.fs; sourceTree = "<group>"; };
+		AFBC77D020936B940096CF26 /* background.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = background.fs; sourceTree = "<group>"; };
+		AFBC77D120936B940096CF26 /* background.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = background.vs; sourceTree = "<group>"; };
+		AFBC77D220936B940096CF26 /* brdf.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = brdf.vs; sourceTree = "<group>"; };
+		AFBC77D320936B940096CF26 /* cubemap.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = cubemap.vs; sourceTree = "<group>"; };
+		AFBC77D420936B940096CF26 /* pbr.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = pbr.fs; sourceTree = "<group>"; };
+		AFBC77E920936BFF0096CF26 /* HelloIBL1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloIBL1.hpp; sourceTree = "<group>"; };
+		AFBC77EA209472D30096CF26 /* blue_grotto_4k.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = blue_grotto_4k.hdr; sourceTree = "<group>"; };
+		AFBC77F020947FA80096CF26 /* tears_of_steel_bridge_4k.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = tears_of_steel_bridge_4k.hdr; sourceTree = "<group>"; };
+		AFBC77F120947FA80096CF26 /* shady_patch_4k.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = shady_patch_4k.hdr; sourceTree = "<group>"; };
+		AFBC77F220947FA80096CF26 /* wooden_lounge_4k.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = wooden_lounge_4k.hdr; sourceTree = "<group>"; };
+		AFBC77F320947FA80096CF26 /* zwinger_night_4k.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = zwinger_night_4k.hdr; sourceTree = "<group>"; };
+		AFBC77F420947FA90096CF26 /* blinds_4k.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = blinds_4k.hdr; sourceTree = "<group>"; };
+		AFBC77F520947FA90096CF26 /* fireplace_4k.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = fireplace_4k.hdr; sourceTree = "<group>"; };
+		AFBC77F620947FA90096CF26 /* garage_4k.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = garage_4k.hdr; sourceTree = "<group>"; };
+		AFBC77F720947FA90096CF26 /* satara_night_4k.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = satara_night_4k.hdr; sourceTree = "<group>"; };
+		AFBC77F820947FA90096CF26 /* vignaioli_night_4k.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = vignaioli_night_4k.hdr; sourceTree = "<group>"; };
+		AFBC77F920947FA90096CF26 /* pond_4k.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = pond_4k.hdr; sourceTree = "<group>"; };
+		AFBC77FA20947FA90096CF26 /* rathaus_4k.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = rathaus_4k.hdr; sourceTree = "<group>"; };
+		AFBC77FB20947FA90096CF26 /* blender_institute_4k.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = blender_institute_4k.hdr; sourceTree = "<group>"; };
+		AFBC783B2094867B0096CF26 /* HelloPBRModel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloPBRModel.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -527,6 +568,8 @@
 				AF336B08208B6ECC00A6B95B /* HelloModel.hpp */,
 				AF2F369F208F746600969216 /* HelloPBR.hpp */,
 				AF2F36D620921A6D00969216 /* HelloIBL.hpp */,
+				AFBC77E920936BFF0096CF26 /* HelloIBL1.hpp */,
+				AFBC783B2094867B0096CF26 /* HelloPBRModel.hpp */,
 			);
 			path = HelloWorldOSX;
 			sourceTree = "<group>";
@@ -571,16 +614,16 @@
 		AF2F36D720921C1100969216 /* ibl */ = {
 			isa = PBXGroup;
 			children = (
-				AFDAA4D020923CDF00C37741 /* background.fs */,
-				AFDAA4D120923CDF00C37741 /* background.vs */,
-				AFDAA4CD20923CDF00C37741 /* brdf.fs */,
-				AFDAA4D220923CDF00C37741 /* brdf.vs */,
-				AFDAA4D320923CDF00C37741 /* cubemap.vs */,
-				AFDAA4CE20923CDF00C37741 /* equirectangular_to_cubemap.fs */,
-				AFDAA4CF20923CDF00C37741 /* irradiance_convolution.fs */,
-				AFDAA4D420923CDF00C37741 /* pbr.fs */,
-				AFDAA4CB20923CDF00C37741 /* pbr.vs */,
-				AFDAA4CC20923CDF00C37741 /* prefilter.fs */,
+				AFBC77D020936B940096CF26 /* background.fs */,
+				AFBC77D120936B940096CF26 /* background.vs */,
+				AFBC77CD20936B940096CF26 /* brdf.fs */,
+				AFBC77D220936B940096CF26 /* brdf.vs */,
+				AFBC77D320936B940096CF26 /* cubemap.vs */,
+				AFBC77CE20936B940096CF26 /* equirectangular_to_cubemap.fs */,
+				AFBC77CF20936B940096CF26 /* irradiance_convolution.fs */,
+				AFBC77D420936B940096CF26 /* pbr.fs */,
+				AFBC77CB20936B940096CF26 /* pbr.vs */,
+				AFBC77CC20936B940096CF26 /* prefilter.fs */,
 			);
 			path = ibl;
 			sourceTree = "<group>";
@@ -601,6 +644,7 @@
 		AF336B11208B823700A6B95B /* objects */ = {
 			isa = PBXGroup;
 			children = (
+				AFBC7814209486480096CF26 /* cerberus */,
 				AF2F36B020909B2E00969216 /* old_lantern */,
 				AF336B12208B823700A6B95B /* cyborg */,
 				AF336B1B208B823700A6B95B /* nanosuit */,
@@ -716,7 +760,20 @@
 		AF336B50208B823800A6B95B /* hdr */ = {
 			isa = PBXGroup;
 			children = (
+				AFBC77FB20947FA90096CF26 /* blender_institute_4k.hdr */,
+				AFBC77F420947FA90096CF26 /* blinds_4k.hdr */,
+				AFBC77F520947FA90096CF26 /* fireplace_4k.hdr */,
+				AFBC77F620947FA90096CF26 /* garage_4k.hdr */,
+				AFBC77F920947FA90096CF26 /* pond_4k.hdr */,
+				AFBC77FA20947FA90096CF26 /* rathaus_4k.hdr */,
+				AFBC77F720947FA90096CF26 /* satara_night_4k.hdr */,
+				AFBC77F120947FA80096CF26 /* shady_patch_4k.hdr */,
+				AFBC77F020947FA80096CF26 /* tears_of_steel_bridge_4k.hdr */,
+				AFBC77F820947FA90096CF26 /* vignaioli_night_4k.hdr */,
+				AFBC77F220947FA80096CF26 /* wooden_lounge_4k.hdr */,
+				AFBC77F320947FA80096CF26 /* zwinger_night_4k.hdr */,
 				AF336B51208B823800A6B95B /* newport_loft.hdr */,
+				AFBC77EA209472D30096CF26 /* blue_grotto_4k.hdr */,
 			);
 			path = hdr;
 			sourceTree = "<group>";
@@ -817,6 +874,13 @@
 				AF336B45208B823800A6B95B /* textures */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		AFBC7814209486480096CF26 /* cerberus */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cerberus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -924,21 +988,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFBC780F20947FA90096CF26 /* pond_4k.hdr in Resources */,
 				AF336B87208B823800A6B95B /* cyborg.obj in Resources */,
 				AF336C1F208B823800A6B95B /* normal.png in Resources */,
 				AF336BAF208B823800A6B95B /* front.jpg in Resources */,
 				AF336B0D208B7DF100A6B95B /* model.vs in Resources */,
 				AF336BCD208B823800A6B95B /* leg_showroom_spec.png in Resources */,
+				AFBC780720947FA90096CF26 /* fireplace_4k.hdr in Resources */,
 				AF336BCB208B823800A6B95B /* leg_showroom_refl.png in Resources */,
 				AF336C3F208B823800A6B95B /* window.png in Resources */,
 				AF336BFD208B823800A6B95B /* ao.png in Resources */,
 				AF336C15208B823800A6B95B /* normal.png in Resources */,
 				AF336C0D208B823800A6B95B /* roughness.png in Resources */,
-				AFDAA4E620923CE000C37741 /* cubemap.vs in Resources */,
+				AFBC780120947FA90096CF26 /* wooden_lounge_4k.hdr in Resources */,
+				AFBC77E620936B940096CF26 /* cubemap.vs in Resources */,
 				AF336C17208B823800A6B95B /* roughness.png in Resources */,
 				AF336C0B208B823800A6B95B /* normal.png in Resources */,
 				AF336BB5208B823800A6B95B /* glass_refl.png in Resources */,
-				AFDAA4D820923CE000C37741 /* prefilter.fs in Resources */,
+				AFBC77D820936B940096CF26 /* prefilter.fs in Resources */,
 				AF2F36C820909B2E00969216 /* albedo.jpg in Resources */,
 				AF336BED208B823800A6B95B /* container2.png in Resources */,
 				AF336BB3208B823800A6B95B /* glass_dif.png in Resources */,
@@ -958,22 +1025,24 @@
 				AF12C9541F76B73E00729018 /* Assets.xcassets in Resources */,
 				AF336BA7208B823800A6B95B /* cell_ddn.png in Resources */,
 				AF2F36AF208F928600969216 /* metallic1.png in Resources */,
+				AFBC77ED209472D40096CF26 /* blue_grotto_4k.hdr in Resources */,
 				AF336C33208B823800A6B95B /* left.jpg in Resources */,
 				AF336C23208B823800A6B95B /* albedo.png in Resources */,
 				AF336B99208B823800A6B95B /* back.jpg in Resources */,
-				AFDAA4DA20923CE000C37741 /* brdf.fs in Resources */,
+				AFBC77DA20936B940096CF26 /* brdf.fs in Resources */,
 				AF336C05208B823800A6B95B /* albedo.png in Resources */,
 				AF336C31208B823800A6B95B /* front.jpg in Resources */,
-				AFDAA4DE20923CE000C37741 /* irradiance_convolution.fs in Resources */,
-				AFDAA4DC20923CE000C37741 /* equirectangular_to_cubemap.fs in Resources */,
+				AFBC77DE20936B940096CF26 /* irradiance_convolution.fs in Resources */,
+				AFBC77DC20936B940096CF26 /* equirectangular_to_cubemap.fs in Resources */,
 				AF336BDB208B823800A6B95B /* rock.obj in Resources */,
 				AF336C3B208B823800A6B95B /* toy_box_disp.png in Resources */,
 				AF2F36CA20909B2E00969216 /* ao.jpg in Resources */,
 				AF336BC1208B823800A6B95B /* helmet_showroom_ddn.png in Resources */,
 				AF336BF9208B823800A6B95B /* metal.png in Resources */,
 				AF336C2D208B823800A6B95B /* back.jpg in Resources */,
-				AFDAA4E820923CE000C37741 /* pbr.fs in Resources */,
+				AFBC77E820936B940096CF26 /* pbr.fs in Resources */,
 				AF336BBD208B823800A6B95B /* hand_showroom_spec.png in Resources */,
+				AFBC781120947FA90096CF26 /* rathaus_4k.hdr in Resources */,
 				AF336C1D208B823800A6B95B /* metallic.png in Resources */,
 				AF2F36BE20909B2E00969216 /* lantern_description.txt in Resources */,
 				AF336C2B208B823800A6B95B /* roughness.png in Resources */,
@@ -986,7 +1055,7 @@
 				AF336C39208B823800A6B95B /* toy_box_diffuse.png in Resources */,
 				AF336C27208B823800A6B95B /* metallic.png in Resources */,
 				AF336BB1208B823800A6B95B /* glass_ddn.png in Resources */,
-				AFDAA4E220923CE000C37741 /* background.vs in Resources */,
+				AFBC77E220936B940096CF26 /* background.vs in Resources */,
 				AF336BBB208B823800A6B95B /* hand_showroom_refl.png in Resources */,
 				AF336BA1208B823800A6B95B /* body_showroom_spec.png in Resources */,
 				AF336C25208B823800A6B95B /* ao.png in Resources */,
@@ -995,23 +1064,28 @@
 				AF336C1B208B823800A6B95B /* ao.png in Resources */,
 				AF336BC5208B823800A6B95B /* helmet_showroom_spec.png in Resources */,
 				AF336BC3208B823800A6B95B /* helmet_showroom_refl.png in Resources */,
-				AFDAA4E420923CE000C37741 /* brdf.vs in Resources */,
+				AFBC77E420936B940096CF26 /* brdf.vs in Resources */,
 				AF336B91208B823800A6B95B /* arm_dif.png in Resources */,
+				AFBC77FF20947FA90096CF26 /* shady_patch_4k.hdr in Resources */,
 				AF336C35208B823800A6B95B /* right.jpg in Resources */,
 				AF2F36CC20909B2E00969216 /* metallic.jpg in Resources */,
 				AF336B83208B823800A6B95B /* cyborg.blend1 in Resources */,
 				AF336BD9208B823800A6B95B /* rock.mtl in Resources */,
+				AFBC780520947FA90096CF26 /* blinds_4k.hdr in Resources */,
 				AF336B9B208B823800A6B95B /* body_dif.png in Resources */,
 				AF2F36C420909B2E00969216 /* lantern_obj.mtl in Resources */,
-				AFDAA4D620923CE000C37741 /* pbr.vs in Resources */,
+				AFBC781320947FA90096CF26 /* blender_institute_4k.hdr in Resources */,
+				AFBC77D620936B940096CF26 /* pbr.vs in Resources */,
 				AF336C07208B823800A6B95B /* ao.png in Resources */,
 				AF336BCF208B823800A6B95B /* nanosuit.mtl in Resources */,
 				AF336BE5208B823800A6B95B /* bricks2_normal.jpg in Resources */,
 				AF336BDF208B823800A6B95B /* awesomeface.png in Resources */,
 				AF336B8F208B823800A6B95B /* LICENSE.txt in Resources */,
+				AFBC780B20947FA90096CF26 /* satara_night_4k.hdr in Resources */,
 				AF336C03208B823800A6B95B /* roughness.png in Resources */,
 				AF336BE7208B823800A6B95B /* brickwall.jpg in Resources */,
 				AF336BEB208B823800A6B95B /* container.jpg in Resources */,
+				AFBC780D20947FA90096CF26 /* vignaioli_night_4k.hdr in Resources */,
 				AF336BC7208B823800A6B95B /* leg_dif.png in Resources */,
 				AF336B89208B823800A6B95B /* cyborg_diffuse.png in Resources */,
 				AF336C09208B823800A6B95B /* metallic.png in Resources */,
@@ -1022,7 +1096,7 @@
 				AF336C2F208B823800A6B95B /* bottom.jpg in Resources */,
 				AF336B9D208B823800A6B95B /* body_showroom_ddn.png in Resources */,
 				AF336B97208B823800A6B95B /* arm_showroom_spec.png in Resources */,
-				AFDAA4E020923CE000C37741 /* background.fs in Resources */,
+				AFBC77E020936B940096CF26 /* background.fs in Resources */,
 				AF336BA5208B823800A6B95B /* cell_body_alpha.png in Resources */,
 				AF336B93208B823800A6B95B /* arm_showroom_ddn.png in Resources */,
 				AF336B81208B823800A6B95B /* cyborg.blend in Resources */,
@@ -1031,16 +1105,19 @@
 				AF8F1742207BACC000C8AB85 /* awesomeface.png in Resources */,
 				AF336B95208B823800A6B95B /* arm_showroom_refl.png in Resources */,
 				AF336C11208B823800A6B95B /* ao.png in Resources */,
+				AFBC77FD20947FA90096CF26 /* tears_of_steel_bridge_4k.hdr in Resources */,
 				AF336BB7208B823800A6B95B /* hand_dif.png in Resources */,
 				AF2F36D220909B2E00969216 /* roughness.jpg in Resources */,
 				AF2F36C220909B2E00969216 /* lantern_maya2016.mb in Resources */,
 				AF336BF3208B823800A6B95B /* newport_loft.hdr in Resources */,
+				AFBC780920947FA90096CF26 /* garage_4k.hdr in Resources */,
 				AF336BA3208B823800A6B95B /* cell_arm_alpha.png in Resources */,
 				AF336C13208B823800A6B95B /* metallic.png in Resources */,
 				AF336BAD208B823800A6B95B /* cell_leg_alpha.png in Resources */,
 				AF2F36C620909B2E00969216 /* lantern_obj.obj in Resources */,
 				AF336C41208B823800A6B95B /* wood.png in Resources */,
 				AF336BFB208B823800A6B95B /* albedo.png in Resources */,
+				AFBC780320947FA90096CF26 /* zwinger_night_4k.hdr in Resources */,
 				AF8F173F207BA0A900C8AB85 /* container.jpg in Resources */,
 				AF336BD3208B823800A6B95B /* planet.mtl in Resources */,
 				AF336BBF208B823800A6B95B /* helmet_diff.png in Resources */,
@@ -1058,21 +1135,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFBC780E20947FA90096CF26 /* pond_4k.hdr in Resources */,
 				AF336B86208B823800A6B95B /* cyborg.obj in Resources */,
 				AF336C1E208B823800A6B95B /* normal.png in Resources */,
 				AF336BAE208B823800A6B95B /* front.jpg in Resources */,
 				AF336B0C208B7DF100A6B95B /* model.vs in Resources */,
 				AF336BCC208B823800A6B95B /* leg_showroom_spec.png in Resources */,
+				AFBC780620947FA90096CF26 /* fireplace_4k.hdr in Resources */,
 				AF336BCA208B823800A6B95B /* leg_showroom_refl.png in Resources */,
 				AF336C3E208B823800A6B95B /* window.png in Resources */,
 				AF336BFC208B823800A6B95B /* ao.png in Resources */,
 				AF336C14208B823800A6B95B /* normal.png in Resources */,
 				AF336C0C208B823800A6B95B /* roughness.png in Resources */,
-				AFDAA4E520923CE000C37741 /* cubemap.vs in Resources */,
+				AFBC780020947FA90096CF26 /* wooden_lounge_4k.hdr in Resources */,
+				AFBC77E520936B940096CF26 /* cubemap.vs in Resources */,
 				AF336C16208B823800A6B95B /* roughness.png in Resources */,
 				AF336C0A208B823800A6B95B /* normal.png in Resources */,
 				AF336BB4208B823800A6B95B /* glass_refl.png in Resources */,
-				AFDAA4D720923CE000C37741 /* prefilter.fs in Resources */,
+				AFBC77D720936B940096CF26 /* prefilter.fs in Resources */,
 				AF2F36C720909B2E00969216 /* albedo.jpg in Resources */,
 				AF336BEC208B823800A6B95B /* container2.png in Resources */,
 				AF336BB2208B823800A6B95B /* glass_dif.png in Resources */,
@@ -1092,22 +1172,24 @@
 				AF143EEE1F715A50000D0788 /* Assets.xcassets in Resources */,
 				AF336BA6208B823800A6B95B /* cell_ddn.png in Resources */,
 				AF2F36AE208F928600969216 /* metallic1.png in Resources */,
+				AFBC77EC209472D40096CF26 /* blue_grotto_4k.hdr in Resources */,
 				AF336C32208B823800A6B95B /* left.jpg in Resources */,
 				AF336C22208B823800A6B95B /* albedo.png in Resources */,
 				AF336B98208B823800A6B95B /* back.jpg in Resources */,
-				AFDAA4D920923CE000C37741 /* brdf.fs in Resources */,
+				AFBC77D920936B940096CF26 /* brdf.fs in Resources */,
 				AF336C04208B823800A6B95B /* albedo.png in Resources */,
 				AF336C30208B823800A6B95B /* front.jpg in Resources */,
-				AFDAA4DD20923CE000C37741 /* irradiance_convolution.fs in Resources */,
-				AFDAA4DB20923CE000C37741 /* equirectangular_to_cubemap.fs in Resources */,
+				AFBC77DD20936B940096CF26 /* irradiance_convolution.fs in Resources */,
+				AFBC77DB20936B940096CF26 /* equirectangular_to_cubemap.fs in Resources */,
 				AF336BDA208B823800A6B95B /* rock.obj in Resources */,
 				AF336C3A208B823800A6B95B /* toy_box_disp.png in Resources */,
 				AF2F36C920909B2E00969216 /* ao.jpg in Resources */,
 				AF336BC0208B823800A6B95B /* helmet_showroom_ddn.png in Resources */,
 				AF336BF8208B823800A6B95B /* metal.png in Resources */,
 				AF336C2C208B823800A6B95B /* back.jpg in Resources */,
-				AFDAA4E720923CE000C37741 /* pbr.fs in Resources */,
+				AFBC77E720936B940096CF26 /* pbr.fs in Resources */,
 				AF336BBC208B823800A6B95B /* hand_showroom_spec.png in Resources */,
+				AFBC781020947FA90096CF26 /* rathaus_4k.hdr in Resources */,
 				AF336C1C208B823800A6B95B /* metallic.png in Resources */,
 				AF2F36BD20909B2E00969216 /* lantern_description.txt in Resources */,
 				AF336C2A208B823800A6B95B /* roughness.png in Resources */,
@@ -1120,7 +1202,7 @@
 				AF336C38208B823800A6B95B /* toy_box_diffuse.png in Resources */,
 				AF336C26208B823800A6B95B /* metallic.png in Resources */,
 				AF336BB0208B823800A6B95B /* glass_ddn.png in Resources */,
-				AFDAA4E120923CE000C37741 /* background.vs in Resources */,
+				AFBC77E120936B940096CF26 /* background.vs in Resources */,
 				AF336BBA208B823800A6B95B /* hand_showroom_refl.png in Resources */,
 				AF336BA0208B823800A6B95B /* body_showroom_spec.png in Resources */,
 				AF336C24208B823800A6B95B /* ao.png in Resources */,
@@ -1129,23 +1211,28 @@
 				AF336C1A208B823800A6B95B /* ao.png in Resources */,
 				AF336BC4208B823800A6B95B /* helmet_showroom_spec.png in Resources */,
 				AF336BC2208B823800A6B95B /* helmet_showroom_refl.png in Resources */,
-				AFDAA4E320923CE000C37741 /* brdf.vs in Resources */,
+				AFBC77E320936B940096CF26 /* brdf.vs in Resources */,
 				AF336B90208B823800A6B95B /* arm_dif.png in Resources */,
+				AFBC77FE20947FA90096CF26 /* shady_patch_4k.hdr in Resources */,
 				AF336C34208B823800A6B95B /* right.jpg in Resources */,
 				AF2F36CB20909B2E00969216 /* metallic.jpg in Resources */,
 				AF336B82208B823800A6B95B /* cyborg.blend1 in Resources */,
 				AF336BD8208B823800A6B95B /* rock.mtl in Resources */,
+				AFBC780420947FA90096CF26 /* blinds_4k.hdr in Resources */,
 				AF336B9A208B823800A6B95B /* body_dif.png in Resources */,
 				AF2F36C320909B2E00969216 /* lantern_obj.mtl in Resources */,
-				AFDAA4D520923CE000C37741 /* pbr.vs in Resources */,
+				AFBC781220947FA90096CF26 /* blender_institute_4k.hdr in Resources */,
+				AFBC77D520936B940096CF26 /* pbr.vs in Resources */,
 				AF336C06208B823800A6B95B /* ao.png in Resources */,
 				AF336BCE208B823800A6B95B /* nanosuit.mtl in Resources */,
 				AF336BE4208B823800A6B95B /* bricks2_normal.jpg in Resources */,
 				AF336BDE208B823800A6B95B /* awesomeface.png in Resources */,
 				AF336B8E208B823800A6B95B /* LICENSE.txt in Resources */,
+				AFBC780A20947FA90096CF26 /* satara_night_4k.hdr in Resources */,
 				AF336C02208B823800A6B95B /* roughness.png in Resources */,
 				AF336BE6208B823800A6B95B /* brickwall.jpg in Resources */,
 				AF336BEA208B823800A6B95B /* container.jpg in Resources */,
+				AFBC780C20947FA90096CF26 /* vignaioli_night_4k.hdr in Resources */,
 				AF336BC6208B823800A6B95B /* leg_dif.png in Resources */,
 				AF336B88208B823800A6B95B /* cyborg_diffuse.png in Resources */,
 				AF336C08208B823800A6B95B /* metallic.png in Resources */,
@@ -1156,7 +1243,7 @@
 				AF336C2E208B823800A6B95B /* bottom.jpg in Resources */,
 				AF336B9C208B823800A6B95B /* body_showroom_ddn.png in Resources */,
 				AF336B96208B823800A6B95B /* arm_showroom_spec.png in Resources */,
-				AFDAA4DF20923CE000C37741 /* background.fs in Resources */,
+				AFBC77DF20936B940096CF26 /* background.fs in Resources */,
 				AF336BA4208B823800A6B95B /* cell_body_alpha.png in Resources */,
 				AF336B92208B823800A6B95B /* arm_showroom_ddn.png in Resources */,
 				AF336B80208B823800A6B95B /* cyborg.blend in Resources */,
@@ -1165,16 +1252,19 @@
 				AF8F1741207BACC000C8AB85 /* awesomeface.png in Resources */,
 				AF336B94208B823800A6B95B /* arm_showroom_refl.png in Resources */,
 				AF336C10208B823800A6B95B /* ao.png in Resources */,
+				AFBC77FC20947FA90096CF26 /* tears_of_steel_bridge_4k.hdr in Resources */,
 				AF336BB6208B823800A6B95B /* hand_dif.png in Resources */,
 				AF2F36D120909B2E00969216 /* roughness.jpg in Resources */,
 				AF2F36C120909B2E00969216 /* lantern_maya2016.mb in Resources */,
 				AF336BF2208B823800A6B95B /* newport_loft.hdr in Resources */,
+				AFBC780820947FA90096CF26 /* garage_4k.hdr in Resources */,
 				AF336BA2208B823800A6B95B /* cell_arm_alpha.png in Resources */,
 				AF336C12208B823800A6B95B /* metallic.png in Resources */,
 				AF336BAC208B823800A6B95B /* cell_leg_alpha.png in Resources */,
 				AF2F36C520909B2E00969216 /* lantern_obj.obj in Resources */,
 				AF336C40208B823800A6B95B /* wood.png in Resources */,
 				AF336BFA208B823800A6B95B /* albedo.png in Resources */,
+				AFBC780220947FA90096CF26 /* zwinger_night_4k.hdr in Resources */,
 				AF8F173E207BA0A900C8AB85 /* container.jpg in Resources */,
 				AF336BD2208B823800A6B95B /* planet.mtl in Resources */,
 				AF336BBE208B823800A6B95B /* helmet_diff.png in Resources */,
