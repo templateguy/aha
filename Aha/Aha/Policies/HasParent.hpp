@@ -7,7 +7,19 @@
 //
 
 template <typename T>
-struct HasParent
+class HasParent
 {
-    T parent;
-}
+public:
+    T* getParent() const
+    {
+        return parent_;
+    }
+    
+    void setParent(T* parent)
+    {
+        parent_ = parent;
+    }
+    
+protected:
+    T* parent_{nullptr};
+};

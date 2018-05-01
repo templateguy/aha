@@ -89,7 +89,7 @@ namespace aha
     
     void RendererGLOSX::clear()
     {
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
     }
     
     void RendererGLOSX::setViewport(int x, int y, int width, int height)
@@ -105,6 +105,7 @@ namespace aha
             NSOpenGLPFAColorSize, 24,
             NSOpenGLPFAAlphaSize, 8,
             NSOpenGLPFADepthSize, 24,
+            NSOpenGLPFAStencilSize, 8,
             NSOpenGLPFADoubleBuffer,
             NSOpenGLPFAAccelerated,
             0

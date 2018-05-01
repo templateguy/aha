@@ -15,8 +15,25 @@
 namespace aha
 {
     template <typename T>
-    struct HasChildren
+    class HasChildren
     {
-        std::vector <T> children;
+    public:
+        void addChild(const T& child)
+        {
+            children_.emplace_back(child);
+        }
+        
+        const T& getChildAt(size_t index) const
+        {
+            return children_[index];
+        }
+        
+        const std::vector <T>& getAllChildren() const
+        {
+            return children_;
+        }
+        
+    protected:
+        std::vector <T> children_;
     };
 }

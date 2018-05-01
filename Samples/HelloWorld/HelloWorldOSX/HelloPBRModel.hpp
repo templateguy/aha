@@ -34,7 +34,9 @@ public:
         // ------
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-        //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+        glEnable(GL_DEPTH_TEST);
+        glDepthFunc(GL_LEQUAL);
+        glEnable(GL_TEXTURE_CUBE_MAP_SEAMLESS);
         
         // render scene, supplying the convoluted irradiance map to the final shader.
         // ------------------------------------------------------------------------------------------
@@ -167,7 +169,7 @@ protected:
         // ---------------------------------
         stbi_set_flip_vertically_on_load(true);
         int width, height, nrComponents;
-        float *data = stbi_loadf("textures/hdr/shady_patch_4k.hdr", &width, &height, &nrComponents, 0);
+        float *data = stbi_loadf("textures/hdr/newport_loft.hdr", &width, &height, &nrComponents, 0);
         if (data)
         {
             glGenTextures(1, &hdrTexture);

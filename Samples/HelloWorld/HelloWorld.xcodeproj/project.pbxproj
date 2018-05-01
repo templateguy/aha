@@ -295,6 +295,16 @@
 		AFBC781120947FA90096CF26 /* rathaus_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77FA20947FA90096CF26 /* rathaus_4k.hdr */; };
 		AFBC781220947FA90096CF26 /* blender_institute_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77FB20947FA90096CF26 /* blender_institute_4k.hdr */; };
 		AFBC781320947FA90096CF26 /* blender_institute_4k.hdr in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77FB20947FA90096CF26 /* blender_institute_4k.hdr */; };
+		AFCBE1BD209600F7001B3AF5 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFCBE1B8209600F7001B3AF5 /* Roboto-Light.ttf */; };
+		AFCBE1BE209600F7001B3AF5 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFCBE1B8209600F7001B3AF5 /* Roboto-Light.ttf */; };
+		AFCBE1BF209600F7001B3AF5 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFCBE1B9209600F7001B3AF5 /* Roboto-Bold.ttf */; };
+		AFCBE1C0209600F7001B3AF5 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFCBE1B9209600F7001B3AF5 /* Roboto-Bold.ttf */; };
+		AFCBE1C1209600F7001B3AF5 /* entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFCBE1BA209600F7001B3AF5 /* entypo.ttf */; };
+		AFCBE1C2209600F7001B3AF5 /* entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFCBE1BA209600F7001B3AF5 /* entypo.ttf */; };
+		AFCBE1C3209600F7001B3AF5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFCBE1BB209600F7001B3AF5 /* Roboto-Regular.ttf */; };
+		AFCBE1C4209600F7001B3AF5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFCBE1BB209600F7001B3AF5 /* Roboto-Regular.ttf */; };
+		AFCBE1C5209600F7001B3AF5 /* NotoEmoji-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFCBE1BC209600F7001B3AF5 /* NotoEmoji-Regular.ttf */; };
+		AFCBE1C6209600F7001B3AF5 /* NotoEmoji-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFCBE1BC209600F7001B3AF5 /* NotoEmoji-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -491,6 +501,12 @@
 		AFBC77FA20947FA90096CF26 /* rathaus_4k.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = rathaus_4k.hdr; sourceTree = "<group>"; };
 		AFBC77FB20947FA90096CF26 /* blender_institute_4k.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = blender_institute_4k.hdr; sourceTree = "<group>"; };
 		AFBC783B2094867B0096CF26 /* HelloPBRModel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloPBRModel.hpp; sourceTree = "<group>"; };
+		AFCBE1B62095FBDC001B3AF5 /* HelloUI.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloUI.hpp; sourceTree = "<group>"; };
+		AFCBE1B8209600F7001B3AF5 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		AFCBE1B9209600F7001B3AF5 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		AFCBE1BA209600F7001B3AF5 /* entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = entypo.ttf; sourceTree = "<group>"; };
+		AFCBE1BB209600F7001B3AF5 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		AFCBE1BC209600F7001B3AF5 /* NotoEmoji-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoEmoji-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -570,6 +586,7 @@
 				AF2F36D620921A6D00969216 /* HelloIBL.hpp */,
 				AFBC77E920936BFF0096CF26 /* HelloIBL1.hpp */,
 				AFBC783B2094867B0096CF26 /* HelloPBRModel.hpp */,
+				AFCBE1B62095FBDC001B3AF5 /* HelloUI.hpp */,
 			);
 			path = HelloWorldOSX;
 			sourceTree = "<group>";
@@ -867,6 +884,7 @@
 		AF8F173C207BA0A900C8AB85 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AFCBE1B7209600AF001B3AF5 /* fonts */,
 				AF336B0A208B7D4400A6B95B /* shaders */,
 				AF8F173D207BA0A900C8AB85 /* container.jpg */,
 				AF8F1740207BACBF00C8AB85 /* awesomeface.png */,
@@ -881,6 +899,18 @@
 			children = (
 			);
 			path = cerberus;
+			sourceTree = "<group>";
+		};
+		AFCBE1B7209600AF001B3AF5 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AFCBE1BA209600F7001B3AF5 /* entypo.ttf */,
+				AFCBE1BC209600F7001B3AF5 /* NotoEmoji-Regular.ttf */,
+				AFCBE1B9209600F7001B3AF5 /* Roboto-Bold.ttf */,
+				AFCBE1B8209600F7001B3AF5 /* Roboto-Light.ttf */,
+				AFCBE1BB209600F7001B3AF5 /* Roboto-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1021,6 +1051,7 @@
 				AF336B8D208B823800A6B95B /* cyborg_specular.png in Resources */,
 				AF2F36D020909B2E00969216 /* opacity.jpg in Resources */,
 				AF336BD7208B823800A6B95B /* planet_Quom1200.png in Resources */,
+				AFCBE1C2209600F7001B3AF5 /* entypo.ttf in Resources */,
 				AF336BEF208B823800A6B95B /* container2_specular.png in Resources */,
 				AF12C9541F76B73E00729018 /* Assets.xcassets in Resources */,
 				AF336BA7208B823800A6B95B /* cell_ddn.png in Resources */,
@@ -1044,6 +1075,7 @@
 				AF336BBD208B823800A6B95B /* hand_showroom_spec.png in Resources */,
 				AFBC781120947FA90096CF26 /* rathaus_4k.hdr in Resources */,
 				AF336C1D208B823800A6B95B /* metallic.png in Resources */,
+				AFCBE1BE209600F7001B3AF5 /* Roboto-Light.ttf in Resources */,
 				AF2F36BE20909B2E00969216 /* lantern_description.txt in Resources */,
 				AF336C2B208B823800A6B95B /* roughness.png in Resources */,
 				AF336BC9208B823800A6B95B /* leg_showroom_ddn.png in Resources */,
@@ -1069,6 +1101,7 @@
 				AFBC77FF20947FA90096CF26 /* shady_patch_4k.hdr in Resources */,
 				AF336C35208B823800A6B95B /* right.jpg in Resources */,
 				AF2F36CC20909B2E00969216 /* metallic.jpg in Resources */,
+				AFCBE1C0209600F7001B3AF5 /* Roboto-Bold.ttf in Resources */,
 				AF336B83208B823800A6B95B /* cyborg.blend1 in Resources */,
 				AF336BD9208B823800A6B95B /* rock.mtl in Resources */,
 				AFBC780520947FA90096CF26 /* blinds_4k.hdr in Resources */,
@@ -1080,6 +1113,7 @@
 				AF336BCF208B823800A6B95B /* nanosuit.mtl in Resources */,
 				AF336BE5208B823800A6B95B /* bricks2_normal.jpg in Resources */,
 				AF336BDF208B823800A6B95B /* awesomeface.png in Resources */,
+				AFCBE1C6209600F7001B3AF5 /* NotoEmoji-Regular.ttf in Resources */,
 				AF336B8F208B823800A6B95B /* LICENSE.txt in Resources */,
 				AFBC780B20947FA90096CF26 /* satara_night_4k.hdr in Resources */,
 				AF336C03208B823800A6B95B /* roughness.png in Resources */,
@@ -1099,6 +1133,7 @@
 				AFBC77E020936B940096CF26 /* background.fs in Resources */,
 				AF336BA5208B823800A6B95B /* cell_body_alpha.png in Resources */,
 				AF336B93208B823800A6B95B /* arm_showroom_ddn.png in Resources */,
+				AFCBE1C4209600F7001B3AF5 /* Roboto-Regular.ttf in Resources */,
 				AF336B81208B823800A6B95B /* cyborg.blend in Resources */,
 				AF336BAB208B823800A6B95B /* cell_helmet_alpha.png in Resources */,
 				AF336C01208B823800A6B95B /* normal.png in Resources */,
@@ -1168,6 +1203,7 @@
 				AF336B8C208B823800A6B95B /* cyborg_specular.png in Resources */,
 				AF2F36CF20909B2E00969216 /* opacity.jpg in Resources */,
 				AF336BD6208B823800A6B95B /* planet_Quom1200.png in Resources */,
+				AFCBE1C1209600F7001B3AF5 /* entypo.ttf in Resources */,
 				AF336BEE208B823800A6B95B /* container2_specular.png in Resources */,
 				AF143EEE1F715A50000D0788 /* Assets.xcassets in Resources */,
 				AF336BA6208B823800A6B95B /* cell_ddn.png in Resources */,
@@ -1191,6 +1227,7 @@
 				AF336BBC208B823800A6B95B /* hand_showroom_spec.png in Resources */,
 				AFBC781020947FA90096CF26 /* rathaus_4k.hdr in Resources */,
 				AF336C1C208B823800A6B95B /* metallic.png in Resources */,
+				AFCBE1BD209600F7001B3AF5 /* Roboto-Light.ttf in Resources */,
 				AF2F36BD20909B2E00969216 /* lantern_description.txt in Resources */,
 				AF336C2A208B823800A6B95B /* roughness.png in Resources */,
 				AF336BC8208B823800A6B95B /* leg_showroom_ddn.png in Resources */,
@@ -1216,6 +1253,7 @@
 				AFBC77FE20947FA90096CF26 /* shady_patch_4k.hdr in Resources */,
 				AF336C34208B823800A6B95B /* right.jpg in Resources */,
 				AF2F36CB20909B2E00969216 /* metallic.jpg in Resources */,
+				AFCBE1BF209600F7001B3AF5 /* Roboto-Bold.ttf in Resources */,
 				AF336B82208B823800A6B95B /* cyborg.blend1 in Resources */,
 				AF336BD8208B823800A6B95B /* rock.mtl in Resources */,
 				AFBC780420947FA90096CF26 /* blinds_4k.hdr in Resources */,
@@ -1227,6 +1265,7 @@
 				AF336BCE208B823800A6B95B /* nanosuit.mtl in Resources */,
 				AF336BE4208B823800A6B95B /* bricks2_normal.jpg in Resources */,
 				AF336BDE208B823800A6B95B /* awesomeface.png in Resources */,
+				AFCBE1C5209600F7001B3AF5 /* NotoEmoji-Regular.ttf in Resources */,
 				AF336B8E208B823800A6B95B /* LICENSE.txt in Resources */,
 				AFBC780A20947FA90096CF26 /* satara_night_4k.hdr in Resources */,
 				AF336C02208B823800A6B95B /* roughness.png in Resources */,
@@ -1246,6 +1285,7 @@
 				AFBC77DF20936B940096CF26 /* background.fs in Resources */,
 				AF336BA4208B823800A6B95B /* cell_body_alpha.png in Resources */,
 				AF336B92208B823800A6B95B /* arm_showroom_ddn.png in Resources */,
+				AFCBE1C3209600F7001B3AF5 /* Roboto-Regular.ttf in Resources */,
 				AF336B80208B823800A6B95B /* cyborg.blend in Resources */,
 				AF336BAA208B823800A6B95B /* cell_helmet_alpha.png in Resources */,
 				AF336C00208B823800A6B95B /* normal.png in Resources */,
@@ -1426,7 +1466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				HEADER_SEARCH_PATHS = (
@@ -1447,7 +1487,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				HEADER_SEARCH_PATHS = (

@@ -462,9 +462,9 @@ namespace aha
     WindowOSX::WindowOSX(const std::string& title, float width, float height, bool isFullScreen) : pimpl_(std::make_unique <impl_> ())
     {
         CGSize size([[NSScreen mainScreen] visibleFrame].size);
-        pimpl_->width_ = (width = width == -1? size.width : width);
-        pimpl_->height_ = (height = height == -1? size.height : height);
-        NSRect frame = NSMakeRect(0, 0, width, height);
+        pimpl_->width_ = width == -1? size.width : width;
+        pimpl_->height_ = height == -1? size.height : height;
+        NSRect frame = NSMakeRect(0, 0, pimpl_->width_, pimpl_->height_);
         NSUInteger windowStyleMask = NSWindowStyleMaskTitled|NSWindowStyleMaskResizable|NSWindowStyleMaskClosable|NSWindowStyleMaskMiniaturizable;
         pimpl_->window_  = [[[NSWindow alloc] initWithContentRect : frame styleMask : windowStyleMask backing : NSBackingStoreBuffered defer : NO] retain];
         [pimpl_->window_ setBackgroundColor : [NSColor whiteColor]];
@@ -476,6 +476,8 @@ namespace aha
         if(pimpl_->view_)
         {
             [pimpl_->window_ setContentView : pimpl_->view_];
+            pimpl_->width_ = width == -1? [pimpl_->window_.contentView visibleRect].size.width : pimpl_->width_;
+            pimpl_->height_ = height == -1? [pimpl_->window_.contentView visibleRect].size.height : pimpl_->height_;
         }
     }
     

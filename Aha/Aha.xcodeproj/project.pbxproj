@@ -19,6 +19,12 @@
 		AFA6D78A1F756A9A006B9CA8 /* WindowIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = AFA6D7891F756A9A006B9CA8 /* WindowIOS.mm */; };
 		AFA85F082079049E0083B81B /* RendererGLOSX.mm in Sources */ = {isa = PBXBuildFile; fileRef = AFA85F072079049E0083B81B /* RendererGLOSX.mm */; };
 		AFBC785720949D070096CF26 /* PBRModel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AFBC785620949D060096CF26 /* PBRModel.hpp */; };
+		AFCBE1AA2095DD7B001B3AF5 /* fontstash.h in Headers */ = {isa = PBXBuildFile; fileRef = AFCBE1A52095DD7A001B3AF5 /* fontstash.h */; };
+		AFCBE1AB2095DD7B001B3AF5 /* nanovg.c in Sources */ = {isa = PBXBuildFile; fileRef = AFCBE1A62095DD7A001B3AF5 /* nanovg.c */; };
+		AFCBE1AC2095DD7B001B3AF5 /* nanovg.c in Sources */ = {isa = PBXBuildFile; fileRef = AFCBE1A62095DD7A001B3AF5 /* nanovg.c */; };
+		AFCBE1AD2095DD7B001B3AF5 /* nanovg.h in Headers */ = {isa = PBXBuildFile; fileRef = AFCBE1A72095DD7A001B3AF5 /* nanovg.h */; };
+		AFCBE1AE2095DD7B001B3AF5 /* nanovg_gl.h in Headers */ = {isa = PBXBuildFile; fileRef = AFCBE1A82095DD7A001B3AF5 /* nanovg_gl.h */; };
+		AFCBE1AF2095DD7B001B3AF5 /* nanovg_gl_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = AFCBE1A92095DD7A001B3AF5 /* nanovg_gl_utils.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,15 +63,21 @@
 		AF0D3F621F704005008864DD /* Config.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Config.hpp; sourceTree = "<group>"; };
 		AF0D3F631F70403D008864DD /* Platform.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Platform.hpp; sourceTree = "<group>"; };
 		AF12BC692003D2830000A955 /* Name.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Name.hpp; sourceTree = "<group>"; };
-		AF12BC6A2003D33D0000A955 /* Position.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Position.hpp; sourceTree = "<group>"; };
-		AF12BC6B2003D3EE0000A955 /* Size.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Size.hpp; sourceTree = "<group>"; };
+		AF12BC6A2003D33D0000A955 /* HasPosition.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HasPosition.hpp; sourceTree = "<group>"; };
+		AF12BC6B2003D3EE0000A955 /* HasSize.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HasSize.hpp; sourceTree = "<group>"; };
 		AF12BC6C2003D4260000A955 /* Scale.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Scale.hpp; sourceTree = "<group>"; };
-		AF12BC6D2003D4DC0000A955 /* Color.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Color.hpp; sourceTree = "<group>"; };
+		AF12BC6D2003D4DC0000A955 /* HasColor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HasColor.hpp; sourceTree = "<group>"; };
 		AF12BC6E2003D51E0000A955 /* Rotation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rotation.hpp; sourceTree = "<group>"; };
 		AF12BC6F2003D6EF0000A955 /* HasParent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HasParent.hpp; sourceTree = "<group>"; };
 		AF12BC702003D7CA0000A955 /* HasChildren.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HasChildren.hpp; sourceTree = "<group>"; };
 		AF12C9601F76B81A00729018 /* libAhaOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAhaOSX.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF143EFA1F716032000D0788 /* libAhaIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAhaIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF163612209609DB00698574 /* TitleBar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TitleBar.hpp; sourceTree = "<group>"; };
+		AF1636132096185800698574 /* Label.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Label.hpp; sourceTree = "<group>"; };
+		AF1636142097289700698574 /* Slider.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Slider.hpp; sourceTree = "<group>"; };
+		AF1636152097393700698574 /* CheckBox.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CheckBox.hpp; sourceTree = "<group>"; };
+		AF163616209745BC00698574 /* RespondsToUIMouseEvents.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RespondsToUIMouseEvents.hpp; sourceTree = "<group>"; };
+		AF1636172097494D00698574 /* UIMouseEvents.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIMouseEvents.hpp; sourceTree = "<group>"; };
 		AF2F36A0208F7FA000969216 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		AF3361E6208B592300A6B95B /* Mesh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
 		AF3361E7208B606100A6B95B /* Model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
@@ -161,7 +173,6 @@
 		AF336C47208CC6F300A6B95B /* Event.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Event.hpp; sourceTree = "<group>"; };
 		AF74D6852042F87C00A1D1DD /* Registry.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Registry.hpp; sourceTree = "<group>"; };
 		AF74D68C204593CE00A1D1DD /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		AF8F173B207B9FDF00C8AB85 /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 		AF8F1743207D038C00C8AB85 /* Texture.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Texture.hpp; sourceTree = "<group>"; };
 		AF9087EA1F7AA618007B56FF /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		AF9087EB1F7AA649007B56FF /* Preprocessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Preprocessor.h; sourceTree = "<group>"; };
@@ -434,6 +445,15 @@
 		AFA86010207924750083B81B /* vector_relational.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vector_relational.hpp; sourceTree = "<group>"; };
 		AFA86011207A46240083B81B /* Scene.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
 		AFBC785620949D060096CF26 /* PBRModel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PBRModel.hpp; sourceTree = "<group>"; };
+		AFCBE1A52095DD7A001B3AF5 /* fontstash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fontstash.h; sourceTree = "<group>"; };
+		AFCBE1A62095DD7A001B3AF5 /* nanovg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nanovg.c; sourceTree = "<group>"; };
+		AFCBE1A72095DD7A001B3AF5 /* nanovg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nanovg.h; sourceTree = "<group>"; };
+		AFCBE1A82095DD7A001B3AF5 /* nanovg_gl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nanovg_gl.h; sourceTree = "<group>"; };
+		AFCBE1A92095DD7A001B3AF5 /* nanovg_gl_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nanovg_gl_utils.h; sourceTree = "<group>"; };
+		AFCBE1B12095DD8B001B3AF5 /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		AFCBE1B22095DD8B001B3AF5 /* stb_truetype.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_truetype.h; sourceTree = "<group>"; };
+		AFCBE1B42095E520001B3AF5 /* Window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
+		AFCBE1B52095E635001B3AF5 /* UI.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UI.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -480,6 +500,9 @@
 		2C80B8E21F641B0100DA33C4 /* Aha */ = {
 			isa = PBXGroup;
 			children = (
+				AFCBE1B32095DF41001B3AF5 /* UI */,
+				AFCBE1B02095DD8B001B3AF5 /* stb */,
+				AFCBE1A42095DD7A001B3AF5 /* nanovg */,
 				AF336AAA208B6D9500A6B95B /* assimp */,
 				AFA85F0A207924740083B81B /* glm */,
 				AF0B01061F818B3A005F700E /* Math */,
@@ -497,7 +520,6 @@
 				AF0B01021F817403005F700E /* Renderer.hpp */,
 				AF74D6852042F87C00A1D1DD /* Registry.hpp */,
 				AFA86011207A46240083B81B /* Scene.hpp */,
-				AF8F173B207B9FDF00C8AB85 /* stb_image.h */,
 				AF8F1743207D038C00C8AB85 /* Texture.hpp */,
 				AF3361E6208B592300A6B95B /* Mesh.hpp */,
 				AF3361E7208B606100A6B95B /* Model.hpp */,
@@ -570,10 +592,10 @@
 			children = (
 				AF0B01041F817673005F700E /* HasID.hpp */,
 				AF12BC692003D2830000A955 /* Name.hpp */,
-				AF12BC6A2003D33D0000A955 /* Position.hpp */,
-				AF12BC6B2003D3EE0000A955 /* Size.hpp */,
+				AF12BC6A2003D33D0000A955 /* HasPosition.hpp */,
+				AF12BC6B2003D3EE0000A955 /* HasSize.hpp */,
 				AF12BC6C2003D4260000A955 /* Scale.hpp */,
-				AF12BC6D2003D4DC0000A955 /* Color.hpp */,
+				AF12BC6D2003D4DC0000A955 /* HasColor.hpp */,
 				AF12BC6E2003D51E0000A955 /* Rotation.hpp */,
 				AF12BC6F2003D6EF0000A955 /* HasParent.hpp */,
 				AF12BC702003D7CA0000A955 /* HasChildren.hpp */,
@@ -1049,6 +1071,42 @@
 			path = simd;
 			sourceTree = "<group>";
 		};
+		AFCBE1A42095DD7A001B3AF5 /* nanovg */ = {
+			isa = PBXGroup;
+			children = (
+				AFCBE1A52095DD7A001B3AF5 /* fontstash.h */,
+				AFCBE1A62095DD7A001B3AF5 /* nanovg.c */,
+				AFCBE1A72095DD7A001B3AF5 /* nanovg.h */,
+				AFCBE1A82095DD7A001B3AF5 /* nanovg_gl.h */,
+				AFCBE1A92095DD7A001B3AF5 /* nanovg_gl_utils.h */,
+			);
+			path = nanovg;
+			sourceTree = "<group>";
+		};
+		AFCBE1B02095DD8B001B3AF5 /* stb */ = {
+			isa = PBXGroup;
+			children = (
+				AFCBE1B12095DD8B001B3AF5 /* stb_image.h */,
+				AFCBE1B22095DD8B001B3AF5 /* stb_truetype.h */,
+			);
+			path = stb;
+			sourceTree = "<group>";
+		};
+		AFCBE1B32095DF41001B3AF5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AFCBE1B42095E520001B3AF5 /* Window.hpp */,
+				AFCBE1B52095E635001B3AF5 /* UI.hpp */,
+				AF163612209609DB00698574 /* TitleBar.hpp */,
+				AF1636132096185800698574 /* Label.hpp */,
+				AF1636142097289700698574 /* Slider.hpp */,
+				AF1636152097393700698574 /* CheckBox.hpp */,
+				AF163616209745BC00698574 /* RespondsToUIMouseEvents.hpp */,
+				AF1636172097494D00698574 /* UIMouseEvents.hpp */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1056,7 +1114,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFCBE1AE2095DD7B001B3AF5 /* nanovg_gl.h in Headers */,
+				AFCBE1AD2095DD7B001B3AF5 /* nanovg.h in Headers */,
+				AFCBE1AF2095DD7B001B3AF5 /* nanovg_gl_utils.h in Headers */,
 				AFBC785720949D070096CF26 /* PBRModel.hpp in Headers */,
+				AFCBE1AA2095DD7B001B3AF5 /* fontstash.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1141,6 +1203,7 @@
 			files = (
 				AFA85F082079049E0083B81B /* RendererGLOSX.mm in Sources */,
 				AF7F45021F76C5F900EAFEA9 /* WindowOSX.mm in Sources */,
+				AFCBE1AC2095DD7B001B3AF5 /* nanovg.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1150,6 +1213,7 @@
 			files = (
 				AFA6D7881F755620006B9CA8 /* ViewController.m in Sources */,
 				AFA6D78A1F756A9A006B9CA8 /* WindowIOS.mm in Sources */,
+				AFCBE1AB2095DD7B001B3AF5 /* nanovg.c in Sources */,
 				AFA6D77D1F7550D8006B9CA8 /* AppDelegate.mm in Sources */,
 				AF0B01171F819662005F700E /* MetalView.m in Sources */,
 			);
@@ -1266,7 +1330,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Aha/assimp/include";
@@ -1285,7 +1349,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Aha/assimp/include";
