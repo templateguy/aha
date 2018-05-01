@@ -63,6 +63,10 @@ namespace aha
     {
         mutex_.lock();
         [pimpl_->context_ makeCurrentContext];
+        
+        // We draw on a secondary thread through the display link
+        // Add a mutex around to avoid the threads from accessing the context simultaneously
+        CGLLockContext([pimpl_->context_ CGLContextObj]);
     }
     
     void RendererGLOSX::render()
