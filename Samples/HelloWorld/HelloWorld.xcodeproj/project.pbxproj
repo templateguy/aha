@@ -249,6 +249,20 @@
 		AF8F1742207BACC000C8AB85 /* awesomeface.png in Resources */ = {isa = PBXBuildFile; fileRef = AF8F1740207BACBF00C8AB85 /* awesomeface.png */; };
 		AFA6D7811F7555C0006B9CA8 /* libAhaIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA6D77B1F754EF8006B9CA8 /* libAhaIOS.a */; };
 		AFA6D78C1F756E36006B9CA8 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFA6D78B1F756E36006B9CA8 /* Main.cpp */; };
+		AFB4DE1B209F5E7100DBF7D5 /* ao.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB4DE14209F5E7000DBF7D5 /* ao.png */; };
+		AFB4DE1C209F5E7100DBF7D5 /* ao.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB4DE14209F5E7000DBF7D5 /* ao.png */; };
+		AFB4DE1D209F5E7100DBF7D5 /* cabinet.obj in Resources */ = {isa = PBXBuildFile; fileRef = AFB4DE15209F5E7000DBF7D5 /* cabinet.obj */; };
+		AFB4DE1E209F5E7100DBF7D5 /* cabinet.obj in Resources */ = {isa = PBXBuildFile; fileRef = AFB4DE15209F5E7000DBF7D5 /* cabinet.obj */; };
+		AFB4DE1F209F5E7100DBF7D5 /* metallic.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB4DE16209F5E7000DBF7D5 /* metallic.png */; };
+		AFB4DE20209F5E7100DBF7D5 /* metallic.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB4DE16209F5E7000DBF7D5 /* metallic.png */; };
+		AFBC207B20A343A300563C85 /* obj_model.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC207920A343A200563C85 /* obj_model.vs */; };
+		AFBC207C20A343A300563C85 /* obj_model.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC207920A343A200563C85 /* obj_model.vs */; };
+		AFBC207D20A343A300563C85 /* obj_model.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC207A20A343A300563C85 /* obj_model.fs */; };
+		AFBC207E20A343A300563C85 /* obj_model.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC207A20A343A300563C85 /* obj_model.fs */; };
+		AFBC208120A3475D00563C85 /* cerberus_lp.obj in Resources */ = {isa = PBXBuildFile; fileRef = AFBC207F20A3475D00563C85 /* cerberus_lp.obj */; };
+		AFBC208220A3475D00563C85 /* cerberus_lp.obj in Resources */ = {isa = PBXBuildFile; fileRef = AFBC207F20A3475D00563C85 /* cerberus_lp.obj */; };
+		AFBC208320A3475D00563C85 /* cerberus_lp.obj.mtl in Resources */ = {isa = PBXBuildFile; fileRef = AFBC208020A3475D00563C85 /* cerberus_lp.obj.mtl */; };
+		AFBC208420A3475D00563C85 /* cerberus_lp.obj.mtl in Resources */ = {isa = PBXBuildFile; fileRef = AFBC208020A3475D00563C85 /* cerberus_lp.obj.mtl */; };
 		AFBC77D520936B940096CF26 /* pbr.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77CB20936B940096CF26 /* pbr.vs */; };
 		AFBC77D620936B940096CF26 /* pbr.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77CB20936B940096CF26 /* pbr.vs */; };
 		AFBC77D720936B940096CF26 /* prefilter.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77CC20936B940096CF26 /* prefilter.fs */; };
@@ -305,6 +319,42 @@
 		AFCBE1C4209600F7001B3AF5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFCBE1BB209600F7001B3AF5 /* Roboto-Regular.ttf */; };
 		AFCBE1C5209600F7001B3AF5 /* NotoEmoji-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFCBE1BC209600F7001B3AF5 /* NotoEmoji-Regular.ttf */; };
 		AFCBE1C6209600F7001B3AF5 /* NotoEmoji-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFCBE1BC209600F7001B3AF5 /* NotoEmoji-Regular.ttf */; };
+		AFD77215209F588000F649B2 /* albedo.tga in Resources */ = {isa = PBXBuildFile; fileRef = AFD77202209F588000F649B2 /* albedo.tga */; };
+		AFD77216209F588000F649B2 /* albedo.tga in Resources */ = {isa = PBXBuildFile; fileRef = AFD77202209F588000F649B2 /* albedo.tga */; };
+		AFD77217209F588000F649B2 /* ao.tga in Resources */ = {isa = PBXBuildFile; fileRef = AFD77203209F588000F649B2 /* ao.tga */; };
+		AFD77218209F588000F649B2 /* ao.tga in Resources */ = {isa = PBXBuildFile; fileRef = AFD77203209F588000F649B2 /* ao.tga */; };
+		AFD77219209F588000F649B2 /* Cerberus.tbscene in Resources */ = {isa = PBXBuildFile; fileRef = AFD77204209F588000F649B2 /* Cerberus.tbscene */; };
+		AFD7721A209F588000F649B2 /* Cerberus.tbscene in Resources */ = {isa = PBXBuildFile; fileRef = AFD77204209F588000F649B2 /* Cerberus.tbscene */; };
+		AFD7721B209F588000F649B2 /* Cerberus_LP.FBX in Resources */ = {isa = PBXBuildFile; fileRef = AFD77205209F588000F649B2 /* Cerberus_LP.FBX */; };
+		AFD7721C209F588000F649B2 /* Cerberus_LP.FBX in Resources */ = {isa = PBXBuildFile; fileRef = AFD77205209F588000F649B2 /* Cerberus_LP.FBX */; };
+		AFD7721D209F588000F649B2 /* Disclaimer.txt in Resources */ = {isa = PBXBuildFile; fileRef = AFD77206209F588000F649B2 /* Disclaimer.txt */; };
+		AFD7721E209F588000F649B2 /* Disclaimer.txt in Resources */ = {isa = PBXBuildFile; fileRef = AFD77206209F588000F649B2 /* Disclaimer.txt */; };
+		AFD7721F209F588000F649B2 /* metallic.tga in Resources */ = {isa = PBXBuildFile; fileRef = AFD77207209F588000F649B2 /* metallic.tga */; };
+		AFD77220209F588000F649B2 /* metallic.tga in Resources */ = {isa = PBXBuildFile; fileRef = AFD77207209F588000F649B2 /* metallic.tga */; };
+		AFD77221209F588000F649B2 /* normal.tga in Resources */ = {isa = PBXBuildFile; fileRef = AFD77208209F588000F649B2 /* normal.tga */; };
+		AFD77222209F588000F649B2 /* normal.tga in Resources */ = {isa = PBXBuildFile; fileRef = AFD77208209F588000F649B2 /* normal.tga */; };
+		AFD77223209F588000F649B2 /* roughness.tga in Resources */ = {isa = PBXBuildFile; fileRef = AFD77209209F588000F649B2 /* roughness.tga */; };
+		AFD77224209F588000F649B2 /* roughness.tga in Resources */ = {isa = PBXBuildFile; fileRef = AFD77209209F588000F649B2 /* roughness.tga */; };
+		AFD77225209F588000F649B2 /* background.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFD7720B209F588000F649B2 /* background.fs */; };
+		AFD77226209F588000F649B2 /* background.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFD7720B209F588000F649B2 /* background.fs */; };
+		AFD77227209F588000F649B2 /* background.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFD7720C209F588000F649B2 /* background.vs */; };
+		AFD77228209F588000F649B2 /* background.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFD7720C209F588000F649B2 /* background.vs */; };
+		AFD77229209F588000F649B2 /* brdf.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFD7720D209F588000F649B2 /* brdf.fs */; };
+		AFD7722A209F588000F649B2 /* brdf.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFD7720D209F588000F649B2 /* brdf.fs */; };
+		AFD7722B209F588000F649B2 /* brdf.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFD7720E209F588000F649B2 /* brdf.vs */; };
+		AFD7722C209F588000F649B2 /* brdf.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFD7720E209F588000F649B2 /* brdf.vs */; };
+		AFD7722D209F588000F649B2 /* cubemap.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFD7720F209F588000F649B2 /* cubemap.vs */; };
+		AFD7722E209F588000F649B2 /* cubemap.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFD7720F209F588000F649B2 /* cubemap.vs */; };
+		AFD7722F209F588000F649B2 /* equirectangular_to_cubemap.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFD77210209F588000F649B2 /* equirectangular_to_cubemap.fs */; };
+		AFD77230209F588000F649B2 /* equirectangular_to_cubemap.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFD77210209F588000F649B2 /* equirectangular_to_cubemap.fs */; };
+		AFD77231209F588000F649B2 /* irradiance_convolution.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFD77211209F588000F649B2 /* irradiance_convolution.fs */; };
+		AFD77232209F588000F649B2 /* irradiance_convolution.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFD77211209F588000F649B2 /* irradiance_convolution.fs */; };
+		AFD77233209F588000F649B2 /* pbr.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFD77212209F588000F649B2 /* pbr.fs */; };
+		AFD77234209F588000F649B2 /* pbr.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFD77212209F588000F649B2 /* pbr.fs */; };
+		AFD77235209F588000F649B2 /* pbr.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFD77213209F588000F649B2 /* pbr.vs */; };
+		AFD77236209F588000F649B2 /* pbr.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFD77213209F588000F649B2 /* pbr.vs */; };
+		AFD77237209F588000F649B2 /* prefilter.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFD77214209F588000F649B2 /* prefilter.fs */; };
+		AFD77238209F588000F649B2 /* prefilter.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFD77214209F588000F649B2 /* prefilter.fs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -466,6 +516,7 @@
 		AF336B7E208B823800A6B95B /* window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = window.png; sourceTree = "<group>"; };
 		AF336B7F208B823800A6B95B /* wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood.png; sourceTree = "<group>"; };
 		AF336C42208B84BA00A6B95B /* libassimp.4.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.4.1.0.dylib; path = ../../Aha/Aha/assimp/lib/libassimp.4.1.0.dylib; sourceTree = "<group>"; };
+		AF6C0BC0209F39AC006F222B /* HelloDemo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloDemo.hpp; sourceTree = "<group>"; };
 		AF7F44FF1F76C4E600EAFEA9 /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
 		AF8537662039AAB300F5B07C /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		AF8537682039AAD000F5B07C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -476,6 +527,13 @@
 		AFA6D78B1F756E36006B9CA8 /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
 		AFA6D78E1F7579DC006B9CA8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		AFA86012207A49730083B81B /* HelloTriangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloTriangle.hpp; sourceTree = "<group>"; };
+		AFB4DE14209F5E7000DBF7D5 /* ao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ao.png; sourceTree = "<group>"; };
+		AFB4DE15209F5E7000DBF7D5 /* cabinet.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cabinet.obj; sourceTree = "<group>"; };
+		AFB4DE16209F5E7000DBF7D5 /* metallic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metallic.png; sourceTree = "<group>"; };
+		AFBC207920A343A200563C85 /* obj_model.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = obj_model.vs; sourceTree = "<group>"; };
+		AFBC207A20A343A300563C85 /* obj_model.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = obj_model.fs; sourceTree = "<group>"; };
+		AFBC207F20A3475D00563C85 /* cerberus_lp.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cerberus_lp.obj; sourceTree = "<group>"; };
+		AFBC208020A3475D00563C85 /* cerberus_lp.obj.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cerberus_lp.obj.mtl; sourceTree = "<group>"; };
 		AFBC77CB20936B940096CF26 /* pbr.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = pbr.vs; sourceTree = "<group>"; };
 		AFBC77CC20936B940096CF26 /* prefilter.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = prefilter.fs; sourceTree = "<group>"; };
 		AFBC77CD20936B940096CF26 /* brdf.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = brdf.fs; sourceTree = "<group>"; };
@@ -507,6 +565,24 @@
 		AFCBE1BA209600F7001B3AF5 /* entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = entypo.ttf; sourceTree = "<group>"; };
 		AFCBE1BB209600F7001B3AF5 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		AFCBE1BC209600F7001B3AF5 /* NotoEmoji-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoEmoji-Regular.ttf"; sourceTree = "<group>"; };
+		AFD77202209F588000F649B2 /* albedo.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = albedo.tga; sourceTree = "<group>"; };
+		AFD77203209F588000F649B2 /* ao.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ao.tga; sourceTree = "<group>"; };
+		AFD77204209F588000F649B2 /* Cerberus.tbscene */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cerberus.tbscene; sourceTree = "<group>"; };
+		AFD77205209F588000F649B2 /* Cerberus_LP.FBX */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cerberus_LP.FBX; sourceTree = "<group>"; };
+		AFD77206209F588000F649B2 /* Disclaimer.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Disclaimer.txt; sourceTree = "<group>"; };
+		AFD77207209F588000F649B2 /* metallic.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = metallic.tga; sourceTree = "<group>"; };
+		AFD77208209F588000F649B2 /* normal.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = normal.tga; sourceTree = "<group>"; };
+		AFD77209209F588000F649B2 /* roughness.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = roughness.tga; sourceTree = "<group>"; };
+		AFD7720B209F588000F649B2 /* background.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = background.fs; sourceTree = "<group>"; };
+		AFD7720C209F588000F649B2 /* background.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = background.vs; sourceTree = "<group>"; };
+		AFD7720D209F588000F649B2 /* brdf.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = brdf.fs; sourceTree = "<group>"; };
+		AFD7720E209F588000F649B2 /* brdf.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = brdf.vs; sourceTree = "<group>"; };
+		AFD7720F209F588000F649B2 /* cubemap.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = cubemap.vs; sourceTree = "<group>"; };
+		AFD77210209F588000F649B2 /* equirectangular_to_cubemap.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = equirectangular_to_cubemap.fs; sourceTree = "<group>"; };
+		AFD77211209F588000F649B2 /* irradiance_convolution.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = irradiance_convolution.fs; sourceTree = "<group>"; };
+		AFD77212209F588000F649B2 /* pbr.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = pbr.fs; sourceTree = "<group>"; };
+		AFD77213209F588000F649B2 /* pbr.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = pbr.vs; sourceTree = "<group>"; };
+		AFD77214209F588000F649B2 /* prefilter.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = prefilter.fs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -587,6 +663,7 @@
 				AFBC77E920936BFF0096CF26 /* HelloIBL1.hpp */,
 				AFBC783B2094867B0096CF26 /* HelloPBRModel.hpp */,
 				AFCBE1B62095FBDC001B3AF5 /* HelloUI.hpp */,
+				AF6C0BC0209F39AC006F222B /* HelloDemo.hpp */,
 			);
 			path = HelloWorldOSX;
 			sourceTree = "<group>";
@@ -884,6 +961,7 @@
 		AF8F173C207BA0A900C8AB85 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AFD771FF209F588000F649B2 /* pbr */,
 				AFCBE1B7209600AF001B3AF5 /* fonts */,
 				AF336B0A208B7D4400A6B95B /* shaders */,
 				AF8F173D207BA0A900C8AB85 /* container.jpg */,
@@ -892,6 +970,16 @@
 				AF336B45208B823800A6B95B /* textures */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		AFB4DE12209F5E7000DBF7D5 /* cabinet */ = {
+			isa = PBXGroup;
+			children = (
+				AFB4DE14209F5E7000DBF7D5 /* ao.png */,
+				AFB4DE15209F5E7000DBF7D5 /* cabinet.obj */,
+				AFB4DE16209F5E7000DBF7D5 /* metallic.png */,
+			);
+			path = cabinet;
 			sourceTree = "<group>";
 		};
 		AFBC7814209486480096CF26 /* cerberus */ = {
@@ -911,6 +999,60 @@
 				AFCBE1BB209600F7001B3AF5 /* Roboto-Regular.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		AFD771FF209F588000F649B2 /* pbr */ = {
+			isa = PBXGroup;
+			children = (
+				AFD77200209F588000F649B2 /* models */,
+				AFD7720A209F588000F649B2 /* shaders */,
+			);
+			path = pbr;
+			sourceTree = "<group>";
+		};
+		AFD77200209F588000F649B2 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				AFB4DE12209F5E7000DBF7D5 /* cabinet */,
+				AFD77201209F588000F649B2 /* cerberus */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		AFD77201209F588000F649B2 /* cerberus */ = {
+			isa = PBXGroup;
+			children = (
+				AFD77202209F588000F649B2 /* albedo.tga */,
+				AFD77203209F588000F649B2 /* ao.tga */,
+				AFD77204209F588000F649B2 /* Cerberus.tbscene */,
+				AFD77205209F588000F649B2 /* Cerberus_LP.FBX */,
+				AFBC207F20A3475D00563C85 /* cerberus_lp.obj */,
+				AFBC208020A3475D00563C85 /* cerberus_lp.obj.mtl */,
+				AFD77206209F588000F649B2 /* Disclaimer.txt */,
+				AFD77207209F588000F649B2 /* metallic.tga */,
+				AFD77208209F588000F649B2 /* normal.tga */,
+				AFD77209209F588000F649B2 /* roughness.tga */,
+			);
+			path = cerberus;
+			sourceTree = "<group>";
+		};
+		AFD7720A209F588000F649B2 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				AFD7720B209F588000F649B2 /* background.fs */,
+				AFD7720C209F588000F649B2 /* background.vs */,
+				AFD7720D209F588000F649B2 /* brdf.fs */,
+				AFBC207A20A343A300563C85 /* obj_model.fs */,
+				AFBC207920A343A200563C85 /* obj_model.vs */,
+				AFD7720E209F588000F649B2 /* brdf.vs */,
+				AFD7720F209F588000F649B2 /* cubemap.vs */,
+				AFD77210209F588000F649B2 /* equirectangular_to_cubemap.fs */,
+				AFD77211209F588000F649B2 /* irradiance_convolution.fs */,
+				AFD77212209F588000F649B2 /* pbr.fs */,
+				AFD77213209F588000F649B2 /* pbr.vs */,
+				AFD77214209F588000F649B2 /* prefilter.fs */,
+			);
+			path = shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1028,19 +1170,25 @@
 				AF336BCB208B823800A6B95B /* leg_showroom_refl.png in Resources */,
 				AF336C3F208B823800A6B95B /* window.png in Resources */,
 				AF336BFD208B823800A6B95B /* ao.png in Resources */,
+				AFBC207C20A343A300563C85 /* obj_model.vs in Resources */,
 				AF336C15208B823800A6B95B /* normal.png in Resources */,
 				AF336C0D208B823800A6B95B /* roughness.png in Resources */,
 				AFBC780120947FA90096CF26 /* wooden_lounge_4k.hdr in Resources */,
+				AFD77234209F588000F649B2 /* pbr.fs in Resources */,
 				AFBC77E620936B940096CF26 /* cubemap.vs in Resources */,
 				AF336C17208B823800A6B95B /* roughness.png in Resources */,
 				AF336C0B208B823800A6B95B /* normal.png in Resources */,
 				AF336BB5208B823800A6B95B /* glass_refl.png in Resources */,
+				AFD77238209F588000F649B2 /* prefilter.fs in Resources */,
+				AFD77216209F588000F649B2 /* albedo.tga in Resources */,
 				AFBC77D820936B940096CF26 /* prefilter.fs in Resources */,
+				AFBC207E20A343A300563C85 /* obj_model.fs in Resources */,
 				AF2F36C820909B2E00969216 /* albedo.jpg in Resources */,
 				AF336BED208B823800A6B95B /* container2.png in Resources */,
 				AF336BB3208B823800A6B95B /* glass_dif.png in Resources */,
 				AF336BD5208B823800A6B95B /* planet.obj in Resources */,
 				AF336B9F208B823800A6B95B /* body_showroom_refl.png in Resources */,
+				AFD77236209F588000F649B2 /* pbr.vs in Resources */,
 				AF336BF1208B823800A6B95B /* grass.png in Resources */,
 				AF336BA9208B823800A6B95B /* cell_hand_alpha.png in Resources */,
 				AF2F36CE20909B2E00969216 /* normal.jpg in Resources */,
@@ -1053,6 +1201,7 @@
 				AF336BD7208B823800A6B95B /* planet_Quom1200.png in Resources */,
 				AFCBE1C2209600F7001B3AF5 /* entypo.ttf in Resources */,
 				AF336BEF208B823800A6B95B /* container2_specular.png in Resources */,
+				AFD7722A209F588000F649B2 /* brdf.fs in Resources */,
 				AF12C9541F76B73E00729018 /* Assets.xcassets in Resources */,
 				AF336BA7208B823800A6B95B /* cell_ddn.png in Resources */,
 				AF2F36AF208F928600969216 /* metallic1.png in Resources */,
@@ -1063,6 +1212,7 @@
 				AFBC77DA20936B940096CF26 /* brdf.fs in Resources */,
 				AF336C05208B823800A6B95B /* albedo.png in Resources */,
 				AF336C31208B823800A6B95B /* front.jpg in Resources */,
+				AFB4DE1E209F5E7100DBF7D5 /* cabinet.obj in Resources */,
 				AFBC77DE20936B940096CF26 /* irradiance_convolution.fs in Resources */,
 				AFBC77DC20936B940096CF26 /* equirectangular_to_cubemap.fs in Resources */,
 				AF336BDB208B823800A6B95B /* rock.obj in Resources */,
@@ -1074,7 +1224,10 @@
 				AFBC77E820936B940096CF26 /* pbr.fs in Resources */,
 				AF336BBD208B823800A6B95B /* hand_showroom_spec.png in Resources */,
 				AFBC781120947FA90096CF26 /* rathaus_4k.hdr in Resources */,
+				AFD77218209F588000F649B2 /* ao.tga in Resources */,
 				AF336C1D208B823800A6B95B /* metallic.png in Resources */,
+				AFD77230209F588000F649B2 /* equirectangular_to_cubemap.fs in Resources */,
+				AFD77224209F588000F649B2 /* roughness.tga in Resources */,
 				AFCBE1BE209600F7001B3AF5 /* Roboto-Light.ttf in Resources */,
 				AF2F36BE20909B2E00969216 /* lantern_description.txt in Resources */,
 				AF336C2B208B823800A6B95B /* roughness.png in Resources */,
@@ -1092,23 +1245,31 @@
 				AF336BA1208B823800A6B95B /* body_showroom_spec.png in Resources */,
 				AF336C25208B823800A6B95B /* ao.png in Resources */,
 				AF336BB9208B823800A6B95B /* hand_showroom_ddn.png in Resources */,
+				AFBC208220A3475D00563C85 /* cerberus_lp.obj in Resources */,
 				AF336BF7208B823800A6B95B /* matrix.jpg in Resources */,
 				AF336C1B208B823800A6B95B /* ao.png in Resources */,
 				AF336BC5208B823800A6B95B /* helmet_showroom_spec.png in Resources */,
+				AFBC208420A3475D00563C85 /* cerberus_lp.obj.mtl in Resources */,
 				AF336BC3208B823800A6B95B /* helmet_showroom_refl.png in Resources */,
 				AFBC77E420936B940096CF26 /* brdf.vs in Resources */,
+				AFD77226209F588000F649B2 /* background.fs in Resources */,
 				AF336B91208B823800A6B95B /* arm_dif.png in Resources */,
 				AFBC77FF20947FA90096CF26 /* shady_patch_4k.hdr in Resources */,
+				AFD7721E209F588000F649B2 /* Disclaimer.txt in Resources */,
 				AF336C35208B823800A6B95B /* right.jpg in Resources */,
+				AFD77222209F588000F649B2 /* normal.tga in Resources */,
 				AF2F36CC20909B2E00969216 /* metallic.jpg in Resources */,
+				AFB4DE20209F5E7100DBF7D5 /* metallic.png in Resources */,
 				AFCBE1C0209600F7001B3AF5 /* Roboto-Bold.ttf in Resources */,
 				AF336B83208B823800A6B95B /* cyborg.blend1 in Resources */,
+				AFD77228209F588000F649B2 /* background.vs in Resources */,
 				AF336BD9208B823800A6B95B /* rock.mtl in Resources */,
 				AFBC780520947FA90096CF26 /* blinds_4k.hdr in Resources */,
 				AF336B9B208B823800A6B95B /* body_dif.png in Resources */,
 				AF2F36C420909B2E00969216 /* lantern_obj.mtl in Resources */,
 				AFBC781320947FA90096CF26 /* blender_institute_4k.hdr in Resources */,
 				AFBC77D620936B940096CF26 /* pbr.vs in Resources */,
+				AFD7721A209F588000F649B2 /* Cerberus.tbscene in Resources */,
 				AF336C07208B823800A6B95B /* ao.png in Resources */,
 				AF336BCF208B823800A6B95B /* nanosuit.mtl in Resources */,
 				AF336BE5208B823800A6B95B /* bricks2_normal.jpg in Resources */,
@@ -1123,6 +1284,7 @@
 				AF336BC7208B823800A6B95B /* leg_dif.png in Resources */,
 				AF336B89208B823800A6B95B /* cyborg_diffuse.png in Resources */,
 				AF336C09208B823800A6B95B /* metallic.png in Resources */,
+				AFD77220209F588000F649B2 /* metallic.tga in Resources */,
 				AF336BF5208B823800A6B95B /* marble.jpg in Resources */,
 				AF336C37208B823800A6B95B /* top.jpg in Resources */,
 				AF336B85208B823800A6B95B /* cyborg.mtl in Resources */,
@@ -1138,24 +1300,29 @@
 				AF336BAB208B823800A6B95B /* cell_helmet_alpha.png in Resources */,
 				AF336C01208B823800A6B95B /* normal.png in Resources */,
 				AF8F1742207BACC000C8AB85 /* awesomeface.png in Resources */,
+				AFD7722E209F588000F649B2 /* cubemap.vs in Resources */,
 				AF336B95208B823800A6B95B /* arm_showroom_refl.png in Resources */,
 				AF336C11208B823800A6B95B /* ao.png in Resources */,
 				AFBC77FD20947FA90096CF26 /* tears_of_steel_bridge_4k.hdr in Resources */,
 				AF336BB7208B823800A6B95B /* hand_dif.png in Resources */,
+				AFB4DE1C209F5E7100DBF7D5 /* ao.png in Resources */,
 				AF2F36D220909B2E00969216 /* roughness.jpg in Resources */,
 				AF2F36C220909B2E00969216 /* lantern_maya2016.mb in Resources */,
 				AF336BF3208B823800A6B95B /* newport_loft.hdr in Resources */,
 				AFBC780920947FA90096CF26 /* garage_4k.hdr in Resources */,
 				AF336BA3208B823800A6B95B /* cell_arm_alpha.png in Resources */,
 				AF336C13208B823800A6B95B /* metallic.png in Resources */,
+				AFD7721C209F588000F649B2 /* Cerberus_LP.FBX in Resources */,
 				AF336BAD208B823800A6B95B /* cell_leg_alpha.png in Resources */,
 				AF2F36C620909B2E00969216 /* lantern_obj.obj in Resources */,
+				AFD77232209F588000F649B2 /* irradiance_convolution.fs in Resources */,
 				AF336C41208B823800A6B95B /* wood.png in Resources */,
 				AF336BFB208B823800A6B95B /* albedo.png in Resources */,
 				AFBC780320947FA90096CF26 /* zwinger_night_4k.hdr in Resources */,
 				AF8F173F207BA0A900C8AB85 /* container.jpg in Resources */,
 				AF336BD3208B823800A6B95B /* planet.mtl in Resources */,
 				AF336BBF208B823800A6B95B /* helmet_diff.png in Resources */,
+				AFD7722C209F588000F649B2 /* brdf.vs in Resources */,
 				AF2F36D52090A45900969216 /* model1.fs in Resources */,
 				AF2F369E208F73DC00969216 /* hello_pbr.fs in Resources */,
 				AF336BFF208B823800A6B95B /* metallic.png in Resources */,
@@ -1180,19 +1347,25 @@
 				AF336BCA208B823800A6B95B /* leg_showroom_refl.png in Resources */,
 				AF336C3E208B823800A6B95B /* window.png in Resources */,
 				AF336BFC208B823800A6B95B /* ao.png in Resources */,
+				AFBC207B20A343A300563C85 /* obj_model.vs in Resources */,
 				AF336C14208B823800A6B95B /* normal.png in Resources */,
 				AF336C0C208B823800A6B95B /* roughness.png in Resources */,
 				AFBC780020947FA90096CF26 /* wooden_lounge_4k.hdr in Resources */,
+				AFD77233209F588000F649B2 /* pbr.fs in Resources */,
 				AFBC77E520936B940096CF26 /* cubemap.vs in Resources */,
 				AF336C16208B823800A6B95B /* roughness.png in Resources */,
 				AF336C0A208B823800A6B95B /* normal.png in Resources */,
 				AF336BB4208B823800A6B95B /* glass_refl.png in Resources */,
+				AFD77237209F588000F649B2 /* prefilter.fs in Resources */,
+				AFD77215209F588000F649B2 /* albedo.tga in Resources */,
 				AFBC77D720936B940096CF26 /* prefilter.fs in Resources */,
+				AFBC207D20A343A300563C85 /* obj_model.fs in Resources */,
 				AF2F36C720909B2E00969216 /* albedo.jpg in Resources */,
 				AF336BEC208B823800A6B95B /* container2.png in Resources */,
 				AF336BB2208B823800A6B95B /* glass_dif.png in Resources */,
 				AF336BD4208B823800A6B95B /* planet.obj in Resources */,
 				AF336B9E208B823800A6B95B /* body_showroom_refl.png in Resources */,
+				AFD77235209F588000F649B2 /* pbr.vs in Resources */,
 				AF336BF0208B823800A6B95B /* grass.png in Resources */,
 				AF336BA8208B823800A6B95B /* cell_hand_alpha.png in Resources */,
 				AF2F36CD20909B2E00969216 /* normal.jpg in Resources */,
@@ -1205,6 +1378,7 @@
 				AF336BD6208B823800A6B95B /* planet_Quom1200.png in Resources */,
 				AFCBE1C1209600F7001B3AF5 /* entypo.ttf in Resources */,
 				AF336BEE208B823800A6B95B /* container2_specular.png in Resources */,
+				AFD77229209F588000F649B2 /* brdf.fs in Resources */,
 				AF143EEE1F715A50000D0788 /* Assets.xcassets in Resources */,
 				AF336BA6208B823800A6B95B /* cell_ddn.png in Resources */,
 				AF2F36AE208F928600969216 /* metallic1.png in Resources */,
@@ -1215,6 +1389,7 @@
 				AFBC77D920936B940096CF26 /* brdf.fs in Resources */,
 				AF336C04208B823800A6B95B /* albedo.png in Resources */,
 				AF336C30208B823800A6B95B /* front.jpg in Resources */,
+				AFB4DE1D209F5E7100DBF7D5 /* cabinet.obj in Resources */,
 				AFBC77DD20936B940096CF26 /* irradiance_convolution.fs in Resources */,
 				AFBC77DB20936B940096CF26 /* equirectangular_to_cubemap.fs in Resources */,
 				AF336BDA208B823800A6B95B /* rock.obj in Resources */,
@@ -1226,7 +1401,10 @@
 				AFBC77E720936B940096CF26 /* pbr.fs in Resources */,
 				AF336BBC208B823800A6B95B /* hand_showroom_spec.png in Resources */,
 				AFBC781020947FA90096CF26 /* rathaus_4k.hdr in Resources */,
+				AFD77217209F588000F649B2 /* ao.tga in Resources */,
 				AF336C1C208B823800A6B95B /* metallic.png in Resources */,
+				AFD7722F209F588000F649B2 /* equirectangular_to_cubemap.fs in Resources */,
+				AFD77223209F588000F649B2 /* roughness.tga in Resources */,
 				AFCBE1BD209600F7001B3AF5 /* Roboto-Light.ttf in Resources */,
 				AF2F36BD20909B2E00969216 /* lantern_description.txt in Resources */,
 				AF336C2A208B823800A6B95B /* roughness.png in Resources */,
@@ -1244,23 +1422,31 @@
 				AF336BA0208B823800A6B95B /* body_showroom_spec.png in Resources */,
 				AF336C24208B823800A6B95B /* ao.png in Resources */,
 				AF336BB8208B823800A6B95B /* hand_showroom_ddn.png in Resources */,
+				AFBC208120A3475D00563C85 /* cerberus_lp.obj in Resources */,
 				AF336BF6208B823800A6B95B /* matrix.jpg in Resources */,
 				AF336C1A208B823800A6B95B /* ao.png in Resources */,
 				AF336BC4208B823800A6B95B /* helmet_showroom_spec.png in Resources */,
+				AFBC208320A3475D00563C85 /* cerberus_lp.obj.mtl in Resources */,
 				AF336BC2208B823800A6B95B /* helmet_showroom_refl.png in Resources */,
 				AFBC77E320936B940096CF26 /* brdf.vs in Resources */,
+				AFD77225209F588000F649B2 /* background.fs in Resources */,
 				AF336B90208B823800A6B95B /* arm_dif.png in Resources */,
 				AFBC77FE20947FA90096CF26 /* shady_patch_4k.hdr in Resources */,
+				AFD7721D209F588000F649B2 /* Disclaimer.txt in Resources */,
 				AF336C34208B823800A6B95B /* right.jpg in Resources */,
+				AFD77221209F588000F649B2 /* normal.tga in Resources */,
 				AF2F36CB20909B2E00969216 /* metallic.jpg in Resources */,
+				AFB4DE1F209F5E7100DBF7D5 /* metallic.png in Resources */,
 				AFCBE1BF209600F7001B3AF5 /* Roboto-Bold.ttf in Resources */,
 				AF336B82208B823800A6B95B /* cyborg.blend1 in Resources */,
+				AFD77227209F588000F649B2 /* background.vs in Resources */,
 				AF336BD8208B823800A6B95B /* rock.mtl in Resources */,
 				AFBC780420947FA90096CF26 /* blinds_4k.hdr in Resources */,
 				AF336B9A208B823800A6B95B /* body_dif.png in Resources */,
 				AF2F36C320909B2E00969216 /* lantern_obj.mtl in Resources */,
 				AFBC781220947FA90096CF26 /* blender_institute_4k.hdr in Resources */,
 				AFBC77D520936B940096CF26 /* pbr.vs in Resources */,
+				AFD77219209F588000F649B2 /* Cerberus.tbscene in Resources */,
 				AF336C06208B823800A6B95B /* ao.png in Resources */,
 				AF336BCE208B823800A6B95B /* nanosuit.mtl in Resources */,
 				AF336BE4208B823800A6B95B /* bricks2_normal.jpg in Resources */,
@@ -1275,6 +1461,7 @@
 				AF336BC6208B823800A6B95B /* leg_dif.png in Resources */,
 				AF336B88208B823800A6B95B /* cyborg_diffuse.png in Resources */,
 				AF336C08208B823800A6B95B /* metallic.png in Resources */,
+				AFD7721F209F588000F649B2 /* metallic.tga in Resources */,
 				AF336BF4208B823800A6B95B /* marble.jpg in Resources */,
 				AF336C36208B823800A6B95B /* top.jpg in Resources */,
 				AF336B84208B823800A6B95B /* cyborg.mtl in Resources */,
@@ -1290,24 +1477,29 @@
 				AF336BAA208B823800A6B95B /* cell_helmet_alpha.png in Resources */,
 				AF336C00208B823800A6B95B /* normal.png in Resources */,
 				AF8F1741207BACC000C8AB85 /* awesomeface.png in Resources */,
+				AFD7722D209F588000F649B2 /* cubemap.vs in Resources */,
 				AF336B94208B823800A6B95B /* arm_showroom_refl.png in Resources */,
 				AF336C10208B823800A6B95B /* ao.png in Resources */,
 				AFBC77FC20947FA90096CF26 /* tears_of_steel_bridge_4k.hdr in Resources */,
 				AF336BB6208B823800A6B95B /* hand_dif.png in Resources */,
+				AFB4DE1B209F5E7100DBF7D5 /* ao.png in Resources */,
 				AF2F36D120909B2E00969216 /* roughness.jpg in Resources */,
 				AF2F36C120909B2E00969216 /* lantern_maya2016.mb in Resources */,
 				AF336BF2208B823800A6B95B /* newport_loft.hdr in Resources */,
 				AFBC780820947FA90096CF26 /* garage_4k.hdr in Resources */,
 				AF336BA2208B823800A6B95B /* cell_arm_alpha.png in Resources */,
 				AF336C12208B823800A6B95B /* metallic.png in Resources */,
+				AFD7721B209F588000F649B2 /* Cerberus_LP.FBX in Resources */,
 				AF336BAC208B823800A6B95B /* cell_leg_alpha.png in Resources */,
 				AF2F36C520909B2E00969216 /* lantern_obj.obj in Resources */,
+				AFD77231209F588000F649B2 /* irradiance_convolution.fs in Resources */,
 				AF336C40208B823800A6B95B /* wood.png in Resources */,
 				AF336BFA208B823800A6B95B /* albedo.png in Resources */,
 				AFBC780220947FA90096CF26 /* zwinger_night_4k.hdr in Resources */,
 				AF8F173E207BA0A900C8AB85 /* container.jpg in Resources */,
 				AF336BD2208B823800A6B95B /* planet.mtl in Resources */,
 				AF336BBE208B823800A6B95B /* helmet_diff.png in Resources */,
+				AFD7722B209F588000F649B2 /* brdf.vs in Resources */,
 				AF2F36D42090A45900969216 /* model1.fs in Resources */,
 				AF2F369D208F73DC00969216 /* hello_pbr.fs in Resources */,
 				AF336BFE208B823800A6B95B /* metallic.png in Resources */,

@@ -10,6 +10,7 @@
 
 
 #include <string>
+#include <vector>
 #include <memory>
 
 
@@ -30,6 +31,8 @@ namespace aha
         void size(size_t w, size_t h);
         aha::Renderer* renderer() const;
         void renderer(aha::Renderer* renderer);
+        
+        std::vector <std::string> openFileDialog(const std::vector<std::string>& fileTypes, bool multiple);
         
         void startRenderLoop();
         void stopRenderLoop();

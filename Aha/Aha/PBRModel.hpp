@@ -18,6 +18,7 @@
 #include "glm/glm.hpp"
 #include "glm/gtc/matrix_transform.hpp"
 #include "glm/gtc/type_ptr.hpp"
+#include "Texture.hpp"
 
 
 namespace aha
@@ -101,16 +102,60 @@ namespace aha
             load(fileName);
         }
         
+        PBRModel(const std::string& path, const std::string& model, const std::string& albedo, const std::string& normal, const std::string& metallic, const std::string& roughness, const std::string& ao)
+        {
+            load(path, model, albedo, normal, metallic, roughness, ao);
+        }
+        
+        const std::string& getPath() const
+        {
+            return path_;
+        }
+        
+        void setPath(const std::string& path)
+        {
+            path_ = path;
+        }
+        
         void load(const std::string& path)
         {
-            Assimp::Importer import;
-            const aiScene *scene = import.ReadFile(path, aiProcess_Triangulate | aiProcess_FlipUVs);
-            if(!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode)
-            {
-                std::cout << "ERROR::ASSIMP::" << import.GetErrorString() << std::endl;
-                return;
-            }
-            processNode_(scene->mRootNode, scene);
+            loadModel_(path);
+        }
+        
+        void load(const std::string& path, const std::string& model, const std::string& albedo, const std::string& normal, const std::string& metallic, const std::string& roughness, const std::string& ao)
+        {
+            setPath(path);
+            loadModel_(path + model);
+            loadPBRTexture_(path + albedo, albedo_);
+            loadPBRTexture_(path + normal, normal_);
+            loadPBRTexture_(path + metallic, metallic_);
+            loadPBRTexture_(path + roughness, roughness_);
+            loadPBRTexture_(path + ao, ao_);
+        }
+        
+        const std::shared_ptr <Texture>& getAlbedo() const
+        {
+            return albedo_;
+        }
+        
+        const std::shared_ptr <Texture>& getNormal() const
+        {
+            return normal_;
+        }
+        
+        const std::shared_ptr <Texture>& getMetallic() const
+        {
+            return metallic_;
+        }
+        
+        const std::shared_ptr <Texture>& getRoughness() const
+        {
+            return roughness_;
+        }
+        
+        const std::shared_ptr <Texture>& getAO() const
+        {
+            return ao_;
         }
         
         void render() const
@@ -122,6 +167,23 @@ namespace aha
         }
         
     protected:
+        void loadModel_(const std::string& path)
+        {
+            Assimp::Importer import;
+            const aiScene* scene = import.ReadFile(path, aiProcess_Triangulate | aiProcess_FlipUVs);
+            if(!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode)
+            {
+                std::cout << "ERROR::ASSIMP::" << import.GetErrorString() << std::endl;
+                return;
+            }
+            processNode_(scene->mRootNode, scene);
+        }
+        
+        void loadPBRTexture_(const std::string& path, std::shared_ptr <Texture>& texture)
+        {
+            texture = Texture::New(path);
+        }
+        
         void processNode_(aiNode* node, const aiScene* scene)
         {
             // process all the node's meshes (if any)
@@ -182,5 +244,11 @@ namespace aha
         }
         
         std::vector <PBRMesh> meshes_;
+        std::shared_ptr <Texture> albedo_;
+        std::shared_ptr <Texture> normal_;
+        std::shared_ptr <Texture> metallic_;
+        std::shared_ptr <Texture> roughness_;
+        std::shared_ptr <Texture> ao_;
+        std::string path_{};
     };
 }

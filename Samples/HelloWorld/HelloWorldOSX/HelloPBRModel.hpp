@@ -70,7 +70,7 @@ public:
         model = glm::translate(model, glm::vec3(4.0f, 0.5f, 0.0f));
         model = glm::scale(model, glm::vec3(0.08f, 0.08f, 0.08f));
         model = glm::rotate(model, (-90.0f * 3.1415f) / 180.0f, glm::vec3(1.0f, 0.0f, 0.0f));
-        model = glm::rotate(model, rotation_, glm::vec3(0.0f, 0.0f, 1.0f));
+        model = glm::rotate(model, (-90.0f * 3.1415f) / 180.0f, glm::vec3(0.0f, 0.0f, 1.0f));
         pbrShader_.setMat4("model", model);
         model_.render();
         

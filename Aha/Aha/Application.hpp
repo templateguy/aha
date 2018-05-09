@@ -61,6 +61,15 @@ namespace aha
             return 0u;
         }
         
+        std::vector <std::string> openFileDialog(const std::vector<std::string>& fileTypes, bool multiple)
+        {
+            if(window_)
+            {
+                return window_->openFileDialog(fileTypes, multiple);
+            }
+            return std::vector <std::string> ();
+        }
+        
     private:
         std::shared_ptr <Window> window_{};
         std::shared_ptr <Renderer> renderer_{};

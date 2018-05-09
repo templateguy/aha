@@ -523,6 +523,30 @@ namespace aha
         [pimpl_->view_ setRenderer : renderer];
     }
     
+    std::vector <std::string> WindowOSX::openFileDialog(const std::vector<std::string>& fileTypes, bool multiple)
+    {
+        std::vector<std::string> result;
+        NSOpenPanel* openDlg = [NSOpenPanel openPanel];
+        [openDlg setCanChooseFiles : YES];
+        [openDlg setCanChooseDirectories : NO];
+        [openDlg setAllowsMultipleSelection : multiple];
+        NSMutableArray* types = [NSMutableArray new];
+        for (size_t idx = 0; idx < fileTypes.size(); ++idx)
+        {
+            [types addObject: [NSString stringWithUTF8String: fileTypes[idx].c_str()]];
+        }
+        [openDlg setAllowedFileTypes : types];
+        
+        if([openDlg runModal] == NSModalResponseOK)
+        {
+            for(NSURL* url in [openDlg URLs])
+            {
+                result.emplace_back((char*) [[url path] UTF8String]);
+            }
+        }
+        return result;
+    }
+    
     void WindowOSX::startRenderLoop()
     {
         [pimpl_->view_ setupDisplayLink];

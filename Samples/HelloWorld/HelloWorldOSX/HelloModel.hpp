@@ -29,7 +29,7 @@ public:
         const float width(aha::Application.getWindowWidth());
         const float height(aha::Application.getWindowHeight());
         const glm::vec3 position(0.0f, 0.0f, 3.0f);
-        const glm::vec3 front(0.0f, 0.0f, -1.0f);
+        const glm::vec3 front(0.0f, 0.0f, 0.0f);
         const glm::vec3 up(0.0f, 1.0f, 0.0f);
         const float zoom(45.0f);
         glm::mat4 projection = glm::perspective(glm::radians(zoom), (float) width / (float) height, 0.1f, 100.0f);

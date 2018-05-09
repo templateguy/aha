@@ -13,11 +13,12 @@
 #include "HelloIBL1.hpp"
 #include "HelloPBRModel.hpp"
 #include "HelloUI.hpp"
+#include "HelloDemo.hpp"
 
 
 void Main()
 {
     aha::Application.init();
-    auto scene(HelloUI::create());
+    auto scene(HelloDemo::create());
     aha::Application.run(scene);
 }

@@ -101,9 +101,9 @@ namespace aha
             {
                 if(auto i(slots_.find(event)); i != slots_.end())
                     if(i->second.size())
-                        for(auto slot : i->second)
-                            if(slot.second)
-                                if(slot.second(x, y))
+                        for(auto ri(i->second.rbegin()); ri != i->second.rend(); ++ri)
+                            if(ri->second)
+                                if(ri->second(x, y))
                                     return;
             }
             
