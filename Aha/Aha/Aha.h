@@ -28,6 +28,7 @@
 #include "PBRModel.hpp"
 #include "Timer.hpp"
 #include "OBJModel.hpp"
+#include "PBROBJModel.hpp"
 
 // UI
 #include "UI/UI.hpp"

@@ -261,8 +261,6 @@
 		AFBC207E20A343A300563C85 /* obj_model.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC207A20A343A300563C85 /* obj_model.fs */; };
 		AFBC208120A3475D00563C85 /* cerberus_lp.obj in Resources */ = {isa = PBXBuildFile; fileRef = AFBC207F20A3475D00563C85 /* cerberus_lp.obj */; };
 		AFBC208220A3475D00563C85 /* cerberus_lp.obj in Resources */ = {isa = PBXBuildFile; fileRef = AFBC207F20A3475D00563C85 /* cerberus_lp.obj */; };
-		AFBC208320A3475D00563C85 /* cerberus_lp.obj.mtl in Resources */ = {isa = PBXBuildFile; fileRef = AFBC208020A3475D00563C85 /* cerberus_lp.obj.mtl */; };
-		AFBC208420A3475D00563C85 /* cerberus_lp.obj.mtl in Resources */ = {isa = PBXBuildFile; fileRef = AFBC208020A3475D00563C85 /* cerberus_lp.obj.mtl */; };
 		AFBC77D520936B940096CF26 /* pbr.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77CB20936B940096CF26 /* pbr.vs */; };
 		AFBC77D620936B940096CF26 /* pbr.vs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77CB20936B940096CF26 /* pbr.vs */; };
 		AFBC77D720936B940096CF26 /* prefilter.fs in Resources */ = {isa = PBXBuildFile; fileRef = AFBC77CC20936B940096CF26 /* prefilter.fs */; };
@@ -533,7 +531,6 @@
 		AFBC207920A343A200563C85 /* obj_model.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = obj_model.vs; sourceTree = "<group>"; };
 		AFBC207A20A343A300563C85 /* obj_model.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = obj_model.fs; sourceTree = "<group>"; };
 		AFBC207F20A3475D00563C85 /* cerberus_lp.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cerberus_lp.obj; sourceTree = "<group>"; };
-		AFBC208020A3475D00563C85 /* cerberus_lp.obj.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cerberus_lp.obj.mtl; sourceTree = "<group>"; };
 		AFBC77CB20936B940096CF26 /* pbr.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = pbr.vs; sourceTree = "<group>"; };
 		AFBC77CC20936B940096CF26 /* prefilter.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = prefilter.fs; sourceTree = "<group>"; };
 		AFBC77CD20936B940096CF26 /* brdf.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = brdf.fs; sourceTree = "<group>"; };
@@ -1027,7 +1024,6 @@
 				AFD77204209F588000F649B2 /* Cerberus.tbscene */,
 				AFD77205209F588000F649B2 /* Cerberus_LP.FBX */,
 				AFBC207F20A3475D00563C85 /* cerberus_lp.obj */,
-				AFBC208020A3475D00563C85 /* cerberus_lp.obj.mtl */,
 				AFD77206209F588000F649B2 /* Disclaimer.txt */,
 				AFD77207209F588000F649B2 /* metallic.tga */,
 				AFD77208209F588000F649B2 /* normal.tga */,
@@ -1249,7 +1245,6 @@
 				AF336BF7208B823800A6B95B /* matrix.jpg in Resources */,
 				AF336C1B208B823800A6B95B /* ao.png in Resources */,
 				AF336BC5208B823800A6B95B /* helmet_showroom_spec.png in Resources */,
-				AFBC208420A3475D00563C85 /* cerberus_lp.obj.mtl in Resources */,
 				AF336BC3208B823800A6B95B /* helmet_showroom_refl.png in Resources */,
 				AFBC77E420936B940096CF26 /* brdf.vs in Resources */,
 				AFD77226209F588000F649B2 /* background.fs in Resources */,
@@ -1426,7 +1421,6 @@
 				AF336BF6208B823800A6B95B /* matrix.jpg in Resources */,
 				AF336C1A208B823800A6B95B /* ao.png in Resources */,
 				AF336BC4208B823800A6B95B /* helmet_showroom_spec.png in Resources */,
-				AFBC208320A3475D00563C85 /* cerberus_lp.obj.mtl in Resources */,
 				AF336BC2208B823800A6B95B /* helmet_showroom_refl.png in Resources */,
 				AFBC77E320936B940096CF26 /* brdf.vs in Resources */,
 				AFD77225209F588000F649B2 /* background.fs in Resources */,

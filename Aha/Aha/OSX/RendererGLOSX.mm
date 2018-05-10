@@ -112,6 +112,8 @@ namespace aha
             NSOpenGLPFAStencilSize, 8,
             NSOpenGLPFADoubleBuffer,
             NSOpenGLPFAAccelerated,
+            NSOpenGLPFASampleBuffers, 1,
+            NSOpenGLPFASamples, 16,
             0
         };
         pimpl_->pixelFormat_ = [[NSOpenGLPixelFormat alloc] initWithAttributes : attrs];

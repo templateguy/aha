@@ -24,8 +24,33 @@ public:
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glEnable(GL_DEPTH_TEST);
+        glDepthFunc(GL_LEQUAL);
+        glEnable(GL_TEXTURE_CUBE_MAP_SEAMLESS);
+        
+        auto shader(model_.getShader());
+        shader.use();
+        glm::mat4 model;
+        glm::mat4 view = camera_.getViewMatrix();
+        shader.setMat4("view", view);
+        shader.setVec3("camPos", camera_.getPosition());
+        
+        // bind pre-computed IBL data
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_CUBE_MAP, irradianceMap_);
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_CUBE_MAP, prefilterMap_);
+        glActiveTexture(GL_TEXTURE2);
+        glBindTexture(GL_TEXTURE_2D, brdfLUTTexture_);
         
         model_.render();
+        
+        // render skybox (render as last to prevent overdraw)
+        backgroundShader_.use();
+        
+        backgroundShader_.setMat4("view", view);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_CUBE_MAP, cubemap_);
+        renderCube_();
     }
     
     AHA_CREATE_FUNC(HelloDemo);
@@ -33,36 +58,39 @@ public:
 protected:
     bool init() override
     {
+        glEnable(GL_DEPTH_TEST);
+        glDepthFunc(GL_LEQUAL);
+        glEnable(GL_TEXTURE_CUBE_MAP_SEAMLESS);
+        buildAndCompileShaders_();
         loadModel_();
+        model_.loadTextures();
+        setupFrameAndRenderBuffer_();
+        loadHDREnvironmentMap_();
+        setupCubemap_();
+        convertEquirectangularToCubemap_();
+        createIrradianceMap_();
+        createPrefilterMap_();
+        generate2DLUT_();
+        setupViewport_();
         return true;
+    }
+    
+    void loadModel_()
+    {
+        model_.loadModel("pbr/models/cerberus/cerberus_lp.obj");
     }
     
     void buildAndCompileShaders_()
     {
-        pbrShader_.load("pbr/shaders/pbr.vs", "pbr/shaders/pbr.fs");
+        model_.compileShader();
         equirectangularToCubemapShader_.load("pbr/shaders/cubemap.vs", "pbr/shaders/equirectangular_to_cubemap.fs");
         irradianceShader_.load("pbr/shaders/cubemap.vs", "pbr/shaders/irradiance_convolution.fs");
         prefilterShader_.load("pbr/shaders/cubemap.vs", "pbr/shaders/prefilter.fs");
         brdfShader_.load("pbr/shaders/brdf.vs", "pbr/shaders/brdf.fs");
         backgroundShader_.load("pbr/shaders/background.vs", "pbr/shaders/background.fs");
         
-        pbrShader_.use();
-        pbrShader_.setInt("irradianceMap", 0);
-        pbrShader_.setInt("prefilterMap", 1);
-        pbrShader_.setInt("brdfLUT", 2);
-        pbrShader_.setInt("albedoMap", 3);
-        pbrShader_.setInt("normalMap", 4);
-        pbrShader_.setInt("metallicMap", 5);
-        pbrShader_.setInt("roughnessMap", 6);
-        pbrShader_.setInt("aoMap", 7);
-        
         backgroundShader_.use();
         backgroundShader_.setInt("environmentMap", 0);
-    }
-    
-    void loadModel_()
-    {
-        model_.loadModel("pbr/models/cerberus/cerberus_lp.obj");
     }
     
     void setupFrameAndRenderBuffer_()
@@ -73,6 +101,7 @@ protected:
         glBindRenderbuffer(GL_RENDERBUFFER, rbo_);
         glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT24, 512, 512);
         glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, rbo_);
+        initializeStaticShaderUniforms_();
     }
     
     void loadHDREnvironmentMap_()
@@ -264,8 +293,8 @@ protected:
     void initializeStaticShaderUniforms_()
     {
         glm::mat4 projection = glm::perspective(glm::radians(camera_.getZoom()), (float) aha::Application.getWindowWidth() / (float) aha::Application.getWindowHeight(), 0.1f, 100.0f);
-        pbrShader_.use();
-        pbrShader_.setMat4("projection", projection);
+        model_.useShader();
+        model_.getShader().setMat4("projection", projection);
         backgroundShader_.use();
         backgroundShader_.setMat4("projection", projection);
     }
@@ -386,7 +415,6 @@ protected:
     unsigned int rbo_;
     
     // Shaders
-    aha::Shader pbrShader_{};
     aha::Shader equirectangularToCubemapShader_{};
     aha::Shader irradianceShader_{};
     aha::Shader prefilterShader_{};
@@ -395,10 +423,10 @@ protected:
     
     // PBR Model
     //aha::PBRModel model_;
-    aha::OBJModel model_;
+    aha::PBROBJModel model_;
     
     // Camera
-    aha::Camera camera_{glm::vec3(0.0f, 0.0f, 3.0f)};
+    aha::Camera camera_{glm::vec3(0.0f, 0.0f, 1.5f)};
     
     unsigned int hdr_;
     
