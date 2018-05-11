@@ -21,18 +21,16 @@ class HelloDemo : public aha::Scene
 public:
     void render() override
     {
+        auto currentTime(timer_.elapsed());
+        auto delta(currentTime - lastTime_);
+        printf("FPS: %f\n", 1.0f / delta);
+        lastTime_ = currentTime;
+        
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glEnable(GL_DEPTH_TEST);
         glDepthFunc(GL_LEQUAL);
         glEnable(GL_TEXTURE_CUBE_MAP_SEAMLESS);
-        
-        auto shader(model_.getShader());
-        shader.use();
-        glm::mat4 model;
-        glm::mat4 view = camera_.getViewMatrix();
-        shader.setMat4("view", view);
-        shader.setVec3("camPos", camera_.getPosition());
         
         // bind pre-computed IBL data
         glActiveTexture(GL_TEXTURE0);
@@ -42,7 +40,17 @@ public:
         glActiveTexture(GL_TEXTURE2);
         glBindTexture(GL_TEXTURE_2D, brdfLUTTexture_);
         
-        model_.render();
+        glm::mat4 view(camera_.getViewMatrix());
+        glm::vec3 camPos(camera_.getPosition());
+        
+        for(const auto& model : models_)
+        {
+            auto shader(model.getShader());
+            shader.use();
+            shader.setMat4("view", view);
+            shader.setVec3("camPos", camPos);
+            model.render();
+        }
         
         // render skybox (render as last to prevent overdraw)
         backgroundShader_.use();
@@ -61,9 +69,10 @@ protected:
         glEnable(GL_DEPTH_TEST);
         glDepthFunc(GL_LEQUAL);
         glEnable(GL_TEXTURE_CUBE_MAP_SEAMLESS);
-        buildAndCompileShaders_();
+        
         loadModel_();
-        model_.loadTextures();
+        
+        buildAndCompileShaders_();
         setupFrameAndRenderBuffer_();
         loadHDREnvironmentMap_();
         setupCubemap_();
@@ -72,17 +81,24 @@ protected:
         createPrefilterMap_();
         generate2DLUT_();
         setupViewport_();
+        timer_.reset();
+        lastTime_ = timer_.elapsed();
         return true;
     }
     
     void loadModel_()
     {
-        model_.loadModel("pbr/models/cerberus/cerberus_lp.obj");
+        for(auto i(0); i < 40; ++i)
+        {
+            aha::PBROBJModel model;
+            model.loadModel("pbr/models/cerberus/cerberus_lp.obj");
+            model.setPosition(glm::vec3(0.0f, rand() % 100, 0.0f));
+            models_.emplace_back(model);
+        }
     }
     
     void buildAndCompileShaders_()
     {
-        model_.compileShader();
         equirectangularToCubemapShader_.load("pbr/shaders/cubemap.vs", "pbr/shaders/equirectangular_to_cubemap.fs");
         irradianceShader_.load("pbr/shaders/cubemap.vs", "pbr/shaders/irradiance_convolution.fs");
         prefilterShader_.load("pbr/shaders/cubemap.vs", "pbr/shaders/prefilter.fs");
@@ -293,8 +309,11 @@ protected:
     void initializeStaticShaderUniforms_()
     {
         glm::mat4 projection = glm::perspective(glm::radians(camera_.getZoom()), (float) aha::Application.getWindowWidth() / (float) aha::Application.getWindowHeight(), 0.1f, 100.0f);
-        model_.useShader();
-        model_.getShader().setMat4("projection", projection);
+        for(const auto& model : models_)
+        {
+            model.useShader();
+            model.getShader().setMat4("projection", projection);
+        }
         backgroundShader_.use();
         backgroundShader_.setMat4("projection", projection);
     }
@@ -421,12 +440,11 @@ protected:
     aha::Shader brdfShader_{};
     aha::Shader backgroundShader_{};
     
-    // PBR Model
-    //aha::PBRModel model_;
-    aha::PBROBJModel model_;
+    // PBR Models
+    std::vector <aha::PBROBJModel> models_;
     
     // Camera
-    aha::Camera camera_{glm::vec3(0.0f, 0.0f, 1.5f)};
+    aha::Camera camera_{glm::vec3(0.0f, 0.0f, 1.75f)};
     
     unsigned int hdr_;
     
@@ -456,4 +474,8 @@ protected:
     
     // Temporary
     float rotation_ = (-90.0f * 3.1415f) / 180.0f;
+    
+    aha::Timer timer_;
+    float lastTime_{};
+    int frameCount_{0};
 };

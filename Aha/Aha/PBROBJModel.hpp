@@ -35,9 +35,22 @@ namespace aha
             printOBJModelInfo_();
             populateBuffer_();
             printMaxMin_();
+            loadTextures();
+            compileShader();
         }
         
-        void useShader()
+        const glm::vec3& getPosition() const
+        {
+            return position_;
+        }
+        
+        void setPosition(const glm::vec3& position)
+        {
+            position_ = position;
+            hasCustomPosition_ = true;
+        }
+        
+        void useShader() const
         {
             shader_.use();
         }
@@ -86,6 +99,11 @@ namespace aha
                     
                     // Centerize object
                     model = glm::translate(model, glm::vec3(-0.5 * (max_[0] + min_[0]), -0.5 * (max_[1] + min_[1]), -0.5 * (max_[2] + min_[2])));
+                    
+                    if(hasCustomPosition_)
+                    {
+                        model = glm::translate(model, position_);
+                    }
                     
                     shader_.setMat4("model", model);
                     
@@ -541,5 +559,8 @@ namespace aha
         
         // Shader
         aha::Shader shader_;
+        
+        glm::vec3 position_{};
+        bool hasCustomPosition_{false};
     };
 }

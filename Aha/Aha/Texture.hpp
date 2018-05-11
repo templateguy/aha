@@ -10,7 +10,9 @@
 
 
 #include <iostream>
-#include <OpenGL/gl.h>
+#include <string>
+#include <map>
+#include <OpenGL/gl3.h>
 
 
 namespace aha
@@ -22,7 +24,12 @@ namespace aha
         
         static std::shared_ptr <Texture> New(const std::string& fileName)
         {
-            std::shared_ptr <Texture> texture;
+            std::shared_ptr <Texture> texture(getFromCache(fileName));
+            if(texture)
+            {
+                return texture;
+            }
+            
             int width, height, channels;
             unsigned char* data(stbi_load(fileName.c_str(), &width, &height, &channels, 0));
             if(data)
@@ -41,6 +48,7 @@ namespace aha
                     format = GL_RGBA;
                 }
                 texture = std::shared_ptr <Texture> (new Texture(data, width, height, format));
+                addToCache(fileName, texture);
             }
             else
             {
@@ -58,6 +66,28 @@ namespace aha
         Handle handle() const
         {
             return handle_;
+        }
+        
+        static std::map <std::string, std::shared_ptr <Texture>>& getCache()
+        {
+            static std::map <std::string, std::shared_ptr <Texture>> instance;
+            return instance;
+        }
+        
+        static std::shared_ptr <Texture> getFromCache(const std::string& fileName)
+        {
+            auto& cache(getCache());
+            if(auto i(cache.find(fileName)); i != cache.end())
+            {
+                return i->second;
+            }
+            return std::shared_ptr <Texture> ();
+        }
+        
+        static void addToCache(const std::string& fileName, const std::shared_ptr <Texture>& texture)
+        {
+            auto& cache(getCache());
+            cache[fileName] = texture;
         }
         
     protected:

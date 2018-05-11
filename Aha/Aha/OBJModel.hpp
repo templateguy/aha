@@ -41,6 +41,11 @@ namespace aha
             printMaxMin_();
         }
         
+        const Shader& getShader() const
+        {
+            return shader_;
+        }
+        
         void render(bool wireframe = false) const
         {
             if(!wireframe)
@@ -56,10 +61,10 @@ namespace aha
                     shader_.use();
                     
                     // view/projection transformations
-                    glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float) 768.0f / (float) 768.0f, 0.1f, 100.0f);
-                    glm::mat4 view = glm::lookAt(glm::vec3(0.0f, 0.0f, 3.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-                    shader_.setMat4("projection", projection);
-                    shader_.setMat4("view", view);
+                    //glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float) 768.0f / (float) 768.0f, 0.1f, 100.0f);
+                    //glm::mat4 view = glm::lookAt(glm::vec3(0.0f, 0.0f, 3.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+                    //shader_.setMat4("projection", projection);
+                    //shader_.setMat4("view", view);
                     
                     // render the loaded model
                     glm::mat4 model;
