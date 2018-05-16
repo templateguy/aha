@@ -30,7 +30,7 @@ namespace aha
                 
                 nvgBeginPath(context);
                 nvgRoundedRect(context, position_.x, position_.y, size_.width, size_.height, 3.0f);
-                nvgFillColor(context, nvgRGBA(128, 128, 128, 16));
+                nvgFillColor(context, nvgRGBA(32, 32, 32, 100));
                 nvgFill(context);
                 nvgRestore(context);
                 Widget::render(context);

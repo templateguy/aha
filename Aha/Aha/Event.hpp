@@ -9,7 +9,6 @@
 #pragma once
 
 
-#include <string>
 #include "Signal.hpp"
 #include "Preprocessor/Preprocessor.h"
 

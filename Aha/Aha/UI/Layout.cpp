@@ -6,9 +6,7 @@
 //  Copyright © 2018 Saurabh Sinha. All rights reserved.
 //
 
-#include "Layout.hpp"
-#include "UIWindow.hpp"
-#include "UILabel.hpp"
+#include "../Aha.h"
 
 
 namespace aha

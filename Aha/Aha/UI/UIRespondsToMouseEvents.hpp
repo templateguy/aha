@@ -9,7 +9,6 @@
 #pragma once
 
 
-#include <type_traits>
 #include "../Math/Vec2.hpp"
 #include "UIMouseEvents.hpp"
 

@@ -10,8 +10,6 @@
 
 
 #include <iostream>
-#include <OpenGL/gl3.h>
-#include <OpenGL/glext.h>
 #include <Aha.h>
 
 

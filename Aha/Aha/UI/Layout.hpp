@@ -9,10 +9,6 @@
 #pragma once
 
 
-#include <string>
-#include <vector>
-#include <unordered_map>
-#include "../nanovg/nanovg.h"
 #include "../Math/Vec2.hpp"
 
 

@@ -9,9 +9,7 @@
 #pragma once
 
 
-#include <cmath>
-#include "glm/glm.hpp"
-#include "glm/gtc/matrix_transform.hpp"
+#include "Application.hpp"
 
 
 namespace aha
@@ -23,6 +21,11 @@ namespace aha
         : position_(position), worldUp_(up), yaw_(yaw), pitch_(pitch)
         {
             updateVectors_();
+        }
+        
+        glm::mat4 getProjectionMatrix() const
+        {
+            return glm::perspective(glm::radians(zoom_), static_cast <float> (Application.getWindowWidth()) / static_cast <float> (Application.getWindowHeight()), 0.1f, 100.0f);
         }
         
         glm::mat4 getViewMatrix() const

@@ -9,18 +9,8 @@
 #pragma once
 
 
-#include <string>
-#include <vector>
-#include <map>
-#include <limits>
-#include <cmath>
-#include <OpenGL/gl3.h>
-#include "tiny_obj_loader/tiny_obj_loader.h"
-#include "tiny_obj_loader/trackball.h"
 #include "Texture.hpp"
 #include "Shader.hpp"
-#include "glm/glm.hpp"
-#include "glm/gtc/matrix_transform.hpp"
 
 
 namespace aha
@@ -65,7 +55,8 @@ namespace aha
             if(!wireframe)
             {
                 //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-                //glEnable(GL_DEPTH_TEST);
+                glEnable(GL_DEPTH_TEST);
+                glDepthFunc(GL_LEQUAL);
                 
                 glActiveTexture(GL_TEXTURE3);
                 glBindTexture(GL_TEXTURE_2D, albedo_->handle());

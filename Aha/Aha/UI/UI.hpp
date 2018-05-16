@@ -9,8 +9,6 @@
 #pragma once
 
 
-#include <vector>
-#include <memory>
 #include "../Preprocessor/Preprocessor.h"
 #include "Widget.hpp"
 
@@ -89,6 +87,7 @@ namespace aha
             
             void render() const
             {
+                glDisable(GL_DEPTH_TEST);
                 nvgBeginFrame(context_, static_cast <int> (aha::Application.getWindowWidth()), static_cast <int> (aha::Application.getWindowHeight()), 1.0f);
                 for(auto child : children_)
                 {
@@ -96,6 +95,7 @@ namespace aha
                     child->render(context_);
                 }
                 nvgEndFrame(context_);
+                glEnable(GL_DEPTH_TEST);
             }
             
             static UI_& getInstance()

@@ -260,8 +260,7 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 
 - (void) keyDown : (NSEvent*) event
 {
-    [self interpretKeyEvents:[NSArray arrayWithObject:event]];
-    printf("Key Down...\n");
+    aha::Event.fire <void (unsigned short, bool)> ("KeyDown", event.keyCode, event.ARepeat);
 }
 
 - (void) flagsChanged : (NSEvent*) event
@@ -271,7 +270,7 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 
 - (void) keyUp : (NSEvent*) event
 {
-    printf("Key Up...\n");
+    aha::Event.fire <void (unsigned short)> ("KeyUp", event.keyCode);
 }
 
 - (NSDragOperation) draggingEntered : (id <NSDraggingInfo>) sender
@@ -479,6 +478,7 @@ namespace aha
             pimpl_->width_ = width == -1? [pimpl_->window_.contentView visibleRect].size.width : pimpl_->width_;
             pimpl_->height_ = height == -1? [pimpl_->window_.contentView visibleRect].size.height : pimpl_->height_;
         }
+        [pimpl_->window_ makeFirstResponder : pimpl_->view_];
     }
     
     WindowOSX::~WindowOSX()

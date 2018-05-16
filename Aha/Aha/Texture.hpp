@@ -9,12 +9,6 @@
 #pragma once
 
 
-#include <iostream>
-#include <string>
-#include <map>
-#include <OpenGL/gl3.h>
-
-
 namespace aha
 {
     class Texture

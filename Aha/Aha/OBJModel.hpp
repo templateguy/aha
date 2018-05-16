@@ -9,18 +9,8 @@
 #pragma once
 
 
-#include <string>
-#include <vector>
-#include <map>
-#include <limits>
-#include <cmath>
-#include <OpenGL/gl3.h>
-#include "tiny_obj_loader/tiny_obj_loader.h"
-#include "tiny_obj_loader/trackball.h"
 #include "Texture.hpp"
 #include "Shader.hpp"
-#include "glm/glm.hpp"
-#include "glm/gtc/matrix_transform.hpp"
 
 
 namespace aha

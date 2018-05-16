@@ -9,11 +9,6 @@
 #pragma once
 
 
-#include <memory>
-#include <vector>
-#include <array>
-#include "../nanovg/nanovg.h"
-#include "../nanovg/nanovg_gl.h"
 #include "../Math/Vec2.hpp"
 #include "Layout.hpp"
 #include "Theme.hpp"

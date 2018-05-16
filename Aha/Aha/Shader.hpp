@@ -9,13 +9,6 @@
 #pragma once
 
 
-#include <string>
-#include <fstream>
-#include <sstream>
-#include <iostream>
-#include "glm/glm.hpp"
-
-
 namespace aha
 {
     class Shader
