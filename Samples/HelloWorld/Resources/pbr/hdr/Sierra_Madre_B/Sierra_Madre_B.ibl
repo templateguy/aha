@@ -1,0 +1,46 @@
+[Header]
+ICOfile = "Sierra_Madre_B_Thumb.jpg"
+PREVIEWfile = "Sierra_Madre_B_preview.jpg"
+Name = "Sierra Madre B"
+Author = "Blochi"
+Location = "California"
+Comment = "great vista point above the valley"
+GEOlat = 36.59265192743126
+GEOlong = -118.22284698486328
+Link = "http://www.hdrlabs.com/sibl/archive.html"
+Date = "2006:11:26"
+Time = "10:00:00"
+Height = 10
+North = 0.07
+
+[Background]
+BGfile = "Sierra_Madre_B_HiRes_TMap.jpg"
+BGmap = 1
+BGu = 0.000000
+BGv = 0.000000
+BGheight = 4000
+
+[Enviroment]
+EVfile = "Sierra_Madre_B_Env.hdr"
+EVmap = 1
+EVu = 0.000000
+EVv = 0.000000
+EVheight = 180
+EVmulti = 1.600000
+EVgamma = 1.600000
+
+[Reflection]
+REFfile = "Sierra_Madre_B_Ref.hdr"
+REFmap = 1
+REFu = 0.000000
+REFv = 0.000000
+REFheight = 800
+REFmulti = 1.600000
+REFgamma = 1.600000
+
+[Sun]
+SUNcolor = 255,254,252
+SUNmulti = 7.604167
+SUNu = 0.598000
+SUNv = 0.400000
+
