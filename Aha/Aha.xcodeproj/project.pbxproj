@@ -392,6 +392,9 @@
 		AFBC207820A3436D00563C85 /* OBJModel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OBJModel.hpp; sourceTree = "<group>"; };
 		AFBC208520A3491500563C85 /* PBROBJModel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PBROBJModel.hpp; sourceTree = "<group>"; };
 		AFCBE1B52095E635001B3AF5 /* UI.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UI.hpp; sourceTree = "<group>"; };
+		AFD9D76E20AC7E11006119FD /* File.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = File.hpp; sourceTree = "<group>"; };
+		AFD9D76F20AC8558006119FD /* GLTF.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GLTF.hpp; sourceTree = "<group>"; };
+		AFD9D77120ACA0A0006119FD /* variant */ = {isa = PBXFileReference; lastKnownFileType = text; path = variant; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -466,6 +469,8 @@
 				AF3F22F420A710CA00F9AD2D /* HDRCubemap.hpp */,
 				AF3F27D120A73C0A00F9AD2D /* ControlledCamera.hpp */,
 				AF3F27D220A7572B00F9AD2D /* PBRQuad.hpp */,
+				AFD9D76E20AC7E11006119FD /* File.hpp */,
+				AFD9D76F20AC8558006119FD /* GLTF.hpp */,
 			);
 			path = Aha;
 			sourceTree = "<group>";
@@ -565,6 +570,7 @@
 		AF3F280120AB1F4900F9AD2D /* external */ = {
 			isa = PBXGroup;
 			children = (
+				AFD9D77020ACA088006119FD /* variant */,
 				AF3F291F20AB29F800F9AD2D /* trackball */,
 				AF3F291D20AB291900F9AD2D /* tiny_obj_loader */,
 				AF3F281620AB21C600F9AD2D /* glm */,
@@ -961,6 +967,14 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		AFD9D77020ACA088006119FD /* variant */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9D77120ACA0A0006119FD /* variant */,
+			);
+			path = variant;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1191,6 +1205,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Aha/assimp/include";
@@ -1210,6 +1225,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Aha/assimp/include";

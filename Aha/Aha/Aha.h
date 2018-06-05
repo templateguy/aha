@@ -28,6 +28,8 @@
 #include <OpenGL/gl3.h>
 #include <OpenGL/glext.h>
 
+#include "File.hpp"
+
 #include "external/stb/stb_image.h"
 #include "external/stb/stb_image_write.h"
 #include "external/stb/stb_truetype.h"
@@ -53,6 +55,7 @@
 #include "PBROBJModel.hpp"
 #include "PBRQuad.hpp"
 #include "HDRCubemap.hpp"
+#include "GLTF.hpp"
 
 // UI
 #include "UI/UI.hpp"
